@@ -95,6 +95,12 @@ recovery-description = Pro vytvoření nového hesla klepněte během jedné hod
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Platnost platební karty pro { $productName } brzy vyprší
 subscriptionPaymentExpired-title = Platnost vaší platební karty brzy vyprší
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Předplatné produktu { $productName } obnoveno
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Děkujeme vám za obnovení předplatného produktu { $productName }.
 subscriptionsPaymentExpired-subject = Platnost platební karty pro úhradu vašich předplatných brzy vyprší
 subscriptionsPaymentExpired-title = Platnost vaší platební karty brzy vyprší
 subscriptionsPaymentExpired-content = Platnost platební karty, kterou hradíte následující předplatné, brzy vyprší.

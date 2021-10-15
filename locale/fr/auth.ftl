@@ -95,6 +95,12 @@ recovery-description = Cliquez sur le bouton d’ici moins d’une heure pour cr
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = La carte bancaire pour { $productName } expire bientôt
 subscriptionPaymentExpired-title = Votre carte bancaire est sur le point d’expirer
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = L’abonnement à { $productName } a été réactivé
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Merci d’avoir réactivé votre abonnement à { $productName } !
 subscriptionsPaymentExpired-subject = La carte bancaire utilisée pour vos abonnements expire bientôt
 subscriptionsPaymentExpired-title = Votre carte bancaire est sur le point d’expirer
 subscriptionsPaymentExpired-content = La carte bancaire que vous utilisez pour effectuer des paiements pour les abonnements suivants est sur le point d’expirer.

@@ -95,6 +95,12 @@ recovery-description = Kattintson a gombra egy órán belül az új jelszó lét
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = A(z) { $productName } termékhez tartozó bankkártya hamarosan lejár
 subscriptionPaymentExpired-title = A bankkártyája hamarosan lejár
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName }-előfizetés újraaktiválva
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Köszönjük, hogy újraaktiválta a { $productName }-előfizetését.
 subscriptionsPaymentExpired-subject = Az előfizetéseihez tartozó bankkártya hamarosan lejár
 subscriptionsPaymentExpired-title = A bankkártyája hamarosan lejár
 subscriptionsPaymentExpired-content = A következő előfizetésekhez használt bankkártyája hamarosan lejár.

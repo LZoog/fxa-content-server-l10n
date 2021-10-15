@@ -93,6 +93,12 @@ recovery-description = K'o jun ramaj chawe richin napïtz' ri pitz'b'äl richin 
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Rutarjeta' Kre'ito' richin { $productName } nik'is yan ruq'ijul 
 subscriptionPaymentExpired-title = Nik'is yan ruq'ijul ri atarjeta' richin kre'ito'
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Xtz'ij chik { $productName } rutz'ib'axik ab'i'
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = ¡Matyox xatzïj chik rutz'ib'axik ab'i' pa { $productName }!
 subscriptionsPaymentExpired-subject = Rutarjeta' Kre'ito' richin rutz'ib'axik ab'i' nik'is yan ruq'ijul 
 subscriptionsPaymentExpired-title = Nik'is yan ruq'ijul ri atarjeta' richin kre'ito'
 subscriptionsPaymentExpired-content = Ri atarjeta' richin kre'ito' richin natojb'ej re rutz'ib'axik b'i'aj re', ri nik'is yan ruq'ijul.

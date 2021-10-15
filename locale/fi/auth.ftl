@@ -95,6 +95,12 @@ recovery-description = Napsauta painiketta tunnin sisään luodaksesi uuden sala
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Tuotteella { $productName } käytettävä luottokortti vanhenee pian
 subscriptionPaymentExpired-title = Luottokorttisi vanhenee pian
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName } -tilaus aktivoitu uudelleen
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Kiitos että aktivoit tuotteen { $productName } tilauksen uudelleen!
 subscriptionsPaymentExpired-subject = Tilauksiin käyttämäsi luottokortti vanhenee pian
 subscriptionsPaymentExpired-title = Luottokorttisi vanhenee pian
 subscriptionsPaymentExpired-content = Seuraaviin tilauksiin käyttämäsi luottokortti vanhenee pian.

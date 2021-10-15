@@ -95,6 +95,12 @@ recovery-description = Cliciwch y botwm o fewn yr awr nesaf i greu cyfrinair new
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Bydd cerdyn credyd { $productName } yn dod i ben yn fuan
 subscriptionPaymentExpired-title = Mae eich cerdyn credyd ar fin dod i ben
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Ail-gychwynnwyd tanysgrifiad { $productName }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Diolch am ail-agor eich tanysgrifiad { $productName }
 subscriptionsPaymentExpired-subject = Mae cerdyn credyd ar gyfer eich tanysgrifiadau yn dod i ben yn fuan
 subscriptionsPaymentExpired-title = Mae eich cerdyn credyd ar fin dod i ben
 subscriptionsPaymentExpired-content = Mae'r cerdyn credyd rydych chi'n ei ddefnyddio i wneud taliadau am y tanysgrifiadau canlynol ar fin dod i ben.

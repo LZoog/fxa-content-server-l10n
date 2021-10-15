@@ -75,6 +75,12 @@ recovery-description = Kliknite na dugme u toku sledećeg sata da kreirate novu 
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Kreditna kartica za { $productName } uskoro ističe
 subscriptionPaymentExpired-title = Vaša kreditna kartica uskoro ističe
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName } pretplata je ponovo aktivirana
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Hvala vam što ste se ponovo aktivirali vašu { $productName } pretplatu!
 subscriptionsPaymentExpired-title = Vaša kreditna kartica uskoro ističe
 unblockCode-subject = Kod za autorizaciju naloga
 unblockCode-title = Da li ste se ovo vi prijavili?

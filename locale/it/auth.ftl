@@ -95,6 +95,12 @@ recovery-description = Per impostare una nuova password fai clic sul pulsante en
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = La carta di credito per { $productName } sta per scadere
 subscriptionPaymentExpired-title = La carta di credito in uso sta per scadere
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Abbonamento a { $productName } rinnovato
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Grazie per aver rinnovato il tuo abbonamento a { $productName }!
 subscriptionsPaymentExpired-subject = La carta di credito collegata ai tuoi abbonamenti sta per scadere
 subscriptionsPaymentExpired-title = La carta di credito in uso sta per scadere
 subscriptionsPaymentExpired-content = La carta di credito in uso per i pagamenti dei seguenti abbonamenti sta per scadere.

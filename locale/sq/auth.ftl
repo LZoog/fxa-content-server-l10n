@@ -95,6 +95,12 @@ recovery-description = Klikoni mbi butonin brenda orës së ardhshme që të kri
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Kartë krediti për { $productName } që skadon së shpejti
 subscriptionPaymentExpired-title = Karta juaj e kreditit është afër skadimit
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Pajtimi në { $productName } u riaktivizua
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Faleminderit për riaktivizimin e pajtimit tuaj në { $productName }!
 subscriptionsPaymentExpired-subject = Karta e kreditit për pajtimet tuaja skadon së shpejti
 subscriptionsPaymentExpired-title = Karta juaj e kreditit është afër skadimit
 subscriptionsPaymentExpired-content = Karta e kreditit që po përdorni për të bërë pagesa për pajtimet vijuese është afër skadimit.

@@ -91,6 +91,12 @@ recovery-description = Яңа бер парол булдыру өчен бер �
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = { $productName } өчен кулланылучы кредит картасының тиздән вакыты чыгачак
 subscriptionPaymentExpired-title = Сезнең кредит картасының вакыты чыгып килә
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName } продуктына язылу яңадан активлаштырылды
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = { $productName } абунәгезне яңадан активлаштырганыгыз өчен рәхмәт!
 subscriptionsPaymentExpired-subject = Язылуларыгыз өчен кулланылучы кредит картасының тиздән вакыты чыгачак
 subscriptionsPaymentExpired-title = Сезнең кредит картасының вакыты чыгып килә
 unblockCode-subject = Хисабыгызны авторизацияләү коды

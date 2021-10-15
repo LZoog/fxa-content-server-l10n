@@ -95,6 +95,12 @@ recovery-description = Klikńće na tłóčatko wob hodźinu, zo byšće nowe he
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Kreditna karta za { $productName } bórze spadnje
 subscriptionPaymentExpired-title = Waša kreditna karta bórze spadnje
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Abonement { $productName } je so zaso zaktiwizował
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Wulki dźak, zo sće zaso zaktiwizował swój abonement { $productName }!
 subscriptionsPaymentExpired-subject = Kreditna karta za swoje abonementy bórze spadnje
 subscriptionsPaymentExpired-title = Waša kreditna karta bórze spadnje
 subscriptionsPaymentExpired-content = Kreditna karta, z kotrejž płaćenja za slědowace abonementy přewjedźeće, bórze spadnje.

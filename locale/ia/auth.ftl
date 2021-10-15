@@ -95,6 +95,12 @@ recovery-description = Clicca sur le button in le proxime hora pro crear un nove
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Le carta de credito pro { $productName } va expirar tosto
 subscriptionPaymentExpired-title = Tu carta de credito va expirar
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Subscription a { $productName } reactivate
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Gratias pro le reactivation de tu subscription a { $productName }!
 subscriptionsPaymentExpired-subject = Le carta de credito pro tu subscriptiones va expirar tosto
 subscriptionsPaymentExpired-title = Tu carta de credito va expirar
 subscriptionsPaymentExpired-content = Le carta de credito que tu usa pro facer pagamentos pro le sequente subscriptiones es sur le puncto de expirar.

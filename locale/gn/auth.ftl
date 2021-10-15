@@ -95,6 +95,12 @@ recovery-description = Eikutu pe votõ 60 aravo’i oútavape emoheñói hag̃ua
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Nde kuatia’atã ñemurã { $productName } ndokovéitama
 subscriptionPaymentExpired-title = Nde kuatia’atã ñemurã ndokovéitama
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Mboheraguapy { $productName } hendyjeýma
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = ¡Aguyje emyandyjeýre ne mboheraguapy { $productName }!-pe
 subscriptionsPaymentExpired-subject = Nde kuatia’atã ñemurã ne mboheraguapýpe g̃uarã ndokovéitama
 subscriptionsPaymentExpired-title = Nde kuatia’atã ñemurã ndokovéitama
 subscriptionsPaymentExpired-content = Pe kuatia’atã ñemurã eipurúva ehepyme’ẽ hag̃ua ko’ã mboheraguapy pegua ndoikovéi potaitéma.

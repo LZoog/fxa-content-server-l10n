@@ -95,6 +95,12 @@ recovery-description = Clique no botão em até uma hora para criar uma nova sen
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Validade do cartão de crédito de { $productName } expirando em breve
 subscriptionPaymentExpired-title = A validade do seu cartão de crédito está prestes a expirar
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Assinatura do { $productName } reativada
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Obrigado por reativar sua assinatura do { $productName }!
 subscriptionsPaymentExpired-subject = A validade do cartão de crédito de suas assinaturas expirará em breve
 subscriptionsPaymentExpired-title = A validade do seu cartão de crédito está prestes a expirar
 subscriptionsPaymentExpired-content = A validade do cartão de crédito que você está usando para efetuar pagamentos das assinaturas a seguir está prestes a expirar.

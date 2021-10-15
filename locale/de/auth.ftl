@@ -95,6 +95,12 @@ recovery-description = Klicken Sie innerhalb der nächsten Stunde auf die Schalt
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Kreditkarte für { $productName } läuft bald ab
 subscriptionPaymentExpired-title = Ihre Kreditkarte läuft bald ab
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Abonnement von { $productName } erneuert
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Vielen Dank, dass Sie Ihr Abonnement von { $productName } erneuert haben!
 subscriptionsPaymentExpired-subject = Die Kreditkarte für Ihre Abonnements läuft bald ab
 subscriptionsPaymentExpired-title = Ihre Kreditkarte läuft bald ab
 subscriptionsPaymentExpired-content = Die Kreditkarte, mit der Sie Zahlungen für die folgenden Abonnements ausführen, läuft bald ab.

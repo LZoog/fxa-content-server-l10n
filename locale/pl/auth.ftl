@@ -95,6 +95,12 @@ recovery-description = Kliknij przycisk w ciągu godziny, aby utworzyć nowe ha
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Karta płatnicza dla { $productName } wkrótce wygaśnie
 subscriptionPaymentExpired-title = Karta płatnicza wkrótce wygaśnie
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Ponownie aktywowano subskrypcję { $productName }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Dziękujemy za ponowną aktywację subskrypcji { $productName }!
 subscriptionsPaymentExpired-subject = Karta płatnicza dla subskrypcji wkrótce wygaśnie
 subscriptionsPaymentExpired-title = Karta płatnicza wkrótce wygaśnie
 subscriptionsPaymentExpired-content = Karta płatnicza używana do dokonywania płatności za poniższe subskrypcje niedługo wygaśnie.

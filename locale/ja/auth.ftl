@@ -80,6 +80,9 @@ recovery-subject = パスワードをリセットしました
 recovery-title = パスワード変更の必要がありますか？
 recovery-description = 1 時間以内にボタンをクリックして新しいパスワードを設定してください。このリクエストは次の端末から行われました:
 subscriptionPaymentExpired-title = クレジットカードの有効期限が近づいています
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = { $productName } のサブスクリプションを再開していただき、ありがとうございます。
 subscriptionsPaymentExpired-title = クレジットカードの有効期限が近づいています
 unblockCode-subject = アカウントの認証コード
 unblockCode-title = ログインしようとしているのはあなた自身ですか？

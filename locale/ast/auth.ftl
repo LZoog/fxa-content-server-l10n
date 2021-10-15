@@ -47,6 +47,9 @@ postVerifySecondary-title = { postVerifySecondary-subject }
 recovery-title = ¿Tienes de reaniciar la contraseña?
 recovery-description = Calca'l botón dientro d'una hora pa crear una contraseña. La solicitú vieno del preséu de darréu:
 subscriptionPaymentExpired-title = La tarxeta de creitu ta a piques de caducar
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Reactivóse la soscripción
 subscriptionsPaymentExpired-title = La tarxeta de creitu ta a piques de caducar
 unblockCode-title = ¿Yes tu aniciando sesión?
 unblockCode-prompt = Si ye asina, esti ye'l códigu d'autorización que precises:

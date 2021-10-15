@@ -95,6 +95,12 @@ recovery-description = 請在一個小時內點擊下面的按鈕來建立新密
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = 訂購 { $productName } 所使用的信用卡即將過期
 subscriptionPaymentExpired-title = 您的信用卡即將過期
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = 已重新開始訂閱 { $productName }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = 感謝您重新開始訂閱 { $productName }！
 subscriptionsPaymentExpired-subject = 訂購多項產品所使用的信用卡即將過期
 subscriptionsPaymentExpired-title = 您的信用卡即將過期
 subscriptionsPaymentExpired-content = 您用來付款訂購下列項目的信用卡即將過期。

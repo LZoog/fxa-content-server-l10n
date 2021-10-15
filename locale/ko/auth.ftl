@@ -95,6 +95,12 @@ recovery-description = 새 비밀번호를 만들려면 다음 시간 안에 버
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = { $productName } 신용 카드 만료 예정
 subscriptionPaymentExpired-title = 신용 카드 만료 예정
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName } 구독 재활성
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = { $productName } 구독을 재활성화 해 주셔서 감사합니다!
 subscriptionsPaymentExpired-subject = 결제용 신용 카드 만료 예정
 subscriptionsPaymentExpired-title = 신용 카드 만료 예정
 subscriptionsPaymentExpired-content = 다음 구독에 대한 결제에 사용 중인 신용 카드가 곧 만료됩니다.

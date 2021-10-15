@@ -95,6 +95,12 @@ recovery-description = Klik binnen een uur op de knop om een nieuw wachtwoord aa
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = De creditcard voor { $productName } verloopt binnenkort
 subscriptionPaymentExpired-title = Uw creditcard verloopt binnenkort
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Abonnement op { $productName } opnieuw geactiveerd
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Bedankt voor het opnieuw activeren van uw abonnement op { $productName }!
 subscriptionsPaymentExpired-subject = De creditcard voor uw abonnementen verloopt binnenkort
 subscriptionsPaymentExpired-title = Uw creditcard verloopt binnenkort
 subscriptionsPaymentExpired-content = De creditcard die u gebruikt voor betalingen voor de volgende abonnementen verloopt binnenkort.

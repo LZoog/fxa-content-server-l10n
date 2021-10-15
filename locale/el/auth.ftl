@@ -95,6 +95,12 @@ recovery-description = Κάντε κλικ στο κουμπί μέσα στην
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Η πιστωτική κάρτα για το { $productName } λήγει σύντομα
 subscriptionPaymentExpired-title = Η πιστωτική σας κάρτα πρόκειται να λήξει
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Η συνδρομή στο { $productName } επανενεργοποιήθηκε
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Ευχαριστούμε για την εκ νέου ενεργοποίηση της συνδρομής { $productName }!
 subscriptionsPaymentExpired-subject = Η πιστωτική κάρτα για τη συνδρομή σας λήγει σύντομα
 subscriptionsPaymentExpired-title = Η πιστωτική σας κάρτα πρόκειται να λήξει
 subscriptionsPaymentExpired-content = Πρόκειται να λήξει η πιστωτική κάρτα που χρησιμοποιείτε για τις πληρωμές των εξής συνδρομών.

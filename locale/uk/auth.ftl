@@ -95,6 +95,12 @@ recovery-description = Натисніть на кнопку протягом н�
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Незабаром, закінчується термін дії кредитної картки для оплати за { $productName }
 subscriptionPaymentExpired-title = Закінчується термін дії вашої кредитної картки
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Передплату { $productName } поновлено
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Дякуємо, що поновили передплату на { $productName }!
 subscriptionsPaymentExpired-subject = Кредитна картка для ваших передплат незабаром втрачає чинність
 subscriptionsPaymentExpired-title = Закінчується термін дії вашої кредитної картки
 subscriptionsPaymentExpired-content = Кредитна картка, якою ви здійснюєте платежі за цими передплатами, невдовзі втрачає чинність.

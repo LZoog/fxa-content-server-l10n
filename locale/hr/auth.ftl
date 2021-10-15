@@ -95,6 +95,12 @@ recovery-description = U sljedećih sat vremena klikni gumb za stvaranje nove lo
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Rok kreditne kartice za { $productName } uskoro istječe
 subscriptionPaymentExpired-title = Tvoja će kreditna kartica uskoro isteći
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Pretplata na { $productName } ponovno je aktivirana
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Zahvaljujemo na ponovnoj pretplati na { $productName }!
 subscriptionsPaymentExpired-subject = Rok kreditne kartice za tvoju pretplatu uskoro istječe
 subscriptionsPaymentExpired-title = Tvoja će kreditna kartica uskoro isteći
 subscriptionsPaymentExpired-content = Kreditna kartica koju koristiš za plaćanje sljedećih pretplata uskoro isteče.

@@ -95,6 +95,12 @@ recovery-description = Clicca entaifer la proxima ura sin il buttun per crear in
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = La carta da credit per { $productName } scada prest
 subscriptionPaymentExpired-title = Tia carta da credit scada prest
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Reactivà l'abunament da { $productName }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Grazia per reactivar tes abunament da { $productName }!
 subscriptionsPaymentExpired-subject = La carta da credit per tes abunaments scada prest
 subscriptionsPaymentExpired-title = Tia carta da credit scada prest
 subscriptionsPaymentExpired-content = La carta da credit che ti utiliseschas per far pajaments per il suandant abunament scada prest.

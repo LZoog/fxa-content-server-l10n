@@ -94,6 +94,12 @@ recovery-description = יש ללחוץ על הכפתור בשעה הקרובה �
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = תוקף כרטיס האשראי עבור { $productName } יפוג בקרוב
 subscriptionPaymentExpired-title = תוקף כרטיס האשראי שלך עומד לפוג
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = המינוי עבור { $productName } הופעל מחדש
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = תודה שהפעלת מחדש את המינוי שלך ל־{ $productName }!
 subscriptionsPaymentExpired-subject = תוקף כרטיס האשראי עבור המינויים שלך יפוג בקרוב
 subscriptionsPaymentExpired-title = תוקף כרטיס האשראי שלך עומד לפוג
 subscriptionsPaymentExpired-content = תוקף כרטיס האשראי המשמש אותך לביצוע תשלומים עבור המינויים הבאים עומד לפוג.

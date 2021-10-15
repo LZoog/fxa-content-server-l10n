@@ -95,6 +95,12 @@ recovery-description = Klik binnen in oer op de knop om in nij wachtwurd oan te 
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = De creditcard foar { $productName } ferrint ynkoarten
 subscriptionPaymentExpired-title = Jo creditcard ferrint ynkoarten
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Abonnemint op { $productName } opnij aktivearre
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Tank foar it opnij aktivearjen fan jo abonnemint op { $productName }!
 subscriptionsPaymentExpired-subject = De creditcard foar jo abonneminten ferrint ynkoarten
 subscriptionsPaymentExpired-title = Jo creditcard ferrint ynkoarten
 subscriptionsPaymentExpired-content = De creditcard dy't jo brûke foar betellingen foar de folgjende abonneminten ferrint ynkoarten.

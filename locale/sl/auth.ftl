@@ -89,6 +89,9 @@ recovery-subject = Ponastavite vaše geslo
 recovery-title = Morate ponastaviti geslo?
 recovery-description = Kliknite gumb v naslednji uri, da ustvarite novo geslo. Zahteva je bila prejeta z naslednje naprave:
 subscriptionPaymentExpired-title = Vaša kreditna kartica bo kmalu potekla
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Hvala, ker ste ponovno aktivirali svojo naročnino na { $productName }!
 subscriptionsPaymentExpired-title = Vaša kreditna kartica bo kmalu potekla
 unblockCode-subject = Overitvena koda računa
 unblockCode-title = Se prijavljate vi?

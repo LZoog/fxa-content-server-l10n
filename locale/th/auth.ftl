@@ -84,6 +84,9 @@ recovery-description = คลิกปุ่มภายในชั่วโม
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = บัตรเครดิตสำหรับ % (productName)s จะหมดอายุในไม่ช้า
 subscriptionPaymentExpired-title = บัตรเครดิตของคุณกำลังจะหมดอายุ
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = เปิดใช้งานการบอกรับ { $productName } ใหม่แล้ว
 subscriptionsPaymentExpired-subject = บัตรเครดิตสำหรับการบอกรับของคุณจะหมดอายุในไม่ช้า
 subscriptionsPaymentExpired-title = บัตรเครดิตของคุณกำลังจะหมดอายุ
 subscriptionsPaymentExpired-content = บัตรเครดิตที่คุณกำลังจะใช้ชำระเงินสำหรับการบอกรับต่อไปนี้กำลังจะหมดอายุ

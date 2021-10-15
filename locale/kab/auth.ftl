@@ -95,6 +95,12 @@ recovery-description = Sit ɣef tqaffalt akka kra n usrag akken ad ternuḍ awal
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Takarḍa n usmad i { $productName } qrib ad temmet
 subscriptionPaymentExpired-title = Takarḍa-k n usmad qrib ad temmet
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Ajerred n { $productName } yettwarmed
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Tanemmirt imi tulseḍ ajerred ɣer { $productName }!
 subscriptionsPaymentExpired-subject = Takarḍa n usmad n yijerriden-ik•im qrib ad temmet
 subscriptionsPaymentExpired-title = Takarḍa-k n usmad qrib ad temmet
 subscriptionsPaymentExpired-content = Takarḍa n usmad i tesseqdaceḍ i uxelleṣ deg yijerriden-a qrib ad temmet.

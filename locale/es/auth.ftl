@@ -84,6 +84,9 @@ postVerifySecondary-title = { postVerifySecondary-subject }
 recovery-subject = Restablece tu contraseña
 recovery-title = ¿Necesitas restablecer tu contraseña?
 recovery-description = Haz clic en el botón en los próximos 60 minutos para crear una nueva. Esta solicitud la envió el siguiente dispositivo:
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Suscripción a { $productName } reactivada
 unblockCode-subject = Código de autorización de la cuenta
 unblockCode-title = ¿Eres tú identificándote?
 unblockCode-prompt = Si es así, el código de autorización que necesitas es este:

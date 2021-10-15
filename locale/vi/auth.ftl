@@ -95,6 +95,12 @@ recovery-description = Vui lòng nhấp vào nút trong vòng một giờ để 
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Thẻ tín dụng cho { $productName } sắp hết hạn
 subscriptionPaymentExpired-title = Thẻ tín dụng của bạn sắp hết hạn
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Đã kích hoạt lại thuê bao { $productName }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Cảm ơn bạn đã kích hoạt lại thuê bao { $productName } của bạn!
 subscriptionsPaymentExpired-subject = Thẻ tín dụng cho thuê bao của bạn sắp hết hạn
 subscriptionsPaymentExpired-title = Thẻ tín dụng của bạn sắp hết hạn
 subscriptionsPaymentExpired-content = Thẻ tín dụng bạn đang sử dụng để thanh toán cho các thuê bao sau sắp hết hạn.

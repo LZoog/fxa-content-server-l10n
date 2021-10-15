@@ -95,6 +95,12 @@ recovery-description = Haz clic en el botón en los próximos 60 minutos para cr
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Tarjeta de crédito para { $productName } caduca pronto
 subscriptionPaymentExpired-title = Tu tarjeta de crédito ya va a expirar
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Suscripción a { $productName } reactivada
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = ¡Gracias por reactivar tu suscripción a { $productName }!
 subscriptionsPaymentExpired-subject = La tarjeta de crédito para tus suscripciones caduca pronto
 subscriptionsPaymentExpired-title = Tu tarjeta de crédito ya va a expirar
 subscriptionsPaymentExpired-content = La tarjeta de crédito que estás utilizando para realizar pagos para la siguiente suscripción está a punto de caducar.

@@ -91,6 +91,12 @@ recovery-description = Klik tumbul selang sajam deui pikeun nyieun sandi anyar. 
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Kartu kiridit keur { $productName } téréh kadaluwarsa
 subscriptionPaymentExpired-title = Kartu kiridit anjeun tos badé kadaluwarsa
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Langganan { $productName } geus aktip deui
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Nuhun tos ngaktipkeun deui langganan { $productName }!
 subscriptionsPaymentExpired-subject = Kartu kiridit keur pendaptaran anjeun téréh kadaluwarsa
 subscriptionsPaymentExpired-title = Kartu kiridit anjeun tos badé kadaluwarsa
 unblockCode-subject = Kodeu otorisasi akun

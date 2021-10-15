@@ -93,6 +93,12 @@ recovery-description = Dă clic pe buton în următoarea oră pentru a crea o no
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Cardul de credit pentru { $productName } va expira în curând
 subscriptionPaymentExpired-title = Cardul tău de credit se apropie de data expirării
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Abonamentul pentru { $productName } a fost reactivat
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Îți mulțumim că ți-ai reactivat abonamentul pentru { $productName }!
 subscriptionsPaymentExpired-subject = Cardul de credit pentru abonamente se apropie de data expirării
 subscriptionsPaymentExpired-title = Cardul tău de credit se apropie de data expirării
 subscriptionsPaymentExpired-content = Cardul de credit pe care îl folosești pentru plăți aferente următoarelor abonamente se apropie de data expirării.

@@ -95,6 +95,12 @@ recovery-description = დააჭირეთ ღილაკს მომდ�
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = { $productName } მომსახურებისთვის საკრედიტო ბარათს ვადა ეწურება
 subscriptionPaymentExpired-title = თქვენი საკრედიტო ბარათის ვადა იწურება
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName } გამოწერა კვლავ ამოქმედებულია
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = გმადლობთ, რომ კვლავ გამოიწერეთ { $productName }!
 subscriptionsPaymentExpired-subject = თქვენი გამოწერების საკრედიტო ბარათს ვადა ეწურება
 subscriptionsPaymentExpired-title = თქვენი საკრედიტო ბარათის ვადა იწურება
 subscriptionsPaymentExpired-content = საკრედიტო ბარათის, რომელსაც გადახდებისთვის იყენებთ, ვადა ეწურება.

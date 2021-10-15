@@ -95,6 +95,12 @@ recovery-description = Yeni bir parola oluşturmak için bir saat içinde bu dü
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = { $productName } için kredi kartının kullanım süresi yakında doluyor
 subscriptionPaymentExpired-title = Kredi kartınızın kullanım süresi dolmak üzere
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = { $productName } aboneliği yeniden etkinleştirildi
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = { $productName } aboneliğinizi yeniden etkinleştirdiğiniz için teşekkür ederiz!
 subscriptionsPaymentExpired-subject = Abonelikleriniz için kredi kartının kullanım süresi yakında doluyor
 subscriptionsPaymentExpired-title = Kredi kartınızın kullanım süresi dolmak üzere
 subscriptionsPaymentExpired-content = Aşağıdaki abonelikler için ödeme yapmak üzere kullandığınız kredi kartının kullanım süresi dolmak üzere.

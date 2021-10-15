@@ -95,6 +95,12 @@ recovery-description = Щёлкните по кнопке в течение сл
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Срок действия банковской карты для оплаты за { $productName } скоро заканчивается
 subscriptionPaymentExpired-title = Срок действия вашей банковской карты скоро заканчивается
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Подписка на { $productName } активирована повторно
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Благодарим вас за повторную активацию подписки { $productName }!
 subscriptionsPaymentExpired-subject = Срок действия банковской карты для оплаты ваших подписок скоро заканчивается
 subscriptionsPaymentExpired-title = Срок действия вашей банковской карты скоро заканчивается
 subscriptionsPaymentExpired-content = Срок действия банковской карты, которую вы используете для совершения платежей за следующие подписки, скоро заканчивается.

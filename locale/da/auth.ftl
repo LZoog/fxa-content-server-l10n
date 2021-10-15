@@ -95,6 +95,12 @@ recovery-description = Klik på knappen inden for den næste time for at oprette
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Betalingskort for { $productName } udløber snart
 subscriptionPaymentExpired-title = Dit betalingskort er ved at udløbe
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-subject = Fornyelse af abonnement på { $productName }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionReactivation-title = Tak fordi du har fornyet dit abonnement på { $productName }!
 subscriptionsPaymentExpired-subject = Betalingskort for dine abonnementer udløber snart
 subscriptionsPaymentExpired-title = Dit betalingskort er ved at udløbe
 subscriptionsPaymentExpired-content = Betalingskortet, du bruger til at betale for følgende abonnementer, er ved at udløbe.
