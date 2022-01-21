@@ -19,22 +19,31 @@
 -product-firefox-cloud = Firefox Cloud
 # Other brands
 -brand-paypal = PayPal
+-app-store = App Store
+-google-play = Google Play
 
 ## Email content
 
+fxa-header-firefox-logo = <img data-l10n-name="fxa-logo" alt="Логотип { -brand-firefox }">
+fxa-header-sync-devices-image = <img data-l10n-name="sync-devices-image" alt="Синхронізовані пристрої">
+body-devices-image = <img data-l10n-name="devices-image" alt="Пристрої">
 fxa-privacy-url = Політика Приватності { -brand-mozilla }
 fxa-service-url = Умови користування { -product-firefox-cloud }
+subplat-header-firefox-logo = <img data-l10n-name="fxa-logo-firefox" alt="Логотип { -brand-firefox }">
+subplat-footer-mozilla-logo = <img data-l10n-name="mozilla-logo" alt="Логотип { -brand-mozilla }">
 subplat-automated-email = Це автоматичне повідомлення; якщо ви отримали його помилково, не реагуйте на нього.
+subplat-privacy-notice = Повідомлення про приватність
 subplat-privacy-plaintext = Повідомлення про приватність:
 subplat-update-billing-plaintext = { subplat-update-billing }:
 # Variables:
 #  $email (String) - A user's primary email address
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subplat-explainer-specific = Ви отримуєте це повідомлення, тому що { $email } пов'язано з { -product-firefox-account } і ви передплатили { $productName }.
+subplat-explainer-specific = Ви отримуєте це повідомлення, тому що { $email } пов'язано з { -product-firefox-account(case: "abl") } і ви передплатили { $productName }.
 # Variables:
 #  $email (String) - A user's primary email address
-subplat-explainer-multiple = Ви отримуєте цей лист, оскільки { $email } пов'язано з { -product-firefox-account } і ви передплатили кілька продуктів.
-subplat-manage-account = Керуйте налаштуваннями { -product-firefox-account }, зі своєї <a data-l10n-name="subplat-account-page">сторінки облікового запису</a>.
+subplat-explainer-reminder-form = Ви отримали це повідомлення, тому що { $email } пов'язана з { -product-firefox-account(case: "abl") }.
+subplat-explainer-multiple = Ви отримуєте цей лист, оскільки { $email } пов'язано з { -product-firefox-account(case: "abl") } і ви передплатили декілька продуктів.
+subplat-manage-account = Керуйте налаштуваннями { -product-firefox-account(case: "gen") }, зі своєї <a data-l10n-name="subplat-account-page">сторінки облікового запису</a>.
 subplat-terms-policy = Умови та політика відмови від послуг
 subplat-terms-policy-plaintext = { subplat-terms-policy }:
 subplat-cancel = Скасувати передплату
@@ -42,8 +51,20 @@ subplat-cancel-plaintext = { subplat-cancel }:
 subplat-reactivate = Поновити передплату
 subplat-reactivate-plaintext = { subplat-reactivate }:
 subplat-update-billing = Оновіть платіжну інформацію
+subplat-privacy-policy = Політика Приватності { -brand-mozilla }
+subplat-privacy-policy-plaintext = { subplat-privacy-policy }:
+subplat-cloud-terms = Умови користування { -product-firefox-cloud }
+subplat-cloud-terms-plaintext = { subplat-cloud-terms }:
 subplat-legal = Правові положення
+subplat-legal-plaintext = { subplat-legal }:
 subplat-privacy = Приватність
+subplat-privacy-website-plaintext = { subplat-privacy }:
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-android-badge = <img data-l10n-name="google-play-badge" alt="Завантажити { $productName } з { -google-play }">
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-ios-badge = <img data-l10n-name="apple-app-badge" alt="Завантажити { $productName } з { -app-store }">
 another-desktop-device = Або встановіть на <a data-l10n-name="anotherDeviceLink">інший настільний пристрій</a>.
 another-device = Або встановіть на <a data-l10n-name="anotherDeviceLink">інший пристрій</a>.
 automated-email-change =
@@ -51,7 +72,7 @@ automated-email-change =
     Для отримання додаткових відомостей зверніться до <a data-l10n-name="supportLink">підтримки { -brand-mozilla }</a>.
 # Variables:
 #  $passwordChangeLink (String) - Link to https://accounts.firefox.com/settings/change_password
-automated-email-change-plaintext = Це автоматично надісланий лист; якщо ви не додавали новий пристрій до свого { -product-firefox-account }, вам потрібно негайно змінити свій пароль на { $passwordChangeLink }
+automated-email-change-plaintext = Це автоматично надісланий лист; якщо ви не додавали новий пристрій до свого { -product-firefox-account(case: "gen") }, вам потрібно негайно змінити свій пароль на { $passwordChangeLink }
 automated-email =
     Це автоматично надісланий лист; якщо ви отримали його помилково, нічого робити не потрібно.
     Для отримання додаткових відомостей зверніться до <a data-l10n-name="supportLink">підтримки { -brand-mozilla }</a>.
@@ -71,6 +92,17 @@ change-password-plaintext = Якщо ви підозрюєте, що хтось 
 user-ip = IP-адреса: { $ip }
 manage-account = Керування обліковим записом
 manage-account-plaintext = { manage-account }:
+payment-details = Подробиці платежу:
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+payment-plan-invoice-number = Номер рахунку: { $invoiceNumber }
+# Variables:
+#  $invoiceDateOnly (String) - The date of the invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+payment-plan-charged = Сплачено: { $invoiceTotal }, { $invoiceDateOnly }
+# Variables
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+payment-plan-next-invoice = Наступний рахунок: { $nextInvoiceDateOnly }
 # After the colon is how the user paid, e.g. PayPal or credit card
 payment-method = Спосіб оплати:
 payment-provider-paypal-plaintext = { payment-method } { -brand-paypal }
@@ -81,15 +113,23 @@ card-ending-in = Картка { $cardType }, що закінчується на 
 subscriptionSupport = Маєте питання щодо передплати? Наша <a data-l10n-name="subscriptionSupportUrl">команда підтримки</a> з радістю вам допоможе.
 # After the colon, there's a link to https://accounts.firefox.com/support
 subscriptionSupport-plaintext = Маєте питання щодо передплати? Наша команда підтримки з радістю допоможе вам:
+# Variables
+#   $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSupportContact = Дякуємо за передплату { $productName }. При виникненні будь-яких питань стосовно вашої передплати чи додаткової інформації про { $productName }, будь ласка, <a data-l10n-name="subscriptionSupportUrl">зв'яжіться з нами</a>.
+# After the colon, there's a link to https://accounts.firefox.com/support
+subscriptionSupportContact-plaintext = Дякуємо за передплату { $productName }. При виникненні будь-яких питань стосовно вашої передплати чи додаткової інформації про { $productName }, будь ласка, зв'яжіться з нами:
+subscriptionUpdateBillingEnsure = Ви можете перевірити актуальність вашого способу оплати й даних облікового запису <a data-l10n-name="updateBillingUrl">тут</a>.
+# After the colon, there's a link to https://accounts.firefox.com/subscriptions
+subscriptionUpdateBillingEnsure-plaintext = Ви можете перевірити актуальність вашого способу оплати й даних облікового запису тут:
+subscriptionUpdateBillingTry = Ми спробуємо виконати ваш платіж знову протягом наступних кількох днів, але, можливо, вам доведеться допомогти нам це виправити, <a data-l10n-name="updateBillingUrl">оновивши свої платіжні дані</a>.
+# After the colon, there's a link to https://accounts.firefox.com/subscriptions
+subscriptionUpdateBillingTry-plaintext = Ми спробуємо здійснити ваш платіж знову впродовж наступних кількох днів, але, можливо, вам доведеться допомогти нам це виправити, оновивши ваші платіжні дані:
 subscriptionUpdatePayment = Щоб уникнути будь-яких переривань в роботі вашої служби, якнайшвидше оновіть <a data-l10n-name="updateBillingUrl">свої платіжні дані</a>.
 # After the colon, there's a link to https://accounts.firefox.com/subscriptions
 subscriptionUpdatePayment-plaintext = Щоб уникнути будь-яких переривань в роботі вашої служби, будь ласка, якнайшвидше оновіть платіжні дані:
 # Variables:
 #  $supportUrl (String) - Link to https://accounts.firefox.com/support
 support-message = Для отримання додаткової інформації, відвідайте { $supportUrl }
-updateBilling = Ми спробуємо виконати ваш платіж знову протягом наступних кількох днів, але, можливо, вам доведеться допомогти нам це виправити, <a data-l10n-name="updateBillingUrl">оновивши свої платіжні дані</a>.
-# After the colon, there's a link to https://accounts.firefox.com/subscriptions
-updateBilling-plaintext = Ми спробуємо виконати ваш платіж знову протягом наступних кількох днів, але, можливо, вам доведеться допомогти нам це виправити, оновивши свої платіжні дані:
 view-invoice = <a data-l10n-name="invoiceLink">Перегляньте свій рахунок</a>.
 # Variables:
 #  $invoiceLink (String) - The link to the invoice
@@ -103,6 +143,18 @@ cadReminderSecond-subject = Останнє нагадування: Заверш�
 cadReminderSecond-action = Синхронізувати інший пристрій
 cadReminderSecond-title = Останнє нагадування про синхронізацію пристроїв!
 cadReminderSecond-description = Синхронізація іншого пристрою з { -brand-firefox } приватно зберігає ваші закладки, паролі та інші дані { -brand-firefox }, щоб вони були однаковими всюди, де ви використовуєте { -brand-firefox }.
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-subject = Вітаємо в { $productName }
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-title = Вітаємо в { $productName }
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-content = Якщо ви досі не завантажили { $productName }, розпочнімо використовувати всі можливості вашої передплати:
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-link-action = Завантажити { $productName }
 # The user has a low number of valid recovery codes remaining for use
 codes-reminder-title = Залишилося мало кодів відновлення
 codes-reminder-description = У вас залишилось мало кодів відновлення. Будь ласка, згенеруйте нові коди, щоб не втратити можливість отримання доступу до свого облікового запису.
@@ -124,14 +176,14 @@ newDeviceLogin-title = Новий вхід у { $clientName }
 newDeviceLogin-action = Керування обліковим записом
 passwordChanged-subject = Пароль оновлено
 passwordChanged-title = Пароль успішно змінено
-passwordChanged-description = Пароль вашого { -product-firefox-account } був успішно змінений з цього пристрою:
+passwordChanged-description = Пароль вашого { -product-firefox-account(case: "gen") } був успішно змінений з цього пристрою:
 passwordChangeRequired-subject = Виявлено підозрілу активність
 passwordChangeRequired-title = Необхідно змінити пароль
-passwordChangeRequired-suspicious-activity = Ми помітили підозрілу діяльність у вашому { -product-firefox-account }. Для запобігання несанкціонованому доступу до вашого { -product-firefox-account }, ми відʼєднали всі пристрої повʼязані з вашим обліковим записом та вимагаємо змінити ваш пароль як запобіжний захід.
-passwordChangeRequired-sign-in = Знову увійдіть на будь-якому пристрої або до служби, де ви використовуєте свій обліковий запис { -product-firefox-account } і виконайте запропоновані вказівки.
+passwordChangeRequired-suspicious-activity = Ми помітили підозрілу діяльність у вашому { -product-firefox-account(case: "dat") }. Для запобігання несанкціонованому доступу до вашого { -product-firefox-account(case: "gen") }, ми відʼєднали всі пов'язані з ним пристрої та вимагаємо змінити ваш пароль як запобіжний захід.
+passwordChangeRequired-sign-in = Увійдіть знову на будь-якому пристрої або до служби, де ви користуєтеся своїм { -product-firefox-account(case: "abl") } і виконайте запропоновані вказівки.
 passwordChangeRequired-different-password = <b>Важливо:</b> Вигадайте новий пароль та переконайтеся, що він раніше не використовувався в інших облікових даних.
 passwordChangeRequired-signoff = Всього найкращого,
-passwordChangeRequired-signoff-name = Команда { -product-firefox-accounts }
+passwordChangeRequired-signoff-name = Команда { -product-firefox-accounts(case: "gen") }
 passwordChangeRequired-different-password-plaintext = Важливо: Вигадайте новий пароль та переконайтеся, що він раніше не використовувався в інших облікових даних.
 passwordReset-subject = Пароль оновлено
 passwordReset-title = Пароль вашого облікового запису було змінено
@@ -145,14 +197,14 @@ passwordResetAccountRecovery-regen-required = Вам необхідно буде
 passwordResetAccountRecovery-create-key = Створити новий ключ відновлення:
 postAddAccountRecovery-subject = Ключ відновлення облікового запису згенеровано
 postAddAccountRecovery-title = Ключ відновлення облікового запису згенеровано
-postAddAccountRecovery-description = Ви успішно згенерували ключ відновлення свого { -product-firefox-account } за допомогою цього пристрою:
+postAddAccountRecovery-description = Ви успішно згенерували ключ відновлення свого { -product-firefox-account(case: "gen") } за допомогою цього пристрою:
 postAddAccountRecovery-action = Керування обліковим записом
 postAddAccountRecovery-recovery = Якщо це були не ви, <a data-l10n-name="revokeAccountRecoveryLink">натисніть тут.</a>
 postAddAccountRecovery-revoke = Якщо це були не ви, відхиліть ключ.
 postAddTwoStepAuthentication-subject = Двоетапну перевірку увімкнено
 postAddTwoStepAuthentication-title = Двоетапну перевірку увімкнено
-postAddTwoStepAuthentication-description-plaintext = Ви успішно увімкнули двоетапну перевірку в { -product-firefox-account }. Відтепер за кожного входу необхідно вводити коди безпеки з вашого застосунку автентифікації.
-postAddTwoStepAuthentication-description = Ви успішно увімкнули двоетапну перевірку в { -product-firefox-account } з такого пристрою:
+postAddTwoStepAuthentication-description-plaintext = Ви успішно увімкнули двоетапну перевірку в { -product-firefox-account(case: "dat") }. Відтепер за кожного входу необхідно вводити коди безпеки з вашого застосунку автентифікації.
+postAddTwoStepAuthentication-description = Ви успішно увімкнули двоетапну перевірку в { -product-firefox-account(case: "dat") } з такого пристрою:
 postAddTwoStepAuthentication-action = Керування обліковим записом
 postAddTwoStepAuthentication-code-required = Відтепер при кожному вході необхідно вводити коди безпеки з вашої програми автентифікації.
 postChangePrimary-subject = Основну адресу електронної пошти оновлено
@@ -171,19 +223,19 @@ postNewRecoveryCodes-description = Ви успішно згенерували н
 postNewRecoveryCodes-action = Керування обліковим записом
 postRemoveAccountRecovery-subject = Ключ відновлення облікового запису вилучено
 postRemoveAccountRecovery-title = Ключ відновлення облікового запису вилучено
-postRemoveAccountRecovery-description = Ви успішно вилучили ключ відновлення свого { -product-firefox-account } за допомогою цього пристрою:
+postRemoveAccountRecovery-description = Ви успішно вилучили ключ відновлення свого { -product-firefox-account(case: "gen") } за допомогою цього пристрою:
 postRemoveAccountRecovery-action = Керування обліковим записом
 postRemoveAccountRecovery-invalid = Цей ключ більше не можна використати для відновлення вашого облікового запису.
 postRemoveSecondary-subject = Альтернативну електронну пошту видалено
 postRemoveSecondary-title = Альтернативну електронну пошту видалено
 # Variables:
 #  $secondaryEmail (String) - A user's email address
-postRemoveSecondary-description = Ви успішно вилучили додаткову адресу { $secondaryEmail } зі свого { -product-firefox-account }. Сповіщення безпеки та підтвердження входу більше не будуть надсилатися на цю адресу.
+postRemoveSecondary-description = Ви успішно вилучили додаткову адресу { $secondaryEmail } зі свого { -product-firefox-account(case: "gen") }. Сповіщення безпеки та підтвердження входу більше не будуть надсилатися на цю адресу.
 postRemoveSecondary-action = Керування обліковим записом
-postRemoveTwoStepAuthentication-subject = Двоетапна перевірка вимкнена
+postRemoveTwoStepAuthentication-subject-line = Двоетапну перевірку вимкнено
 postRemoveTwoStepAuthentication-title = Двоетапну перевірку вимкнено
-postRemoveTwoStepAuthentication-description = Ви успішно вимкнули двоетапну перевірку в { -product-firefox-account } з такого пристрою:
-postRemoveTwoStepAuthentication-description-plaintext = Ви успішно вимкнули двоетапну перевірку { -product-firefox-account }. Відтепер більше не потрібно вводити коди безпеки за кожного входу.
+postRemoveTwoStepAuthentication-description = Ви успішно вимкнули двоетапну перевірку в { -product-firefox-account(case: "dat") } з такого пристрою:
+postRemoveTwoStepAuthentication-description-plaintext = Ви успішно вимкнули двоетапну перевірку { -product-firefox-account(case: "gen") }. Відтепер більше не потрібно вводити коди безпеки за кожного входу.
 postRemoveTwoStepAuthentication-action = Керування обліковим записом
 postRemoveTwoStepAuthentication-not-required = Тепер коди безпеки більше не будуть вимагатися при кожному вході.
 postVerify-sub-title = { -product-firefox-account } підтверджено. Майже все готово.
@@ -199,7 +251,7 @@ postVerifySecondary-subject = Альтернативну електронну п
 postVerifySecondary-title = Альтернативну електронну пошту додано
 # Variables:
 #  $secondaryEmail (String) - A user's secondary email address
-postVerifySecondary-description = Ви успішно підтвердили додаткову адресу { $secondaryEmail } для свого { -product-firefox-account }. Сповіщення безпеки та підтвердження входу тепер будуть надсилатися на обидві адреси.
+postVerifySecondary-content = Ви успішно підтвердили додаткову адресу { $secondaryEmail } для свого { -product-firefox-account(case: "gen") }. Сповіщення безпеки та підтвердження входу тепер будуть надсилатися на обидві адреси.
 postVerifySecondary-action = Керування обліковим записом
 recovery-subject = Відновити свій пароль
 recovery-title = Необхідно скинути пароль?
@@ -214,6 +266,31 @@ subscriptionAccountDeletion-title = Шкода, що ви йдете
 #  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
 #  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 subscriptionAccountDeletion-content-cancelled = Ви нещодавно видалили свій { -product-firefox-account }. Як наслідок, ми скасували вашу передплату { $productName }. Ваш останній рахунок на суму { $invoiceTotal } був сплачений { $invoiceDateOnly }.
+# COMMENT ABOUT After the colon,
+payment-details = Подробиці платежу:
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionAccountFinishSetup-subject = Вітаємо в { $productName }: Будь ласка, встановіть пароль.
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionAccountFinishSetup-title = Вітаємо в { $productName }
+subscriptionAccountFinishSetup-content-processing = Ваш платіж обробляється. Це може тривати до чотирьох робочих днів. Ваша передплата автоматично поновлюватиметься після завершення розрахункового періоду, доки ви її не скасуєте.
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionAccountFinishSetup-content-create = Далі вам потрібно створити пароль облікового запису Firefox і завантажити { $productName }.
+subscriptionAccountFinishSetup-action = Створити пароль
+subscriptionAccountReminderFirst-subject = Нагадування: Завершіть налаштування свого облікового запису
+subscriptionAccountReminderFirst-title = Ви поки що не можете отримати доступ до своєї передплати
+subscriptionAccountReminderFirst-content-info = Кілька днів тому ви створили { -product-firefox-account }, але не підтвердили його. Ми сподіваємося, що ви завершите його налаштування, щоб мати змогу користуватися своєю передплатою.
+subscriptionAccountReminderFirst-content-select = Виберіть “Створити пароль” для встановлення нового пароля та завершення налаштування свого облікового запису.
+subscriptionAccountReminderFirst-action = Створити пароль
+subscriptionAccountReminderFirst-action-plaintext = { subscriptionAccountReminderFirst-action }:
+subscriptionAccountReminderSecond-subject = Останнє нагадування: Налаштуйте свій обліковий запис
+subscriptionAccountReminderSecond-title = Вітаємо у { -brand-firefox }!
+subscriptionAccountReminderSecond-content-info = Кілька днів тому ви створили { -product-firefox-account }, але не підтвердили його. Ми сподіваємося, що ви завершите його налаштування, щоб мати змогу користуватися своєю передплатою.
+subscriptionAccountReminderSecond-content-select = Виберіть “Створити пароль” для встановлення нового пароля та завершення налаштування свого облікового запису.
+subscriptionAccountReminderSecond-action = Створити пароль
+subscriptionAccountReminderSecond-action-plaintext = { subscriptionAccountReminderSecond-action }:
 # Variables
 #   $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionCancellation-subject = Вашу передплату { $productName } було скасовано
@@ -234,13 +311,21 @@ subscriptionDowngrade-content-switch = Ви успішно перейшли з {
 # Variables:
 # $paymentAmountOld (String) - The amount of the previous subscription payment, including currency, e.g. $10.00
 # $paymentAmountNew (String) - The amount of the new subscription payment, including currency, e.g. $10.00
-# $productPaymentCycle (String) - The interval of time from the end of one payment statement date to the next payment statement date, e.g. month
+# $productPaymentCycleNew (String) - The interval of time from the end of one payment statement date to the next payment statement date of the new subscription, e.g. month
+# $productPaymentCycleOld (String) - The interval of time from the end of one payment statement date to the next payment statement date of the old subscription, e.g. month
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
-subscriptionDowngrade-content-charge = Починаючи з вашого наступного рахунку, сума платежу зміниться з { $paymentAmountOld } за { $productPaymentCycle } на { $paymentAmountNew }. У той самий час вам також буде надано одноразовий кредит розміром { $paymentProrated } для покриття нижчої вартості залишку цього { $productPaymentCycle }.
+subscriptionDowngrade-content-charge-info = Починаючи з вашого наступного рахунку, сума платежу зміниться з { $paymentAmountOld } за { $productPaymentCycleOld } на { $paymentAmountNew } за { $productPaymentCycleNew }. У той самий час вам також буде надано одноразовий кредит розміром { $paymentProrated } для покриття нижчої вартості залишку цього { $productPaymentCycleOld }.
 # Variables:
 # $productNameNew (String) - The name of the new subscribed product, e.g. Mozilla VPN
 subscriptionDowngrade-content-install = При наявності нового програмного забезпечення, яке необхідно встановити для користування { $productNameNew }, ви отримаєте окремий лист з інструкціями щодо завантаження.
 subscriptionDowngrade-content-auto-renew = Ваша передплата автоматично поновлюватиметься на кожен наступний період, доки ви не її не скасуєте.
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionFailedPaymentsCancellation-subject = Вашу передплату { $productName } було скасовано
+subscriptionFailedPaymentsCancellation-title = Вашу передплату скасовано
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionFailedPaymentsCancellation-content = Ми скасували вашу передплату { $productName }, оскільки декілька спроб оплати були невдалими. Щоб отримати доступ знову, спробуйте виконати передплату з використанням оновленого способу оплати.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionFirstInvoice-subject = Платіж за { $productName } підтверджено
@@ -265,6 +350,36 @@ subscriptionFirstInvoice-content-charge = Сплачено { $invoiceTotal }, { 
 # Variables:
 #  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 subscriptionFirstInvoice-content-next-invoice = Наступний рахунок: { $nextInvoiceDateOnly }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionFirstInvoiceDiscount-subject = Платіж за { $productName } підтверджено
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionFirstInvoiceDiscount-title = Дякуємо вам за передплату { $productName }
+subscriptionFirstInvoiceDiscount-content-processing = Ваш платіж обробляється і його завершення може тривати до чотирьох робочих днів.
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionFirstInvoiceDiscount-content-install = Ви отримаєте окреме повідомлення електронною поштою з інструкціями про початок роботи з { $productName }.
+subscriptionFirstInvoiceDiscount-content-auto-renew = Ваша передплата автоматично поновлюватиметься на кожен наступний період, доки ви не її не скасуєте.
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionFirstInvoiceDiscount-content-invoice-number = Номер рахунку: <b>{ $invoiceNumber }</b>
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionFirstInvoiceDiscount-content-invoice-number-plaintext = Номер рахунку: { $invoiceNumber }
+# Variables:
+#  $invoiceSubtotal (String) - The amount, before discount, of the subscription invoice, including currency, e.g. $10.00
+subscriptionFirstInvoiceDiscount-content-subtotal = Проміжний підсумок: { $invoiceSubtotal }
+# Variables:
+#  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
+subscriptionFirstInvoiceDiscount-content-onetime-discount = Одноразова знижка: -{ $invoiceDiscountAmount }
+# Variables:
+#  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount, after discount, of the subscription invoice, including currency, e.g. $8.00
+subscriptionFirstInvoiceDiscount-content-charge = Сплачено { $invoiceTotal }, { $invoiceDateOnly }
+# Variables:
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+subscriptionFirstInvoiceDiscount-content-next-invoice = Наступний рахунок: { $nextInvoiceDateOnly }
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionPaymentExpired-subject = Незабаром, завершується термін дії кредитної картки для оплати за { $productName }
@@ -298,6 +413,23 @@ subscriptionReactivation-title = Дякуємо, що поновили пере�
 #  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
 #  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
 subscriptionReactivation-content = Ваш цикл платежів та їхній розмір залишаться незмінними. Наступна оплата складе { $invoiceTotal } та буде здійснена { $nextInvoiceDateOnly }. Ваша передплата автоматично продовжуватиметься на встановлений розрахунковий період, доки ви не скасуєте її.
+# Variables
+#   $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionRenewalReminder-subject = Повідомлення про автоматичне поновлення { $productName }
+subscriptionRenewalReminder-title = Ваша передплата невдовзі буде поновлена
+# Variables
+#   $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionRenewalReminder-content-greeting = Шановний передплатнику { $productName },
+# Variables
+#   $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+#   $planIntervalCount (String) - The interval count of subscription plan, e.g. 2
+#   $planInterval (String) - The interval of time of the subscription plan, e.g. week
+#   $reminderLength (String) - The number of days until the current subscription is set to automatically renew, e.g. 14
+subscriptionRenewalReminder-content-current = Ваша чинна передплата налаштована на автоматичне поновлення через { $reminderLength } днів. У вказаний час { -brand-mozilla } поновить вашу передплату { $planIntervalCount } { $planInterval } і з вашого облікового запису буде списано { $invoiceTotal } за визначеним способом оплати.
+subscriptionRenewalReminder-content-closing = З повагою,
+# Variables
+#   $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionRenewalReminder-content-signature = Команда { $productName }
 subscriptionsPaymentExpired-subject = Кредитна картка для ваших передплат незабаром втрачає чинність
 subscriptionsPaymentExpired-title = Закінчується термін дії вашої кредитної картки
 subscriptionsPaymentExpired-content = Кредитна картка, якою ви здійснюєте платежі за цими передплатами, невдовзі втрачає чинність.
@@ -339,9 +471,10 @@ subscriptionUpgrade-upgrade-info = Ви успішно перейшли з { $pr
 # Variables:
 # $paymentAmountOld (String) - The amount of the previous subscription payment, including currency, e.g. $10.00
 # $paymentAmountNew (String) - The amount of the new subscription payment, including currency, e.g. $10.00
-# $productPaymentCycle (String) - The interval of time from the end of one payment statement date to the next payment statement date, e.g. month
+# $productPaymentCycleNew (String) - The interval of time from the end of one payment statement date to the next payment statement date of the new subscription, e.g. month
+# $productPaymentCycleOld (String) - The interval of time from the end of one payment statement date to the next payment statement date of the old subscription, e.g. month
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
-subscriptionUpgrade-charge-info = Починаючи з вашого наступного рахунку, сума платежу зміниться з { $paymentAmountOld } за { $productPaymentCycle } на { $paymentAmountNew }. У той самий час з вас також буде стягнуто одноразовий платіж розміром { $paymentProrated } для покриття вищої вартості залишку цього { $productPaymentCycle }.
+subscriptionUpgrade-content-charge-info = Починаючи з вашого наступного рахунку, сума платежу зміниться з { $paymentAmountOld } за { $productPaymentCycleOld } на { $paymentAmountNew } за { $productPaymentCycleNew }. У той самий час з вас також буде стягнуто одноразовий платіж розміром { $paymentProrated } для покриття вищої вартості залишку цього { $productPaymentCycleOld }.
 # Variables:
 # $productNameNew (String) - The name of the new subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-install = При наявності нового програмного забезпечення, яке необхідно встановити для користування { $productNameNew }, ви отримаєте окремий лист з інструкціями щодо завантаження.
@@ -363,7 +496,7 @@ confirm-email-plaintext = { confirm-email }:
 verificationReminderFirst-action = Підтвердьте електронну пошту
 verificationReminderSecond-subject = Остаточне нагадування: Активуйте свій обліковий запис
 verificationReminderSecond-title = Досі тут?
-verificationReminderSecond-description = Майже тиждень тому ви створили обліковий запис { -product-firefox-account }, але не підтвердили його. Ми хвилюємося за вас.
+verificationReminderSecond-description = Майже тиждень тому ви створили { -product-firefox-account }, але не підтвердили його. Ми хвилюємося за вас.
 verificationReminderSecond-sub-description = Підтвердьте цю адресу електронної пошти, щоб активувати обліковий запис і дати нам знати, що все гаразд.
 verificationReminderSecond-action = Підтвердьте електронну пошту
 verify-title = Активуйте сімейство продуктів { -brand-firefox }
@@ -395,7 +528,7 @@ verifySecondary-subject = Підтвердьте альтернативну ад
 verifySecondary-title = Підтвердьте альтернативну е-пошту
 # Variables:
 #  $email (String) - A user's unverified secondary email address
-verifySecondary-explainer = Запит на використання { $email } альтернативною електронною поштою, було зроблено з такого { -product-firefox-account }:
+verifySecondary-explainer = Запит на використання { $email } альтернативною електронною поштою було зроблено з такого { -product-firefox-account }:
 verifySecondary-action = Підтвердьте е-пошту
 verifySecondary-prompt = { verifySecondary-action }:
 verifySecondary-post-verification = Одразу після підтвердження, на цю адресу почнуть приходити сповіщення безпеки і входу.
@@ -403,7 +536,7 @@ verifySecondaryCode-subject = Підтвердьте альтернативну 
 verifySecondaryCode-title = Підтвердьте альтернативну е-пошту
 # Variables:
 #  $email (string) A user's unverified secondary email address
-verifySecondaryCode-explainer = Запит на використання { $email } альтернативною електронною поштою, було зроблено з такого { -product-firefox-account }:
+verifySecondaryCode-explainer = Запит на використання { $email } альтернативною електронною поштою було зроблено з такого { -product-firefox-account(case: "gen") }:
 verifySecondaryCode-prompt = Використати цей код підтвердження:
 verifySecondaryCode-expiry-notice = Термін його дії спливає через 5 хвилин. Одразу після підтвердження, на цю адресу надсилатимуться сповіщення про безпеку та підтвердження входів.
 # Variables:

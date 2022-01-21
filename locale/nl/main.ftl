@@ -362,6 +362,18 @@ plan-details-header = Productdetails
 plan-details-show-button = Details tonen
 plan-details-hide-button = Details verbergen
 plan-details-total-label = Totaal
+plan-details-list-price = Normale prijs
+
+## coupons
+
+coupon-discount = Korting
+coupon-discount-applied = Kortingsbeloning toegepast
+coupon-submit = Toepassen
+coupon-remove = Verwijderen
+coupon-error = De ingevoerde kortingscode is ongeldig of verlopen.
+coupon-success = Uw abonnement wordt automatisch verlengd tegen de normale prijs.
+coupon-enter-code =
+    .placeholder = Code invoeren
 
 ## payment-processing
 
@@ -440,6 +452,6 @@ new-user-submit = Nu abonneren
 manage-pocket-title = Op zoek naar uw abonnement op { -brand-name-pocket } premium?
 manage-pocket-body = <a>Klik hier</a> om het te beheren.
 payment-method-header = Kies uw betalingsmethode
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Kies uw betalingsmethode
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Vereist

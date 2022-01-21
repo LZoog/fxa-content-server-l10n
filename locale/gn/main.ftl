@@ -362,6 +362,18 @@ plan-details-header = Apopyre mba’emimi
 plan-details-show-button = Mba’emimi jehechauka
 plan-details-hide-button = Mba’emimi mokañy
 plan-details-total-label = Opavavete
+plan-details-list-price = Tysýi repy
+
+## coupons
+
+coupon-discount = Tepymboguejy
+coupon-discount-applied = Jopói tepymboguejy rehegua
+coupon-submit = Jejapopy
+coupon-remove = Mboguete
+coupon-error = Pe ayvu emoĩva ndoikói térã hi’arapaháma.
+coupon-success = Ne rembiaporã ipyahúta ijehegui tysýi repýpe.
+coupon-enter-code =
+    .placeholder = Emoinge ayvu
 
 ## payment-processing
 
@@ -440,6 +452,6 @@ new-user-submit = Eñemboheraguapy Ko’ág̃a
 manage-pocket-title = ¿Eheka ne ñemboheraguapy guasu { -brand-name-pocket } pegua?
 manage-pocket-body = Eñangarekokuaa hag̃ua, <a>eikutu ápe</a>.
 payment-method-header = Eiporavo mba’éichapa ehepyme’ẽta
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Eiporavo mba’éichapa ehepyme’ẽta
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Tekotevẽva

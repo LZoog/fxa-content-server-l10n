@@ -10,8 +10,16 @@ project-brand = ਫਾਇਰਫਾਕਸ ਖਾਤੇ
 -brand-name-firefox = Firefox
 -brand-name-paypal = PayPal
 -brand-name-stripe = Stripe
+-brand-name-google = Google
+-brand-name-apple = Apple
+-brand-name-pocket = Pocket
+# the following are not terms because they are not used directly in messages,
+# but rather looked up in code and passed into the message as variables.
+brand-name-google-play = { -brand-name-google } Play ਸਟੋਰ
+# App Store here refers to Apple's App Store not the generic app store.
+brand-name-apple-app-store = App Store
 document =
-    .title = ਫਾਇਰਫਾਕਸ ਖਾਤੇ
+    .title = Firefox ਖਾਤੇ
 
 ## general-aria
 
@@ -75,6 +83,7 @@ payment-zip =
 payment-cancel-btn = ਰੱਦ ਕਰੋ
 payment-update-btn = ਅੱਪਡੇਟ
 payment-pay-btn = ਹੁਣੇ ਭੁਗਤਾਨ ਕਰੋ
+payment-pay-with-paypal-btn = { -brand-name-paypal } ਰਾਹੀਂ ਭੁਗਤਾਨ ਕਰੋ
 payment-validate-name-error = ਆਪਣਾ ਪੂਰਾ ਨਾਂ ਭਰੋ
 payment-validate-zip-required = ਜ਼ਿਪ ਕੋਡ ਲੋੜੀਂਦਾ ਹੈ
 payment-validate-zip-short = ਜ਼ਿਪ ਕੋਡ ਬਹੁਤ ਛੋਟਾ ਹੈ
@@ -82,12 +91,16 @@ payment-validate-zip-short = ਜ਼ਿਪ ਕੋਡ ਬਹੁਤ ਛੋਟਾ ਹ�
 ## subscription redirect
 
 sub-redirect-ready = ਤੁਹਾਡੀ ਮੈਂਬਰੀ ਤਿਆਰ ਹੈ
+sub-redirect-skip-survey = ਨਹੀਂ ਰਹਿਣ ਦਿਉ, ਮੈਨੂੰ ਮੇਰੇ ਉਤਪਾਦ 'ਤੇ ਲੈ ਜਾਓ।
 
 ## fields
 
+default-input-error = ਇਹ ਖੇਤਰ ਲੋੜੀਂਦਾ ਹੈ
+input-error-is-required = { $label } ਲੋੜੀਂਦਾ ਹੈ
 
 ## subscription upgrade
 
+sub-update-payment-title = ਭੁਗਤਾਨ ਦੀ ਜਾਣਕਾਰੀ
 
 ##
 
@@ -118,6 +131,9 @@ sub-redirect-ready = ਤੁਹਾਡੀ ਮੈਂਬਰੀ ਤਿਆਰ ਹੈ
 ## $period (Date) - The last day of product access
 
 
+## subscription iap item
+
+
 ## subscription route index
 
 
@@ -125,6 +141,9 @@ sub-redirect-ready = ਤੁਹਾਡੀ ਮੈਂਬਰੀ ਤਿਆਰ ਹੈ
 
 
 ## plan-details
+
+
+## coupons
 
 
 ## payment-processing

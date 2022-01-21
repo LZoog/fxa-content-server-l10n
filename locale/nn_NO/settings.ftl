@@ -79,6 +79,10 @@ connect-another-fx-mobile = Få { -brand-firefox } på mobil eller nettbrett
 connect-another-find-fx-mobile =
     Finn { -brand-firefox } på { -google-play } og { -app-store } eller
     <br /><linkExternal>send ei nedlastingslenke til eininga.</linkExternal>
+# Alt text for Google Play and Apple App store images that will be shown if the image can't be loaded.
+# These images are used to encourage users to download Firefox on their mobile devices.
+connect-another-play-store-image =
+    .title = Last ned { -brand-firefox } på { -google-play }
 
 ##
 
@@ -209,6 +213,8 @@ nav-email-comm = E-postkommunikasjon
 
 ## Two Step Authentication - replace recovery code
 
+tfa-replace-code-1-2 = Steg 1 av 2
+tfa-replace-code-2-2 = Steg 2 av 2
 
 ## Avatar change page
 
@@ -333,12 +339,21 @@ delete-account-link = Slett kontoen
 
 ## Two Step Authentication
 
+tfa-title = Tostegs-godkjenning
 tfa-step-1-3 = Steg 1 av 3
 tfa-step-2-3 = Steg 2 av 3
 tfa-step-3-3 = Steg 3 av 3
 tfa-button-continue = Fortset
 tfa-button-cancel = Avbryt
 tfa-button-finish = Fullfør
+tfa-incorrect-totp = Feil tostegs-godkjenningskode
+tfa-enabled = Tostegs-godkjenning aktivert
+# This is the image alt text for a QR code.
+# Variables:
+#   $secret (String) - a long alphanumeric string that does not require translation
+tfa-qa-code-alt =
+    Bruk koden { $secret } for å setje opp tostegs-godkjenning i
+    støtta appar.
 tfa-button-cant-scan-qr = Klarer du ikkje å skanne koden?
 tfa-input-enter-totp =
     .label = Skriv inn sikkerheitskode
@@ -392,10 +407,11 @@ row-defaults-status = Ingen
 ## Recovery key sub-section on main Settings page
 
 rk-header = Gjenopprettingsnøkkel
-rk-enabled = Slått på
+rk-enabled = Aktivert
 rk-not-set = Ikkje innstilt
 rk-action-create = Opprett
 rk-action-remove = Fjern
+rk-content-explain = Gjenopprett informasjonen din når du gløymer passordet ditt.
 rk-remove-modal-heading = Fjerne gjenopprettingsnøkkel?
 
 ## Secondary email sub-section on main Settings page
@@ -419,13 +435,17 @@ se-secondary-email-none = Ingen
 
 ## Two Step Auth sub-section on Settings main page
 
-tfa-row-header = Tostegsverifisering
-tfa-row-disabled = Tostegs-verifisering deaktivert
-tfa-row-enabled = Slått på
+tfa-row-header = Tostegs-godkjenning
+tfa-row-disabled = Tostegs-godkjenning deaktivert
+tfa-row-enabled = Aktivert
 tfa-row-not-set = Ikkje innstilt
 tfa-row-action-add = Legg til
 tfa-row-action-disable = Slå av
+tfa-row-button-refresh =
+    .title = Oppdater tostegs-godkjenning
+tfa-row-disable-modal-heading = Deaktivere tostegs-godkjenning?
 tfa-row-disable-modal-confirm = Slå av
+tfa-row-cannot-disable = Klarte ikkje å deaktivere tostegs-godkjenning.
 tfa-row-change-modal-heading = Endre gjenopprettingskodar?
 tfa-row-change-modal-confirm = Endre
 

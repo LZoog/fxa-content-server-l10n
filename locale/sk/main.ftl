@@ -60,6 +60,7 @@ card-error = Vašu transakciu sa nepodarilo spracovať. Skontrolujte, prosím, z
 ##  $productName (String) - The name of the subscribed product.
 
 newsletter-signup-error = Nie ste zaregistrovaný na odber e-mailov s novinkami v produkte. Môžete to skúsiť znova v nastaveniach účtu.
+fxa-post-passwordless-sub-error = Predplatné bolo potvrdené, ale nepodarilo sa načítať stránku s potvrdením. Skontrolujte svoj e-mail a nastavte si účet.
 
 ## settings
 
@@ -76,6 +77,9 @@ terms-download = Stiahnuť podmienky
 
 subscription-create-title = Nastavte si predplatné
 subscription-success-title = Potvrdenie predplatného
+subscription-processing-title = Potvrdzuje sa odber...
+subscription-error-title = Chyba pri potvrdzovaní predplatného…
+subscription-noplanchange-title = Táto zmena plánu predplatného nie je podporovaná
 
 ##  $productName (String) - The name of the subscribed product.
 ##  $amount (Number) - The amount billed. It will be formatted as currency.
@@ -83,13 +87,19 @@ subscription-success-title = Potvrdenie predplatného
 
 ## Product route
 
+product-plan-error =
+    .title = Problém s načítaním plánov
 product-profile-error =
     .title = Problém s načítaním profilu
+product-customer-error =
+    .title = Problém s načítaním zákazníka
 product-plan-not-found = Plán nebol nájdený
+product-no-such-plan = Pre tento produkt takýto plán neexistuje.
 
 ## payment legal blurb
 
 payment-legal-link-stripe-paypal = <stripePrivacyLink>Zásady ochrany osobných údajov služby { -brand-name-stripe }</stripePrivacyLink> &nbsp; <paypalPrivacyLink>Zásady ochrany osobných údajov služby { -brand-name-paypal }</paypalPrivacyLink>
+payment-legal-link-paypal-2 = <paypalPrivacyLink>Zásady ochrany osobných údajov služby { -brand-name-paypal }</paypalPrivacyLink>
 payment-legal-link-stripe-3 = <stripePrivacyLink>Zásady ochrany osobných údajov služby { -brand-name-stripe }</stripePrivacyLink>
 
 ## payment form
@@ -145,13 +155,95 @@ sub-update-total-label = Nová suma spolu
 ## subscription upgrade plan details
 ## $amount (Number) - The amount billed. It will be formatted as currency.
 
+#  $intervalCount (Number) - The interval between payments, in days.
+plan-price-day =
+    { $intervalCount ->
+        [one] { $amount } denne
+        [few] { $amount } každé { $intervalCount } dni
+       *[other] { $amount } každých { $intervalCount } dní
+    }
+    .title =
+        { $intervalCount ->
+            [one] { $amount } denne
+            [few] { $amount } každé { $intervalCount } dni
+           *[other] { $amount } každých { $intervalCount } dní
+        }
+#  $intervalCount (Number) - The interval between payments, in weeks.
+plan-price-week =
+    { $intervalCount ->
+        [one] { $amount } týždenne
+        [few] { $amount } každé { $intervalCount } týždne
+       *[other] { $amount } každých { $intervalCount } týždňov
+    }
+    .title =
+        { $intervalCount ->
+            [one] { $amount } týždenne
+            [few] { $amount } každé { $intervalCount } týždne
+           *[other] { $amount } každých { $intervalCount } týždňov
+        }
+#  $intervalCount (Number) - The interval between payments, in months.
+plan-price-month =
+    { $intervalCount ->
+        [one] { $amount } mesačne
+        [few] { $amount } každé { $intervalCount } mesiace
+       *[other] { $amount } každých { $intervalCount } mesiacov
+    }
+    .title =
+        { $intervalCount ->
+            [one] { $amount } mesačne
+            [few] { $amount } každé { $intervalCount } mesiace
+           *[other] { $amount } každých { $intervalCount } mesiacov
+        }
+#  $intervalCount (Number) - The interval between payments, in years.
+plan-price-year =
+    { $intervalCount ->
+        [one] { $amount } ročne
+        [few] { $amount } každé { $intervalCount } roky
+       *[other] { $amount } každých { $intervalCount } rokov
+    }
+    .title =
+        { $intervalCount ->
+            [one] { $amount } ročne
+            [few] { $amount } každé { $intervalCount } roky
+           *[other] { $amount } každých { $intervalCount } rokov
+        }
 
 ## subscription billing details
 ## $amount (Number) - The amount billed. It will be formatted as currency.
 
+#  $intervalCount (Number) - The interval between payments, in days.
+sub-plan-price-day =
+    { $intervalCount ->
+        [one] { $amount } denne
+        [few] { $amount } každé { $intervalCount } dni
+       *[other] { $amount } každých { $intervalCount } dní
+    }
+#  $intervalCount (Number) - The interval between payments, in weeks.
+sub-plan-price-week =
+    { $intervalCount ->
+        [one] { $amount } týždenne
+        [few] { $amount } každé { $intervalCount } týždne
+       *[other] { $amount } každých { $intervalCount } týždňov
+    }
+#  $intervalCount (Number) - The interval between payments, in months.
+sub-plan-price-month =
+    { $intervalCount ->
+        [one] { $amount } mesačne
+        [few] { $amount } každé { $intervalCount } mesiace
+       *[other] { $amount } každých { $intervalCount } mesiacov
+    }
+#  $intervalCount (Number) - The interval between payments, in years.
+sub-plan-price-year =
+    { $intervalCount ->
+        [one] { $amount } ročne
+        [few] { $amount } každé { $intervalCount } roky
+       *[other] { $amount } každých { $intervalCount } rokov
+    }
 
 ## $date (Date) - The date for the next time a charge will occur.
 
+sub-next-bill = Ďalšia fakturácia dňa { $date }
+sub-expires-on = Vyprší dňa { $date }
 
 ##
 
@@ -183,6 +275,8 @@ sub-item-stay-sub = Ponechať predplatné
 
 ## subscription iap item
 
+sub-iap-item-google-purchase = { -brand-name-google }: Nákup v aplikácii
+sub-iap-item-apple-purchase = { -brand-name-apple }: Nákup v aplikácii
 sub-iap-item-manage-button = Spravovať
 account-activated = Váš účet je aktivovaný, <userEl/>
 
@@ -205,6 +299,10 @@ sub-subscription-error =
 sub-customer-error =
     .title = Problém pri načítaní zákazníka
 sub-billing-update-success = Vaše platobné údaje boli úspešne aktualizované
+sub-route-payment-modal-heading = Neplatné fakturačné údaje
+sub-route-payment-modal-message = Zdá sa, že sa vyskytla chyba vo vašom účte { -brand-name-paypal }. Potrebujeme, aby ste podnikli potrebné kroky na vyriešenie tohto problému s platbou.
+sub-route-missing-billing-agreement-payment-alert = Neplatné informácie o platbe; vo vašom účte sa vyskytla chyba. <div>Spravovať</div>
+sub-route-funding-source-payment-alert = Neplatné informácie o platbe; vo vašom účte sa vyskytla chyba. Po úspešnej aktualizácii informácií môže chvíľu trvať, kým sa toto upozornenie vymaže. <div>Spravovať</div>
 pay-update-manage-btn = Spravovať
 
 ## subscription create
@@ -220,6 +318,18 @@ plan-details-header = Podrobnosti o produkte
 plan-details-show-button = Zobraziť podrobnosti
 plan-details-hide-button = Skryť podrobnosti
 plan-details-total-label = Celkom
+plan-details-list-price = Cenník
+
+## coupons
+
+coupon-discount = Zľava
+coupon-discount-applied = Zľava bola uplatnená
+coupon-submit = Použiť
+coupon-remove = Odstrániť
+coupon-error = Zadaný kód je neplatný alebo jeho platnosť vypršala.
+coupon-success = Váš plán sa automaticky obnoví za katalógovú cenu.
+coupon-enter-code =
+    .placeholder = Zadajte kód
 
 ## payment-processing
 
@@ -235,10 +345,12 @@ payment-confirmation-thanks-heading = Ďakujeme!
 ## $email (string) - The user's email.
 ## $productName (String) - The name of the subscribed product.
 
+payment-confirmation-thanks-subheading = Na adresu { $email } bol odoslaný potvrdzujúci e-mail s podrobnosťami o tom, ako začať so službou { $product_name }.
 payment-confirmation-thanks-heading-account-exists = Ďakujeme, teraz skontrolujte svoj e-mail!
 
 ## $email (string) - The user's email.
 
+payment-confirmation-thanks-subheading-account-exists = Na adresu { $email } dostanete e-mail s pokynmi na nastavenie účtu, ako aj s podrobnosťami o platbe.
 payment-confirmation-order-heading = Podrobnosti o objednávke
 payment-confirmation-invoice-number = Faktúra č. { $invoiceNumber }
 payment-confirmation-billing-heading = Odberateľ
@@ -276,17 +388,29 @@ payment-confirmation-amount-year =
        *[other] { $amount } každých { $intervalCount } rokov
     }
 payment-confirmation-download-button = Pokračovať na stiahnutie
+payment-confirmation-cc-card-ending-in = Karta končiaca číslicami { $last4 }
 
 ## new user email form
 
 new-user-sign-in-link = Už máte účet { -brand-name-firefox }? <a>Prihláste sa</a>
+new-user-step-1 = 1. Vytvorte si účet { -brand-name-firefox }
+# "Required" to indicate that the user must use the checkbox below this text to
+# agree to a payment method's terms of service and privacy notice in order to
+# continue.
 new-user-email =
-    .placeholder = foxy@mozilla.com
-    .label = Zadajte vašu e-mailovú adresu
+    .label = Zadajte e-mailovú adresu
 new-user-confirm-email =
     .label = Potvrďte vašu e-mailovú adresu
 new-user-subscribe-product-updates = Chcem dostávať produktové novinky o { -brand-name-firefox }e
 new-user-subscribe-product-assurance = Vašu e-mailovú adresu použijeme iba na vytvorenie účtu. Nikdy ju nepredáme tretej strane.
 new-user-email-validate = E-mailová adresa nie je platná
 new-user-email-validate-confirm = E-mailové adresy sa nezhodujú
+new-user-already-has-account-sign-in = Už máte účet. <a>Prihláste sa</a>
 new-user-card-title = Zadajte informácie o svojej karte
+new-user-submit = Predplatiť
+manage-pocket-title = Hľadáte svoje prémiové predplatné { -brand-name-pocket }?
+manage-pocket-body = Ak ho chcete spravovať, <a>kliknite sem</a>.
+payment-method-header = Vyberte si spôsob platby
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
+payment-method-required = Požadované

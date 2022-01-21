@@ -346,6 +346,18 @@ plan-details-header = 產品詳細資訊
 plan-details-show-button = 顯示詳細資訊
 plan-details-hide-button = 隱藏詳細資訊
 plan-details-total-label = 總計
+plan-details-list-price = 原價
+
+## coupons
+
+coupon-discount = 折扣
+coupon-discount-applied = 已套用折扣獎勵
+coupon-submit = 套用
+coupon-remove = 移除
+coupon-error = 您輸入的折扣碼無效或已過期。
+coupon-success = 您的訂閱方案將以牌告原價自動續約。
+coupon-enter-code =
+    .placeholder = 輸入折扣碼
 
 ## payment-processing
 
@@ -424,6 +436,6 @@ new-user-submit = 立刻訂閱
 manage-pocket-title = 在尋找您的 { -brand-name-pocket } Premium 訂閱嗎？
 manage-pocket-body = 若要管理，<a>請點擊此處</a>。
 payment-method-header = 選擇付款方式
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } 選擇付款方式
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = 必填

@@ -218,14 +218,15 @@ datablock-print =
 
 dc-heading = Збір та використання даних
 dc-subheader = Допоможіть вдосконалити { -product-firefox-accounts }
-dc-subheader-content = Дозволити { -product-firefox-accounts } надсилати технічні дані та інформацію про взаємодію до { -brand-mozilla }.
-dc-opt-out-success = Скасування пройшло успішно. { -product-firefox-accounts } не надсилатиме технічні дані та інформацію про взаємодію до { -brand-mozilla }.
+dc-subheader-content = Дозволити { -product-firefox-accounts(case: "dat") } надсилати технічні дані та інформацію про взаємодію до { -brand-mozilla }.
+dc-opt-out-success = Відмова пройшла успішно. { -product-firefox-accounts } не надсилатимуть технічні дані та інформацію про взаємодію до { -brand-mozilla }.
 dc-opt-in-success = Дякуємо! Надсилання цих даних допомагає нам вдосконалювати { -product-firefox-accounts }.
+dc-opt-in-out-error = Перепрошуємо, виникла проблема зі зміною налаштувань збору даних.
 dc-learn-more = Докладніше
 
 # DropDownAvatarMenu component
 
-drop-down-menu-title = Меню { -product-firefox-account }
+drop-down-menu-title = Меню { -product-firefox-account(case: "gen") }
 # This string is used to show the current user's name or email in the settings page menu.
 # Variables:
 #   $user (String) - the user's name (or email address, if they haven't added their name to their account)
@@ -367,8 +368,8 @@ delete-account-step-1-2 = Крок 1 з 2
 delete-account-step-2-2 = Крок 2 з 2
 delete-account-confirm-title-2 = Ви під'єднали свій { -product-firefox-account } до продуктів { -brand-mozilla }, які забезпечують для вас захист і продуктивність в Мережі:
 delete-account-acknowledge = Будь ласка, підтвердьте, що при видаленні свого облікового запису:
-delete-account-chk-box-1 =
-    .label = Будь-які дійсні передплати будуть скасовані
+delete-account-chk-box-1-v2 =
+    .label = Усі ваші передплати буде скасовано (окрім { product-pocket })
 delete-account-chk-box-2 =
     .label = Ви можете втратити збережену інформацію та функції продуктів { -brand-mozilla }
 delete-account-chk-box-3 =
@@ -467,9 +468,12 @@ tfa-scan-this-code =
 # This is the image alt text for a QR code.
 # Variables:
 #   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
 tfa-qa-code-alt =
     Скористайтеся кодом { $secret } для налаштування двоетапної перевірки
     в підтримуваних програмах.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = Не вдається сканувати код?
 # When the user cannot use a QR code.
 tfa-enter-secret-key = Введіть цей ключ у своїй програмі для двоетапної перевірки:

@@ -95,6 +95,7 @@ alert-bar-close-message = Zavrieť správu
 product-mozilla-vpn = Mozilla VPN
 product-pocket = Pocket
 product-firefox-monitor = Firefox Monitor
+product-firefox-relay = Firefox Relay
 
 ##
 
@@ -133,6 +134,7 @@ bento-menu-firefox-title = { -brand-firefox } je technológia, ktorá bojuje za 
 bento-menu-vpn = { product-mozilla-vpn }
 bento-menu-monitor = { product-firefox-monitor }
 bento-menu-pocket = { product-pocket }
+bento-menu-firefox-relay = { product-firefox-relay }
 bento-menu-firefox-desktop = Prehliadač { -brand-firefox } pre počítač
 bento-menu-firefox-mobile = Prehliadač { -brand-firefox } pre mobilné zariadenia
 bento-menu-made-by-mozilla = Od spoločnosti { -brand-mozilla }
@@ -143,6 +145,12 @@ connect-another-fx-mobile = Získajte { -brand-firefox } pre mobilné zariadenia
 connect-another-find-fx-mobile =
     Vyhľadajte { -brand-firefox } v { -google-play } alebo { -app-store },
     <br />prípadne si nechajte <linkExternal>poslať odkaz na svoje zariadenie</linkExternal>.
+# Alt text for Google Play and Apple App store images that will be shown if the image can't be loaded.
+# These images are used to encourage users to download Firefox on their mobile devices.
+connect-another-play-store-image =
+    .title = Stiahnite si { -brand-firefox } na { -google-play }
+connect-another-app-store-image-2 =
+    .title = Stiahnite si { -brand-firefox } z { -app-store }
 
 ##
 
@@ -224,6 +232,7 @@ dc-subheader = Pomôžte nám vylepšiť { -product-firefox-accounts(capitalizat
 dc-subheader-content = Povoliť { -product-firefox-accounts(capitalizaion: "lower", case: "dat") } odosielať technické údaje a údaje o interakcii spoločnosti { -brand-mozilla }.
 dc-opt-out-success = Odhlásenie bolo úspešné. { -product-firefox-accounts } nebude posielať technické údaje ani údaje o interakcii spoločnosti { -brand-mozilla }.
 dc-opt-in-success = Vďaka! Zdieľanie týchto údajov nám pomáha zlepšovať { -product-firefox-accounts(capitalization: "lower", case: "acc") }.
+dc-opt-in-out-error = Ľutujeme, pri zmene predvoľby zhromažďovania údajov sa vyskytol problém.
 dc-learn-more = Ďalšie informácie
 
 # DropDownAvatarMenu component
@@ -242,7 +251,7 @@ flow-container-back = Naspäť
 
 # GetDataTrio component, part of Recovery Key flow
 
-get-data-trio-title = Kódy na obnovu účtu
+get-data-trio-title = Obnovovacie kódy
 get-data-trio-download =
     .title = Stiahnuť
 get-data-trio-copy =
@@ -300,6 +309,8 @@ tfa-replace-code-success =
     na bezpečnom mieste. Budete ich potrebovať na prístup do svojho
     účtu v prípade, že nebudete mať svoje mobilné zariadenie.
 tfa-replace-code-success-alert = Kódy na obnovenie účtu boli aktualizované.
+tfa-replace-code-1-2 = Krok 1 z 2
+tfa-replace-code-2-2 = Krok 2 z 2
 
 ## Avatar change page
 
@@ -366,8 +377,8 @@ delete-account-step-1-2 = Krok 1 z 2
 delete-account-step-2-2 = Krok 2 z 2
 delete-account-confirm-title-2 = Svoj { -product-firefox-account(capitalization: "lower") } ste pripojili k produktom { -brand-mozilla(case: "gen") }, ktoré vám pomôžu zaistiť vaše bezpečie a produktivitu na webe:
 delete-account-acknowledge = Potvrďte, že odstránením svojho účtu:
-delete-account-chk-box-1 =
-    .label = budú zrušené všetky predplatné
+delete-account-chk-box-1-v2 =
+    .label = Všetky predplatné, ktoré máte, budú zrušené (okrem { product-pocket })
 delete-account-chk-box-2 =
     .label = môžete prísť o uložené informácie a niektoré funkcie produktov { -brand-mozilla(case: "gen") }
 delete-account-chk-box-3 =
@@ -422,9 +433,6 @@ add-secondary-email-enter-address =
 add-secondary-email-cancel-button = Zrušiť
 add-secondary-email-save-button = Uložiť
 
-##
-
-
 ## Verify secondary email page
 
 add-secondary-email-step-2 = Krok 2 z 2
@@ -460,8 +468,8 @@ tfa-button-cancel = Zrušiť
 tfa-button-finish = Dokončiť
 tfa-incorrect-totp = Nesprávny kód pre dvojstupňové overenie
 tfa-cannot-retrieve-code = Pri načítaní vášho kódu sa vyskytol problém.
-tfa-cannot-verify-code = Pri overovaní vášho kódu na obnovenie účtu sa vyskytol problém.
-tfa-incorrect-recovery-code = Nesprávny kód na obnovenie
+tfa-cannot-verify-code = Pri overovaní vášho obnovovacieho kódu sa vyskytol problém.
+tfa-incorrect-recovery-code = Nesprávny obnovovací kód
 tfa-enabled = Dvojstupňové overenie bolo povolené
 tfa-scan-this-code =
     Naskenujte tento QR kód pomocou jednej z <linkExternal>overovacích
@@ -469,9 +477,12 @@ tfa-scan-this-code =
 # This is the image alt text for a QR code.
 # Variables:
 #   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
 tfa-qa-code-alt =
     Pomocou kódu { $secret } nastavte dvojstupňové overenie v
     podporovanej aplikácii.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = Nemôžete kód naskenovať?
 # When the user cannot use a QR code.
 tfa-enter-secret-key = Zadajte tento tajný kľúč do svojej overovacej aplikácie:
@@ -482,11 +493,11 @@ tfa-save-these-codes =
     Tieto jednorazové kódy si uložte na bezpečné miesto,
     na ktoré sa dostanete aj bez svojho mobilného zariadenia.
 tfa-enter-code-to-confirm =
-    Potvrďte uloženie kódov na obnovenie účtu zadaním
+    Potvrďte uloženie obnovovacích kódov zadaním
     jedného z nich. Ak stratíte zariadenie, budete kódy potrebovať
     na získanie prístupu do svojho účtu.
 tfa-enter-recovery-code =
-    .label = Zadajte kód na obnovenie účtu
+    .label = Zadajte obnovovací kód
 
 ##
 
@@ -588,6 +599,8 @@ se-default-content = Získajte prístup k svojmu účtu, ak sa vám nepodarí pr
 se-content-note =
     Poznámka: alternatívna e-mailová adresa neslúži na obnovenie vašich údajov,
     na to budete potrebovať <a>kľúč na obnovenie účtu</a>.
+# Default value for the secondary email
+se-secondary-email-none = žiadna
 
 ##
 
@@ -611,9 +624,9 @@ tfa-row-disable-modal-heading = Zakázať dvojstupňové overenie?
 tfa-row-disable-modal-confirm = Zakázať
 tfa-row-disable-modal-explain =
     Túto akciu nebudete môcť vrátiť späť. Máte tiež
-    možnosť <linkExternal>nahradiť svoje kódy obnovenia účtu</linkExternal>.
+    možnosť <linkExternal>nahradiť svoje obnovovacie kódy</linkExternal>.
 tfa-row-cannot-disable = Dvojstupňové overenie sa nepodarilo zakázať.
-tfa-row-change-modal-heading = Zmeniť kódy obnovenia účtu?
+tfa-row-change-modal-heading = Zmeniť obnovovacie kódy?
 tfa-row-change-modal-confirm = Zmeniť
 tfa-row-change-modal-explain = Túto akciu nebudete môcť vrátiť späť.
 
@@ -621,6 +634,7 @@ tfa-row-change-modal-explain = Túto akciu nebudete môcť vrátiť späť.
 
 auth-error-102 = Neznámy účet
 auth-error-103 = Nesprávne heslo
+auth-error-105 = Neplatný overovací kód
 auth-error-110 = Neplatný token
 # This string is the amount of time required before a user can attempt another request.
 # Variables:
@@ -631,5 +645,7 @@ auth-error-110 = Neplatný token
 #                           (for example: "in 15 minutes")
 auth-error-114 = Vykonali ste príliš veľa pokusov. Skúste to znova { $retryAfter }.
 auth-error-138 = Neoverená relácia
+auth-error-139 = Alternatívna e-mailová adresa musí byť iná ako adresa účtu
 auth-error-155 = Token TOTP sa nenašiel
+auth-error-183 = Neplatný alebo starý overovací kód
 auth-error-1008 = Staré a nové heslo sa musia líšiť

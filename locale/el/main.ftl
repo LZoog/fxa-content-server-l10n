@@ -362,6 +362,14 @@ plan-details-header = Λεπτομέρειες προιόντος
 plan-details-show-button = Εμφάνιση λεπτομερειών
 plan-details-hide-button = Απόκρυψη λεπτομερειών
 plan-details-total-label = Σύνολο
+plan-details-list-price = Τιμή καταλόγου
+
+## coupons
+
+coupon-discount = Έκπτωση
+coupon-submit = Εφαρμογή
+coupon-remove = Αφαίρεση
+coupon-error = Ο κωδικός που καταχωρίσατε δεν είναι έγκυρος ή έχει λήξει.
 
 ## payment-processing
 
@@ -439,4 +447,7 @@ new-user-card-title = Εισαγάγετε τα στοιχεία της κάρτ
 new-user-submit = Συνδρομή τώρα
 manage-pocket-title = Ψάχνετε την premium συνδρομή του { -brand-name-pocket } σας;
 manage-pocket-body = Για διαχείριση, <a>κάντε κλικ εδώ</a>.
+payment-method-header = Επιλέξτε τη μέθοδο πληρωμής σας
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Απαιτείται

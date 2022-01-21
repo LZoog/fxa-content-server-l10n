@@ -346,6 +346,18 @@ plan-details-header = Thông tin chi tiết sản phẩm
 plan-details-show-button = Hiện chi tiết
 plan-details-hide-button = Ẩn chi tiết
 plan-details-total-label = Tổng
+plan-details-list-price = Bảng giá
+
+## coupons
+
+coupon-discount = Giảm giá
+coupon-discount-applied = Đã áp dụng phần thưởng chiết khấu
+coupon-submit = Áp dụng
+coupon-remove = Xóa
+coupon-error = Mã bạn nhập không hợp lệ hoặc đã hết hạn.
+coupon-success = Gói của bạn sẽ tự động gia hạn theo giá niêm yết.
+coupon-enter-code =
+    .placeholder = Nhập mã
 
 ## payment-processing
 
@@ -420,6 +432,6 @@ new-user-submit = Theo dõi ngay
 manage-pocket-title = Bạn đang tìm cách đăng ký { -brand-name-pocket } premium?
 manage-pocket-body = Để quản lý nó, hãy <a>nhấp vào đây</a>.
 payment-method-header = Chọn phương thức thanh toán của bạn
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Chọn phương thức thanh toán của bạn
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Bắt buộc

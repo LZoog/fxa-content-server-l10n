@@ -394,6 +394,18 @@ plan-details-header = Produktowe podrobnosće
 plan-details-show-button = Podrobnosće pokazać
 plan-details-hide-button = Podrobnosće schować
 plan-details-total-label = Dohromady
+plan-details-list-price = Lisćinowa płaćizna
+
+## coupons
+
+coupon-discount = Rabat
+coupon-discount-applied = Rabatowa premija je so nałožiła
+coupon-submit = Nałožić
+coupon-remove = Wotstronić
+coupon-error = Kod, kotryž sće zapodał, je njepłaćiwy abo spadnył.
+coupon-success = Waš plan so awtomatisce za lisćinowu płaćiznu wobnowja.
+coupon-enter-code =
+    .placeholder = Kod zapodać
 
 ## payment-processing
 
@@ -480,6 +492,6 @@ new-user-submit = Nětko abonować
 manage-pocket-title = Pytaće za premiumowym abonementom { -brand-name-pocket }?
 manage-pocket-body = <a>Klikńće tu</a>, zo byšće rjadował.
 payment-method-header = Wubjerće swoju płaćensku metodu
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Wubjerće swoju płaćensku metodu
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Trěbny

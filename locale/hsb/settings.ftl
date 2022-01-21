@@ -167,6 +167,7 @@ dc-subheader = Pomhajće { -product-firefox-accounts } polěpšić
 dc-subheader-content = { -product-firefox-accounts } dowolić, zo byšće techniske a interakciske daty na { -brand-mozilla } pósłał.
 dc-opt-out-success = Wotzjewjenje wuspěšne. { -product-firefox-accounts } njebudźe techniske abo interakciske daty na { -brand-mozilla } słać.
 dc-opt-in-success = Wulki dźak! Dźělenje tutych datow nam pomha, { -product-firefox-accounts } polěpšić.
+dc-opt-in-out-error = Bohužel je při měnjenju wašeho nastajenja datoweje zběrki problem nastał.
 dc-learn-more = Dalše informacije
 
 # DropDownAvatarMenu component
@@ -313,8 +314,8 @@ delete-account-step-1-2 = Krok 1 z 2
 delete-account-step-2-2 = Krok 2 z 2
 delete-account-confirm-title-2 = Sće swoje konto { -product-firefox-account } z produktami { -brand-mozilla } zwjazał, kotrež was wěsty a produktiwny we webje dźerža:
 delete-account-acknowledge = Prošu zhašejće swoje konto, zo byšće to wobkrućił:
-delete-account-chk-box-1 =
-    .label = Wšě zapłaćene abonementy, kotrež maće, so wupowědźa
+delete-account-chk-box-1-v2 =
+    .label = Někotre z wašich abonementow so anuluja (nimo { product-pocket })
 delete-account-chk-box-2 =
     .label = Móžeće składowane informacije a funkcije produktow { -brand-mozilla } zhubić
 delete-account-chk-box-3 =
@@ -411,9 +412,12 @@ tfa-scan-this-code = skenujće tutón QR-kod z pomocu jednoho z <linkExternal>tu
 # This is the image alt text for a QR code.
 # Variables:
 #   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
 tfa-qa-code-alt =
     Wužiwajće kod { $secret }, zo byšće dwukročelowu awtentifikaciju w
     podpěranych nałoženjach připrawił.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = Njemóžeće kod skenować?
 # When the user cannot use a QR code.
 tfa-enter-secret-key = Zapodajće tutón tajny kluč do swojeho awtentifikowanskeho nałoženja:

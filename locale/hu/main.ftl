@@ -362,6 +362,18 @@ plan-details-header = Termék részletei
 plan-details-show-button = Részletek megjelenítése
 plan-details-hide-button = Részletek elrejtése
 plan-details-total-label = Összesen
+plan-details-list-price = Listaár
+
+## coupons
+
+coupon-discount = Kedvezmény
+coupon-discount-applied = Kedvezményes jutalom alkalmazva
+coupon-submit = Alkalmaz
+coupon-remove = Eltávolítás
+coupon-error = A megadott kód érvénytelen vagy lejárt.
+coupon-success = A csomag automatikusan megújul a listaáron.
+coupon-enter-code =
+    .placeholder = Adja meg a kódot
 
 ## payment-processing
 
@@ -440,6 +452,6 @@ new-user-submit = Előfizetés most
 manage-pocket-title = A { -brand-name-pocket } prémium előfizetését keresi?
 manage-pocket-body = A kezeléséhez <a>kattintson ide</a>.
 payment-method-header = Válassza ki a fizetési módot
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Válassza ki a fizetési módot
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Kötelező

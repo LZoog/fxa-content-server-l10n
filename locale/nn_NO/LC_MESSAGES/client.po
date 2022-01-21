@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 22:07+0000\n"
-"PO-Revision-Date: 2021-12-15 00:29+0000\n"
-"Last-Translator: Björn I. <bjorni.svindseth@yahoo.com>\n"
+"POT-Creation-Date: 2022-01-20 22:06+0000\n"
+"PO-Revision-Date: 2022-01-18 11:39+0000\n"
+"Last-Translator: Bjørn I. <bjorni.svindseth@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nn_NO\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "Kontoen er no sletta"
 
 #: .es5/views/inline_totp_setup.js:156
 msgid "Use the code %(code)s to set up two-step authentication in supported applications."
-msgstr "Bruk koden %(code)s for å setje opp tostegs-autentisering i støtta appar."
+msgstr "Bruk koden %(code)s for å setje opp tostegs-godkjenning i støtta appar."
 
 #: .es5/views/permissions.js:41
 msgid "%(permissionName)s (required)"
@@ -190,7 +190,7 @@ msgstr "Firefox gjenoppbyggingskodar"
 
 #: .es5/views/mixins/recovery-codes-mixin.js:142
 msgid "Two-step authentication enabled"
-msgstr "Tostegs-verifisering slått på"
+msgstr "Tostegs-godkjenning aktivert"
 
 #: .es5/views/mixins/recovery-key-mixin.js:30
 msgid "Firefox Recovery Key"
@@ -290,7 +290,7 @@ msgstr "Passordet er tilbakestilt"
 
 #: .es5/models/auth_brokers/web.js:45
 msgid "Account recovery enabled"
-msgstr "Kontogjenoppretting slått på"
+msgstr "Kontogjenoppretting aktivert"
 
 #: .es5/lib/auth-errors.js:26 .es5/lib/oauth-errors.js:30 .es5/lib/pairing-channel-client-errors.js:18 .es5/lib/profile-errors.js:61 .es5/lib/profile-errors.js:69
 msgid "Unexpected error"
@@ -526,7 +526,7 @@ msgstr "Tenaren er opptatt, prøv på nytt seinare"
 
 #: .es5/lib/auth-errors.js:296
 msgid "Feature not enabled"
-msgstr "Funksjonen er ikkje slått på"
+msgstr "Funksjonen er ikkje aktivert"
 
 #: .es5/lib/auth-errors.js:300 .es5/lib/auth-errors.js:304 .es5/lib/auth-errors.js:312 .es5/lib/oauth-errors.js:117 .es5/lib/oauth-errors.js:121 .es5/lib/oauth-errors.js:125
 #: .es5/lib/profile-errors.js:41 .es5/lib/profile-errors.js:45 .es5/lib/profile-errors.js:65
@@ -667,11 +667,11 @@ msgstr "Telefonnummer påkravd"
 
 #: .es5/lib/auth-errors.js:559
 msgid "Two-step authentication code required"
-msgstr "Tostegs-verifiseringskode påkravd"
+msgstr "Tostegs-godkjenning påkravd"
 
 #: .es5/lib/auth-errors.js:563
 msgid "Invalid two-step authentication code"
-msgstr "Feil tostegs-verifiseringskode"
+msgstr "Feil tostegs-godkjenningskode"
 
 #: .es5/lib/auth-errors.js:567
 msgid "Recovery code required"
@@ -969,7 +969,7 @@ msgstr "Lag nytt passord"
 #: .es5/templates/complete_reset_password.mustache:9
 msgid ""
 "<span>REMEMBER:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt "
-"your data with your password to protect your privacy. You’ll still keep any subscriptions you may have."
+"your data with your password to protect your privacy. You’ll still keep any subscriptions you may have and Pocket data will not be affected."
 msgstr ""
 
 #: .es5/templates/complete_reset_password.mustache:11
@@ -1199,7 +1199,7 @@ msgstr "Stadfest"
 
 #: .es5/templates/inline_totp_setup.mustache:1
 msgid "Enable two-step authentication"
-msgstr "Slå på tostegs-verifisering"
+msgstr "Slå på tostegs-godkjenning"
 
 #: .es5/templates/inline_totp_setup.mustache:3
 msgid "Add a layer of security to your account by requiring security codes from one of <a %(escapedTotpSupportAttributes)s>these authentication apps</a>."
@@ -1327,7 +1327,7 @@ msgstr "Kvifor skjer dette?"
 #: .es5/templates/reset_password.mustache:3
 msgid ""
 "<span>NOTE:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt your "
-"data with your password to protect your privacy. You’ll still keep any subscriptions you may have."
+"data with your password to protect your privacy. You’ll still keep any subscriptions you may have and Pocket data will not be affected."
 msgstr ""
 
 #: .es5/templates/reset_password.mustache:6

@@ -426,6 +426,18 @@ plan-details-header = Manylion cynnyrch
 plan-details-show-button = Dangos manylion
 plan-details-hide-button = Cuddio manylion
 plan-details-total-label = Cyfanswm
+plan-details-list-price = Rhestr Prisiau
+
+## coupons
+
+coupon-discount = Gostyngiad
+coupon-discount-applied = Gwobr Gostyngiad wedi'i Gynnwys
+coupon-submit = Gosod
+coupon-remove = Tynnu
+coupon-error = Mae'r cod a roesoch yn annilys neu wedi dod i ben.
+coupon-success = Bydd eich cynllun yn adnewyddu'n awtomatig am y pris ar y rhestr.
+coupon-enter-code =
+    .placeholder = Rhowch y Cod
 
 ## payment-processing
 
@@ -520,6 +532,6 @@ new-user-submit = Tanysgrifiwch Nawr
 manage-pocket-title = Yn chwilio am eich tanysgrifiad premiwm { -brand-name-pocket }?
 manage-pocket-body = I'w reoli, <a>cliciwch yma</a>.
 payment-method-header = Dewiswch eich dull talu
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Dewiswch eich dull talu
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Angenrheidiol

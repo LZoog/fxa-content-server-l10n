@@ -17,6 +17,8 @@
 -product-firefox-account = Firefox хисап язмасы
 # "Firefox Cloud" should be treated as a brand.
 -product-firefox-cloud = Firefox Cloud
+# Other brands
+-brand-paypal = PayPal
 
 ## Email content
 
@@ -34,6 +36,8 @@ subplat-reactivate-plaintext = { subplat-reactivate }:
 subplat-update-billing = Түләү турындагы мәгълүматны яңарту
 subplat-legal = Хокукый мәсьәләләр
 subplat-privacy = Хосусыйлык
+another-desktop-device = Яисә <a data-l10n-name="anotherDeviceLink">башка бер өстәл компьютерына</a> урнаштырыгыз.
+another-device = Яисә <a data-l10n-name="anotherDeviceLink">башка бер җиһазга</a> урнаштырыгыз.
 # Variables:
 #  $passwordChangeLink (String) - Link to https://accounts.firefox.com/settings/change_password
 automated-email-change-plaintext = Бу автоматик бер электрон хат. Әгәр { -product-firefox-account } хисабыгызга яңа җиһазны өстәмәгән булсагыз, хәзер үк { $passwordChangeLink } битендә серсүзегезне үзгәртегез
@@ -41,6 +45,7 @@ automated-email-plaintext = Бу автоматик электрон хат. А�
 # Variables:
 #  $resetLink (String) - Link to https://accounts.firefox.com/reset_password
 automated-email-reset-plaintext = Серсүзегезне үзгәртмәгән булсагыз, зинһар хәзер үк { $resetLink } битендә яңа серсүз куегыз
+cancellationSurvey = Хезмәтләребезне яхшыртырга ярдәм итү өчен зинһар бу <a data-l10n-name="cancellationSurveyUrl")s>кыска сораулыкка</a> җавап бирүегезне сорыйбыз.
 # After the colon, there's a link to https://survey.alchemer.com/s3/6534408/Privacy-Security-Product-Cancellation-of-Service-Q4-21
 cancellationSurvey-plaintext = Зинһар, хезмәтләребезне яхшыртырга ярдәм итү өчен бу кыска сораулыкны алыгыз:
 change-password-plaintext = Берәрсе хисабыгызны кулга төшерергә маташа дип шикләнсәгез, зинһар паролыгызны үзгәртегез.
@@ -49,9 +54,21 @@ change-password-plaintext = Берәрсе хисабыгызны кулга т�
 user-ip = IP адрес: { $ip }
 manage-account = Хисап белән идарә итү
 manage-account-plaintext = { manage-account }:
+# After the colon is how the user paid, e.g. PayPal or credit card
+payment-method = Түләү ысулы:
+payment-provider-paypal-plaintext = { payment-method } { -brand-paypal }
+# Variables:
+#  $cardType (String) - The type of the credit card, e.g. Visa
+#  $lastFour (String) - The last four digits of the credit card, e.g. 5309
+card-ending-in = { $lastFour } белән тәмамланучы { $cardType } картасы
 # Variables:
 #  $supportUrl (String) - Link to https://accounts.firefox.com/support
 support-message = Күбрәк белү өчен, { $supportUrl } сәхифәсен зиярәт итегез
+view-invoice = <a data-l10n-name="invoiceLink">Квитанциягезне карагыз</a>
+# Variables:
+#  $invoiceLink (String) - The link to the invoice
+# After the colon, there's a link to https://pay.stripe.com/
+view-invoice-plaintext = Квитанцияне карау: { $invoiceLink }
 cadReminderFirst-action = Башка җиһазны синхронлау
 cadReminderFirst-title = Бер искәртү: җиһазларыгызны синхронларга мөмкин.
 cadReminderSecond-subject = Соңгы искәртү: Синхронлауны көйләүне тәмамлагыз
@@ -94,15 +111,21 @@ passwordResetAccountRecovery-regen-required = Сезгә яңа коткару �
 passwordResetAccountRecovery-create-key = Яңа коткару ачкычын ясату:
 postAddAccountRecovery-subject = Хисапны торгызу ачкычы яратылды
 postAddAccountRecovery-title = Хисапны торгызу ачкычы яратылды
+postAddAccountRecovery-description = Түбәндәге җиһазны кулланып, { -product-firefox-account } өчен хисапны торгызу ачкычын ясату уңышлы узды:
 postAddAccountRecovery-action = Хисап белән идарә итү
 postAddAccountRecovery-recovery = Әгәр дә моны Сез эшләмәгән булсагыз, <a data-l10n-name="revokeAccountRecoveryLink">монда басыгыз.</a>
 postAddAccountRecovery-revoke = Әгәр дә моны Сез эшләмәгән булсагыз, ачкычны кире кайтарыгыз.
 postAddTwoStepAuthentication-subject = Ике адымлы аутентификация кабызылды
 postAddTwoStepAuthentication-title = Ике адымлы аутентификация кабызылды
+postAddTwoStepAuthentication-description-plaintext = { -product-firefox-account } өчен ике адымлы аутентификацияне уңышлы гына кабыздыгыз. Моннан ары һәр керүдә аутентификация кушымтасыннан алынган кодлар кирәк булачак.
+postAddTwoStepAuthentication-description = Түбәндәге җиһаздан { -product-firefox-account } өчен ике адымлы аутентификацияне уңышлы гына кабыздыгыз:
 postAddTwoStepAuthentication-action = Хисап белән идарә итү
 postAddTwoStepAuthentication-code-required = Алга таба һәр керүегездә аутентификация кулланмагыздан алынган хәвефсезлек кодлары кирәк булачак.
 postChangePrimary-subject = Төп эл. почта адресы яңартылды
 postChangePrimary-title = Яңа төп электрон почта адресы
+# Variables:
+#  $email (String) - A user's email address
+postChangePrimary-description = Төп электрон почта адресыгызны { $email } адресына уңышлы үзгәрттегез. Бу адрес хәзер { -product-firefox-account } эченә керү өчен кулланасы исемегез булачак. Моннан тыш, хәвефсезлеккә бәйле белдерүләр һәм хисап язмагызга керү турындагы хәбәрләр дә шул адреска җибәреләчәк.
 postChangePrimary-action = Хисап белән идарә итү
 postConsumeRecoveryCode-subject = Коткару коды кулланылды
 postConsumeRecoveryCode-title = Коткару коды кулланылды
@@ -114,10 +137,14 @@ postNewRecoveryCodes-description = Түбәндәге җиһаз ярдәмен�
 postNewRecoveryCodes-action = Хисап белән идарә итү
 postRemoveAccountRecovery-subject = Хисапны коткару ачкычы бетерелде
 postRemoveAccountRecovery-title = Хисапны коткару ачкычы бетерелде
+postRemoveAccountRecovery-description = Түбәндәге җиһазны кулланып, { -product-firefox-account } өчен хисапны торгызу кодын уңышлы бетердегез:
 postRemoveAccountRecovery-action = Хисап белән идарә итү
 postRemoveAccountRecovery-invalid = Бу коткару коды инде хисабыгызны торгызу өчен кулланыла алмас.
 postRemoveSecondary-subject = Икенчел электрон почта бетерелде
 postRemoveSecondary-title = Икенчел электрон почта бетерелде
+# Variables:
+#  $secondaryEmail (String) - A user's email address
+postRemoveSecondary-description = Сез { $secondaryEmail } икенчел электрон почта адресын үзегезнең { -product-firefox-account }-тан уңышлы бетердегез. Моннан ары хәвефсезлеккә бәйле белдерүләр һәм кергәнне раслаулар ул адреска җибәрелмәячәк.
 postRemoveSecondary-action = Хисап белән идарә итү
 postRemoveTwoStepAuthentication-subject = Ике адымлы раслау сүндерелде
 postRemoveTwoStepAuthentication-title = Ике адымлы аутентификация сүндерелде

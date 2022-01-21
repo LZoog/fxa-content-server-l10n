@@ -17,6 +17,8 @@
 -product-firefox-account = Firefox-konto
 # "Firefox Cloud" should be treated as a brand.
 -product-firefox-cloud = Firefox Cloud
+# Other brands
+-brand-paypal = PayPal
 
 ## Email content
 
@@ -43,6 +45,13 @@ change-password-plaintext = Om du mistenkjer at nokon prøver å få tilgang til
 user-ip = IP-adresse: { $ip }
 manage-account = Handter kontoen
 manage-account-plaintext = { manage-account }:
+# After the colon is how the user paid, e.g. PayPal or credit card
+payment-method = Betalingsmåte:
+payment-provider-paypal-plaintext = { payment-method } { -brand-paypal }
+# Variables:
+#  $cardType (String) - The type of the credit card, e.g. Visa
+#  $lastFour (String) - The last four digits of the credit card, e.g. 5309
+card-ending-in = { $cardType }-kort som sluttar på { $lastFour }
 # After the colon, there's a link to https://accounts.firefox.com/support
 subscriptionSupport-plaintext = Har du spørsmål om abonnementet ditt? Supportteamet vårt står klar til å hjelpe deg:
 # After the colon, there's a link to https://accounts.firefox.com/subscriptions
@@ -64,6 +73,12 @@ lowRecoveryCodes-subject =
         [one] 1 gjenopprettingskode att
        *[other] { $numberRemaining } gjenopprettingskodar att
     }
+# Variables:
+# $clientName (String) - A client the user hasn't signed into before (e.g. Firefox, Sync)
+newDeviceLogin-subject = Ny inloggning på { $clientName }
+# Variables:
+# $clientName (String) - A client the user hasn't signed into before (e.g. Firefox, Sync)
+newDeviceLogin-title = Ny innlogging på { $clientName }
 newDeviceLogin-action = Handter kontoen
 passwordChanged-subject = Passord oppdatert
 passwordChanged-title = Passordet er endra
@@ -72,6 +87,7 @@ passwordChangeRequired-title = Passordendring påkravd
 passwordChangeRequired-sign-in = Logg deg tilbake på hkva som helst som helst eining eller teneste der du brukar { -product-firefox-account }en din, og følg stega som vil bli presenterte for deg.
 passwordChangeRequired-different-password = <b>Viktig:</b> Vel eit anna passord enn det du tidlegare brukte, og sørg for at det er eit anna enn det du brukar på e-postkontoen din.
 passwordChangeRequired-signoff = Venleg helsing
+passwordChangeRequired-signoff-name = Teamet { -product-firefox-accounts }
 passwordChangeRequired-different-password-plaintext = Viktig: Vel eit anna passord enn det du tidlegare brukte, og sørg for at det er eit anna enn det du brukar på e-postkontoen din.
 passwordReset-subject = Passord oppdatert
 passwordReset-title = Kontopassordet ditt vart endra
@@ -87,8 +103,8 @@ postAddAccountRecovery-subject = Gjenopprettingsnøkkel for konto generert
 postAddAccountRecovery-title = Gjenopprettingsnøkkel for konto generert
 postAddAccountRecovery-action = Handter kontoen
 postAddAccountRecovery-revoke = Viss dette ikkje var deg, tilbakekall nøkkelen.
-postAddTwoStepAuthentication-subject = Tostegs-verifisering aktivert
-postAddTwoStepAuthentication-title = Tostegs-verifisering aktivert
+postAddTwoStepAuthentication-subject = Tostegs-godkjenning aktivert
+postAddTwoStepAuthentication-title = Tostegs-godkjenning aktivert
 postAddTwoStepAuthentication-action = Handter kontoen
 postAddTwoStepAuthentication-code-required = Sikkerheitskodar frå autentiseringappen din vil no krevjast for kvar pålogging.
 postChangePrimary-subject = Primær e-postadresse oppdatert
@@ -109,8 +125,8 @@ postRemoveAccountRecovery-invalid = Denne gjenopprettingsnøkkelen kan ikkje len
 postRemoveSecondary-subject = Sekundær e-postadesse fjerna
 postRemoveSecondary-title = Sekundær e-postadesse fjerna
 postRemoveSecondary-action = Handter kontoen
-postRemoveTwoStepAuthentication-subject = Tostegs-verifisering er slått av
-postRemoveTwoStepAuthentication-title = Tostegs-verifisering deaktivert
+postRemoveTwoStepAuthentication-subject-line = Tostegs-godkjenning er av
+postRemoveTwoStepAuthentication-title = Tostegs-godkjenning deaktivert
 postRemoveTwoStepAuthentication-action = Handter kontoen
 postRemoveTwoStepAuthentication-not-required = Sikkerheitskodar vil ikkje lenger krevjast ved kvar pålogging.
 postVerify-title = Synkroniser einingane dine no!

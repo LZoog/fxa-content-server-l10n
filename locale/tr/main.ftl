@@ -344,6 +344,17 @@ plan-details-header = Ürün ayrıntıları
 plan-details-show-button = Ayrıntıları göster
 plan-details-hide-button = Ayrıntıları gizle
 plan-details-total-label = Toplam
+plan-details-list-price = Liste fiyatı
+
+## coupons
+
+coupon-discount = İndirim
+coupon-submit = Uygula
+coupon-remove = Kaldır
+coupon-error = Girdiğiniz kod geçersiz veya süresi dolmuş.
+coupon-success = Planınız liste fiyatı üzerinden otomatik olarak yenilenecektir.
+coupon-enter-code =
+    .placeholder = Kodu yazın
 
 ## payment-processing
 
@@ -422,6 +433,6 @@ new-user-submit = Şimdi abone ol
 manage-pocket-title = { -brand-name-pocket } premium aboneliğinizi mi arıyorsunuz?
 manage-pocket-body = Yönetmek için <a>buraya tıklayın</a>.
 payment-method-header = Ödeme yönteminizi seçin
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Ödeme yönteminizi seçin
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Gerekli

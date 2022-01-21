@@ -362,6 +362,18 @@ plan-details-header = Produktdetails
 plan-details-show-button = Details toane
 plan-details-hide-button = Details ferstopje
 plan-details-total-label = Totaal
+plan-details-list-price = Normale priis
+
+## coupons
+
+coupon-discount = Koarting
+coupon-discount-applied = Koartingsbeleaning tapast
+coupon-submit = Tapasse
+coupon-remove = Fuortsmite
+coupon-error = De ynfierde koartingskoade is ûnjildich of ferrûn.
+coupon-success = Jo abonnemint wurdt automatysk ferlinge tsjin de normale priis.
+coupon-enter-code =
+    .placeholder = Koade ynfiere
 
 ## payment-processing
 
@@ -422,11 +434,9 @@ payment-confirmation-cc-card-ending-in = Creditcard einigjend op { $last4 }
 
 new-user-sign-in-link = Hawwe jo al in { -brand-name-firefox }-account? <a>Oanmelde</a>
 new-user-step-1 = 1. Meitsje in { -brand-name-firefox }-account oan
-new-user-step-2 = 2. Kies jo betellingsmetoade
 # "Required" to indicate that the user must use the checkbox below this text to
 # agree to a payment method's terms of service and privacy notice in order to
 # continue.
-new-user-required-payment-consent = Fereaske
 new-user-email =
     .placeholder = foxy@mozilla.com
     .label = Fier jo e-mailadres yn
@@ -441,3 +451,7 @@ new-user-card-title = Fier jo kaartgegevens yn
 new-user-submit = No abonnearje
 manage-pocket-title = Op syk nei jo abonnemint op { -brand-name-pocket } premium?
 manage-pocket-body = <a>Klik hjir</a> om it te behearen.
+payment-method-header = Kies jo betellingsmetoade
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
+payment-method-required = Fereaske

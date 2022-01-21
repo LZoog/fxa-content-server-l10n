@@ -376,6 +376,18 @@ plan-details-header = Докладніше про продукт
 plan-details-show-button = Докладніше
 plan-details-hide-button = Сховати подробиці
 plan-details-total-label = Всього
+plan-details-list-price = Базова ціна
+
+## coupons
+
+coupon-discount = Знижка
+coupon-discount-applied = Застосована знижка
+coupon-submit = Застосувати
+coupon-remove = Вилучити
+coupon-error = Введений код недійсний або прострочений.
+coupon-success = Вашу передплату буде автоматично поновлено за базовою ціною.
+coupon-enter-code =
+    .placeholder = Ввести код
 
 ## payment-processing
 
@@ -458,6 +470,6 @@ new-user-submit = Передплатити
 manage-pocket-title = Шукаєте свою передплату { -brand-name-pocket } преміум?
 manage-pocket-body = Щоб керувати нею, <a>натисніть тут</a>.
 payment-method-header = Оберіть спосіб оплати
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Виберіть спосіб оплати
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Обов'язково
