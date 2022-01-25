@@ -23,11 +23,18 @@
 -product-firefox-cloud = Firefox Cloud
 # Other brands
 -brand-paypal = PayPal
+-app-store = App Store
+-google-play = Google Play
 
 ## Email content
 
+fxa-header-firefox-logo = <img data-l10n-name="fxa-logo" alt="Logo { -brand-firefox }">
+fxa-header-sync-devices-image = <img data-l10n-name="sync-devices-image" alt="Sincronizza dispositivi">
+body-devices-image = <img data-l10n-name="devices-image" alt="Dispositivi">
 fxa-privacy-url = Informativa sulla privacy  di { -brand-mozilla }
 fxa-service-url = Termini di servizio di { -product-firefox-cloud }
+subplat-header-firefox-logo = <img data-l10n-name="fxa-logo-firefox" alt="Logo { -brand-firefox }">
+subplat-footer-mozilla-logo = <img data-l10n-name="mozilla-logo" alt="Logo { -brand-mozilla }">
 subplat-automated-email = Questa email è stata inviata da un servizio automatico, se hai ricevuto questa email per errore, puoi semplicemente ignorarla.
 subplat-privacy-notice = Informativa sulla privacy
 subplat-privacy-plaintext = Informativa sulla privacy:
@@ -56,6 +63,12 @@ subplat-legal = Note legali
 subplat-legal-plaintext = { subplat-legal }:
 subplat-privacy = Privacy
 subplat-privacy-website-plaintext = { subplat-privacy }:
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-android-badge = <img data-l10n-name="google-play-badge" alt="Scarica { $productName } su { -google-play }">
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-ios-badge = <img data-l10n-name="apple-app-badge" alt="Scarica { $productName } sull’{ -app-store }">
 another-desktop-device = Oppure installa su <a data-l10n-name="anotherDeviceLink">un altro dispositivo desktop</a>.
 another-device = Oppure installa su <a data-l10n-name="anotherDeviceLink">un altro dispositivo</a>.
 automated-email-change =
