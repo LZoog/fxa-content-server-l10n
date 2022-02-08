@@ -151,6 +151,7 @@ dc-subheader = 帮助我们改进 { -product-firefox-accounts }
 dc-subheader-content = 允许 { -product-firefox-accounts }向 { -brand-mozilla } 发送技术与交互数据。
 dc-opt-out-success = 成功退出，{ -product-firefox-accounts }将不再向 { -brand-mozilla } 发送技术与交互数据。
 dc-opt-in-success = 感谢！共享此数据可帮助我们改进 { -product-firefox-accounts }。
+dc-opt-in-out-error = 抱歉，更改您的数据收集首选项时出现问题。
 dc-learn-more = 详细了解
 
 # DropDownAvatarMenu component
@@ -292,6 +293,8 @@ delete-account-step-1-2 = 步骤（1 / 2）
 delete-account-step-2-2 = 步骤（2 / 2）
 delete-account-confirm-title-2 = 您已将 { -product-firefox-account }关联至可让您更安全、更高效地畅游网络的 { -brand-mozilla } 产品：
 delete-account-acknowledge = 请确认，若您真要删除账户：
+delete-account-chk-box-1-v2 =
+    .label = 将取消所有付费订阅项目（{ product-pocket } 除外）
 delete-account-chk-box-2 =
     .label = 您可能丢失在 { -brand-mozilla } 产品中保存的信息以及功能
 delete-account-chk-box-3 =

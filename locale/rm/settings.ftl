@@ -31,6 +31,7 @@ alert-bar-close-message = Serrar il messadi
 product-mozilla-vpn = Mozilla VPN
 product-pocket = Pocket
 product-firefox-monitor = Firefox Monitor
+product-firefox-relay = Firefox Relay
 
 ##
 
@@ -69,6 +70,7 @@ bento-menu-firefox-title = { -brand-firefox } è ina tecnologia che cumbatta per
 bento-menu-vpn = { product-mozilla-vpn }
 bento-menu-monitor = { product-firefox-monitor }
 bento-menu-pocket = { product-pocket }
+bento-menu-firefox-relay = { product-firefox-relay }
 bento-menu-firefox-desktop = Navigatur { -brand-firefox } per computers
 bento-menu-firefox-mobile = Navigatur { -brand-firefox } per apparats mobils
 bento-menu-made-by-mozilla = Realisà da { -brand-mozilla }
@@ -79,6 +81,12 @@ connect-another-fx-mobile = Ir per { -brand-firefox } per apparats mobils u tabl
 connect-another-find-fx-mobile =
     Tschertga { -brand-firefox } en { -google-play } u l'{ -app-store } u
     <br /><linkExternal>trametta ina colliaziun a la telechargiada a tes apparat.</linkExternal>
+# Alt text for Google Play and Apple App store images that will be shown if the image can't be loaded.
+# These images are used to encourage users to download Firefox on their mobile devices.
+connect-another-play-store-image =
+    .title = Telechargiar { -brand-firefox } sin { -google-play }
+connect-another-app-store-image-2 =
+    .title = Telechargiar { -brand-firefox } en l'{ -app-store }
 
 ##
 
@@ -159,6 +167,7 @@ dc-subheader = Gida da meglierar { -product-firefox-accounts }
 dc-subheader-content = Permetter a { -product-firefox-accounts } da trametter datas tecnicas e datas d'interacziun a { -brand-mozilla }.
 dc-opt-out-success = Deactivà cun success. { -product-firefox-accounts } na trametta naginas datas tecnicas u datas d'interacziun a { -brand-mozilla }.
 dc-opt-in-success = Grazia! La cundivisiun da questas datas ans gidan da meglierar { -product-firefox-accounts }.
+dc-opt-in-out-error = Perstgisa, igl ha dà in problem cun midar tia preferenza da la rimnada da datas.
 dc-learn-more = Ulteriuras infurmaziuns
 
 # DropDownAvatarMenu component
@@ -235,6 +244,8 @@ tfa-replace-code-success =
     a diever unic en in lieu segir – ti als vegns a duvrar per acceder a tes conto sche ti n'has
     betg tes apparat mobil.
 tfa-replace-code-success-alert = Actualisà ils codes da recuperaziun dal conto.
+tfa-replace-code-1-2 = Pass 1 da 2
+tfa-replace-code-2-2 = Pass 2 da 2
 
 ## Avatar change page
 
@@ -303,8 +314,8 @@ delete-account-step-1-2 = Pass 1 da 2
 delete-account-step-2-2 = Pass 2 da 2
 delete-account-confirm-title-2 = Ti has connectà tes { -product-firefox-account } cun products da { -brand-mozilla } che ta gidan da navigar a moda segira e productiva en il web:
 delete-account-acknowledge = Considerescha, cun stizzar tes conto:
-delete-account-chk-box-1 =
-    .label = Vegnan annullads eventuals abunaments pajads
+delete-account-chk-box-1-v2 =
+    .label = Tut tes abunaments che custan vegnan annullads (cun excepziun da { product-pocket })
 delete-account-chk-box-2 =
     .label = Perdas ti eventualmain infurmaziuns memorisadas e funcziuns che fan part da products da { -brand-mozilla }
 delete-account-chk-box-3 =
@@ -405,9 +416,12 @@ tfa-scan-this-code =
 # This is the image alt text for a QR code.
 # Variables:
 #   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
 tfa-qa-code-alt =
     Utilisescha il code { $secret } per configurar l'autentificaziun
     en dus pass en las applicaziuns sustegnidas.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = Betg pussaivel da scannar il code?
 # When the user cannot use a QR code.
 tfa-enter-secret-key = Endatescha questa clav secreta en tia app d'autentificaziun:
@@ -523,6 +537,8 @@ se-default-content = Acceda a tes conto sche ti na pos betg t'annunziar a tia ad
 se-content-note =
     Remartga: ina adressa d'e-mail secundara na restaurescha betg tias datas – ti
     dovras ina <a>clav da recuperaziun</a> per quest intent.
+# Default value for the secondary email
+se-secondary-email-none = Nagina
 
 ##
 
@@ -558,6 +574,7 @@ tfa-row-change-modal-explain = Ti na vegns betg a pudair revocar questa acziun.
 
 auth-error-102 = Conto nunenconuschent
 auth-error-103 = Pled-clav nuncorrect
+auth-error-105 = Code da verificaziun nunvalid
 auth-error-110 = Token nunvalid
 # This string is the amount of time required before a user can attempt another request.
 # Variables:
@@ -568,5 +585,7 @@ auth-error-110 = Token nunvalid
 #                           (for example: "in 15 minutes")
 auth-error-114 = Ti has empruvà memia savens. Emprova anc ina giada suenter { $retryAfter }.
 auth-error-138 = Sesida betg verifitgada
+auth-error-139 = L'adressa dad e-mail alternativa sto esser differenta da l'adressa da tes conto
 auth-error-155 = Betg chattà il token TOTP
+auth-error-183 = Code da verificaziun nunvalid u scadì
 auth-error-1008 = Tes pled-clav nov sto esser different

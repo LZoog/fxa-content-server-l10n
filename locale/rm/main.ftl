@@ -362,9 +362,22 @@ plan-details-header = Detagls dal product
 plan-details-show-button = Mussar ils detagls
 plan-details-hide-button = Zuppentar ils detagls
 plan-details-total-label = Total
+plan-details-list-price = Pretsch da catalog
 
 ## coupons
 
+coupon-discount = Rabat
+coupon-discount-applied = Applitgà il rabat
+coupon-submit = Applitgar
+coupon-remove = Allontanar
+coupon-error = Il code che ti has endatà è nunvalid u scadì.
+coupon-error-generic = Ina errur è succedida cun elavurar il code. Reempruvar per plaschair.
+coupon-error-expired = Il code endatà è scrudà.
+coupon-error-limit-reached = Il code endatà ha cuntanschì sia limita.
+coupon-error-invalid = Il code endatà è nunvalid.
+coupon-success = Tes plan vegn renovà automaticamain cun il pretsch da catalog.
+coupon-enter-code =
+    .placeholder = Endatescha il code
 
 ## payment-processing
 
@@ -442,3 +455,7 @@ new-user-card-title = Endatescha las infurmaziuns da tia carta
 new-user-submit = Abunar ussa
 manage-pocket-title = Tschertgas ti tes abunament premium da { -brand-name-pocket }?
 manage-pocket-body = Per l'administrar, <a>clicca qua</a>.
+payment-method-header = Tscherna tia metoda da pajament
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
+payment-method-required = Obligatoric

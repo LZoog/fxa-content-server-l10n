@@ -140,6 +140,10 @@ payment-plan-next-invoice = Επόμενο τιμολόγιο: { $nextInvoiceDat
 # After the colon is how the user paid, e.g. PayPal or credit card
 payment-method = Μέθοδος πληρωμής:
 payment-provider-paypal-plaintext = { payment-method } { -brand-paypal }
+# Variables:
+#  $cardType (String) - The type of the credit card, e.g. Visa
+#  $lastFour (String) - The last four digits of the credit card, e.g. 5309
+card-ending-in = Κάρτα { $cardType } με κατάληξη { $lastFour }
 subscriptionSupport = Έχετε απορίες σχετικά με τη συνδρομή σας; Η <a data-l10n-name="subscriptionSupportUrl">ομάδα υποστήριξής</a> μας είναι εδώ για να σας βοηθήσει.
 # After the colon, there's a link to https://accounts.firefox.com/support
 subscriptionSupport-plaintext = Έχετε απορίες για τη συνδρομή σας; Η ομάδα υποστήριξής μας είναι εδώ για να σας βοηθήσει:
@@ -307,6 +311,7 @@ subscriptionAccountFinishSetup-content-processing = Η πληρωμή σας β�
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionAccountFinishSetup-content-create = Έπειτα, θα δημιουργήσετε έναν κωδικό πρόσβασης για τον λογαριασμό Firefox και θα κάνετε λήψη του { $productName }.
+subscriptionAccountFinishSetup-action = Δημιουργία κωδικού πρόσβασης
 subscriptionAccountReminderFirst-subject = Υπενθύμιση: Ολοκληρώστε τη ρύθμιση του λογαριασμού σας
 subscriptionAccountReminderFirst-title = Δεν έχετε ακόμα πρόσβαση στη συνδρομή σας
 subscriptionAccountReminderFirst-content-info = Πριν από λίγες μέρες, δημιουργήσατε έναν { -product-firefox-account(case: "acc", capitalization: "lower") } αλλά δεν τον επαληθεύσατε. Ελπίζουμε να ολοκληρώσετε τη ρύθμιση του λογαριασμού σας, ώστε να μπορέσετε να χρησιμοποιήσετε τη νέα σας συνδρομή.
@@ -541,8 +546,8 @@ verifyLogin-description = Για επιπρόσθετη ασφάλεια, παρ
 verifyLogin-subject = Επιβεβαίωση νέας σύνδεσης στο { $clientName }
 verifyLogin-action = Επιβεβαίωση εισόδου
 # Variables:
-#  $code (Number) - e.g. 123456
-verifyLoginCode-subject = Κωδικός επαλήθευσης: { $code }
+#  $serviceName (String) - A service the user hasn't signed into before (e.g. Firefox)
+verifyLoginCode-subject-line = Κωδικός σύνδεσης για το { $serviceName }
 verifyLoginCode-title = Κάνετε εσείς σύνδεση;
 verifyLoginCode-prompt = Αν ναι, ορίστε ο κωδικός επαλήθευσης:
 verifyLoginCode-expiry-notice = Λήγει σε 5 λεπτά.

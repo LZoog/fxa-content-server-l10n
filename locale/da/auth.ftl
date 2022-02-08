@@ -62,6 +62,9 @@ subplat-privacy-website-plaintext = { subplat-privacy }:
 # Variables:
 #  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
 body-android-badge = <img data-l10n-name="google-play-badge" alt="Hent { $productName } på { -google-play }">
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-ios-badge = <img data-l10n-name="apple-app-badge" alt="Hent { $productName } i { -app-store }">
 another-desktop-device = Eller installer på <a data-l10n-name="anotherDeviceLink">en anden computer</a>.
 another-device = Eller installer på <a data-l10n-name="anotherDeviceLink">en anden enhed</a>.
 automated-email-change =
@@ -509,8 +512,8 @@ verifyLogin-description = Som en ekstra sikkerhed skal du bekræfte dette login 
 verifyLogin-subject = Bekræft nyt login til { $clientName }
 verifyLogin-action = Bekræft login
 # Variables:
-#  $code (Number) - e.g. 123456
-verifyLoginCode-subject = Bekræftelseskode: { $code }
+#  $serviceName (String) - A service the user hasn't signed into before (e.g. Firefox)
+verifyLoginCode-subject-line = Login-kode til { $serviceName }
 verifyLoginCode-title = Er det dig, der logger ind?
 verifyLoginCode-prompt = Hvis det er, så er bekræftelseskoden her:
 verifyLoginCode-expiry-notice = Den udløber om 5 minutter.

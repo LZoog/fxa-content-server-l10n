@@ -367,9 +367,13 @@ plan-details-list-price = Τιμή καταλόγου
 ## coupons
 
 coupon-discount = Έκπτωση
+coupon-discount-applied = Εφαρμόστηκε έκπτωση
 coupon-submit = Εφαρμογή
 coupon-remove = Αφαίρεση
 coupon-error = Ο κωδικός που καταχωρίσατε δεν είναι έγκυρος ή έχει λήξει.
+coupon-success = Το πρόγραμμά σας θα ανανεωθεί αυτόματα στην τιμή καταλόγου.
+coupon-enter-code =
+    .placeholder = Εισαγωγή κωδικού
 
 ## payment-processing
 
