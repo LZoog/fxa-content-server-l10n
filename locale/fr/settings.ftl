@@ -23,6 +23,7 @@ alert-bar-close-message = Fermer le message
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $capitalization ->
@@ -203,6 +204,16 @@ input-password-hide = Masquer le mot de passe
 input-password-show = Afficher le mot de passe
 input-password-hide-aria = Masquer le mot de passe de l’écran.
 input-password-show-aria = Afficher le mot de passe sous forme de texte brut. Votre mot de passe sera visible à l’écran.
+
+## Linked Accounts section
+
+la-heading = Comptes liés
+la-description = Vous avez autorisé l’accès aux comptes suivants.
+la-unlink-button = Dissocier
+la-unlink-account-button = Dissocier
+la-unlink-heading = Dissocier du compte tiers
+la-unlink-content = Voulez-vous vraiment dissocier votre compte { -brand-google } ? La dissociation de votre compte ne vous déconnecte pas automatiquement de ces services. Pour ce faire, vous devrez vous déconnecter manuellement depuis la section Services connectés.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -435,12 +446,6 @@ profile-picture =
     .header = Photo
 profile-display-name =
     .header = Nom d’affichage
-profile-password =
-    .header = Mot de passe
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Créé le { $date }
 profile-primary-email =
     .header = Adresse électronique principale
 
@@ -450,6 +455,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Sécurité
+security-password =
+    .header = Mot de passe
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Créé le { $date }
 
 ## Switch component
 

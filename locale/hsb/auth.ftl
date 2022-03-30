@@ -77,6 +77,8 @@ automated-email =
     To je awtomatizowana mejlka; jeli sće ju mylnje dóstał, njetrjebaće ničo činić.
     Za dalše informacije wopytajće prošu <a data-l10n-name="supportLink">pomoc { -brand-mozilla }</a>.
 automated-email-plaintext = To je awtomatizowana e-mejlka; jeli sće ju zmylnje dóstał, njetrjebaće ničo činić.
+#  After the colon, there's a link to https://accounts.firefox.com/settings/change_password
+automated-email-not-authorized-plaintext = To je awtomatiska e-mejlka; jeli njejsće tutu akciju awtorizował, změńće prošu swoje hesło.
 automated-email-reset =
     To je awtomatizowana mejlka; jeli njejsće tutu akciju awtorizował, <a data-l10n-name="resetLink">stajće prošu swoje hesło wróćo.</a>.
     Za dalše informacije wopytajće prošu <a data-l10n-name="supportLink">pomoc { -brand-mozilla }</a>.
@@ -149,12 +151,7 @@ downloadSubscription-subject = Witajće k { $productName }
 #  Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 downloadSubscription-title = Witajće k { $productName }
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-content = Jeli njejsće hišće { $productName } sćahnył, móžeće nětko wšě funkcije swojeho abonementa wužiwać:
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-link-action = { $productName } sćahnyć
+downloadSubscription-link-action-2 = Prěnje kroki
 # The user has a low number of valid recovery codes remaining for use
 codes-reminder-title = Mało wobnowjenskich kodow wyše
 codes-reminder-description = Smy zwěsćili, zo mało wobnowjenskich kodow wužiwaće. Prošu rozwažujćo, hač nowe kody wutworiće, zo byšće zawrjenje swojeho konta wobešoł.
@@ -202,6 +199,11 @@ postAddAccountRecovery-description = Sće wuspěšnje nowy wobnowjenski kluč za
 postAddAccountRecovery-action = Konto rjadować
 postAddAccountRecovery-recovery = Jeli wy to njejsće był, <a data-l10n-name="revokeAccountRecoveryLink">klikńće tu.</a>
 postAddAccountRecovery-revoke = Jeli wy to njejsće był, wotwołajće kluč.
+postAddLinkedAccount-subject = Nowe z { -brand-firefox } zwjazane konto
+#  Variables:
+#  $providerName (String) - The name of the provider, e.g. Apple, Google
+postAddLinkedAccount-title = Konto wašeho poskićowarja je so z wašim { -product-firefox-account } zwjazało.
+postAddLinkedAccount-action = Konto rjadować
 postAddTwoStepAuthentication-subject = Dwukročelowa awtentifikacija zmóžnjena
 postAddTwoStepAuthentication-title = Dwukročelowa awtentifikacija zmóžnjena
 postAddTwoStepAuthentication-description-plaintext = Sće dwukročelowu awtentifikaciju na swojim konće { -product-firefox-account } wuspěšnje zmóžnił. Wěstotne kody z wašeho awtentifikaciskeho nałoženja su wotnětka trěbne při kóždym přizjewjenju.
@@ -276,10 +278,8 @@ subscriptionAccountFinishSetup-subject = Witajće k { $productName }: Nastajće 
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionAccountFinishSetup-title = Witajće k { $productName }
 subscriptionAccountFinishSetup-content-processing = Waše płaćenje so předźěłuje a móže hač do štyri wšědnych dnjow trać. Waš abonement so w kóždym wotličenskim času awtomatisce podlěša, chibazo wupowědźeće.
-# Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionAccountFinishSetup-content-create = Potom hesło konta Firefox wutworiće a { $productName } sćehnjeće.
-subscriptionAccountFinishSetup-action = Hesło wutworić
+subscriptionAccountFinishSetup-content-create-2 = Jako dalše hesło konta { -product-firefox-account } wutworiće, zo byšće započał swój nowy abonement wužiwać.
+subscriptionAccountFinishSetup-action-2 = Prěnje kroki
 subscriptionAccountReminderFirst-subject = Dopomnjeće: Dokónčće konfigurowanje swojeho konta
 subscriptionAccountReminderFirst-title = Hisće nimaće přistup k swojemu abonementej
 subscriptionAccountReminderFirst-content-info = Před někotrymi dnjemi sće konto { -product-firefox-account } załožił, ale njejsće jo ženje wobkrućił. Nadźijamy so, zo konfigurowanje swojeho konta dokónčiće, zo byšće swój nowy abonement wužiwać móhł.
@@ -334,9 +334,6 @@ subscriptionFirstInvoice-subject = Płaćenje { $productName } wobkrućene
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionFirstInvoice-title = Wulki dźak, zo sće { $productName } abonował
 subscriptionFirstInvoice-content-processing = Waše płaćenje so tuchwilu předźěłuje a móže do štyrjoch wobchodnych dnjow trać.
-# Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoice-content-install = Dóstanjeće separatnu mejlku ze sćehnjenskimi instrukcijemi a wo tym, kak móžeće { $productName } wužiwać.
 subscriptionFirstInvoice-content-auto-renew = Waš abonement so awtomatisce kóždu wotličensku dobu podlěšuje, chibazo wupowědźiće.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -358,9 +355,6 @@ subscriptionFirstInvoiceDiscount-subject = Płaćenje { $productName } wobkruće
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionFirstInvoiceDiscount-title = Wulki dźak, zo sće { $productName } abonował
 subscriptionFirstInvoiceDiscount-content-processing = Waše płaćenje so tuchwilu předźěłuje a móže do štyrjoch wobchodnych dnjow trać.
-# Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoiceDiscount-content-install = Dóstanjeće separatnu mejlku ze sćehnjenskimi instrukcijemi a wo tym, kak móžeće { $productName } wužiwać.
 subscriptionFirstInvoiceDiscount-content-auto-renew = Waš abonement so awtomatisce kóždu wotličensku dobu podlěšuje, chibazo wupowědźiće.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -373,7 +367,7 @@ subscriptionFirstInvoiceDiscount-content-invoice-number-plaintext = Čisło zli�
 subscriptionFirstInvoiceDiscount-content-subtotal = Mjezysuma: { $invoiceSubtotal }
 # Variables:
 #  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
-subscriptionFirstInvoiceDiscount-content-onetime-discount = Jónkróćny rabat: -{ $invoiceDiscountAmount }
+subscriptionFirstInvoiceDiscount-content-discount = Rabat: -{ $invoiceDiscountAmount }
 # Variables:
 #  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 #  $invoiceTotal (String) - The amount, after discount, of the subscription invoice, including currency, e.g. $8.00
@@ -462,6 +456,35 @@ subscriptionSubsequentInvoice-content-charged = { $invoiceTotal } dnja { $invoic
 #  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
 subscriptionSubsequentInvoice-content-next-invoice = Přichodna zličbowanka: { $nextInvoiceDateOnly }
 # Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-subject = Płaćenje { $productName } dóstane
+subscriptionSubsequentInvoiceDiscount-title = Wulki dźak, zo sće abonent!
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-content-received = Smy waše najnowše płaćenje za { $productName } dóstali.
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number = Čisło zličbowanki: <b>{ $invoiceNumber }</b>
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number-plaintext = Čisło zličbowanki: { $invoiceNumber }
+# Variables:
+# $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-plan-change = Planowa změna: { $paymentProrated }
+# Variables:
+# $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-charge = { $invoiceTotal } dnja { $invoiceDateOnly } wotknihowane
+# Variables:
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
+subscriptionSubsequentInvoiceDiscount-content-next-invoice = Přichodna zličbowanka: { $nextInvoiceDateOnly }
+# Variables:
+#  $invoiceSubtotal (String) - The amount, before discount, of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-subtotal = Mjezysuma: { $invoiceSubtotal }
+# Variables:
+#  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
+subscriptionSubsequentInvoiceDiscount-content-discount = Rabat: -{ $invoiceDiscountAmount }
+# Variables:
 # $productNameNew (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-subject = Sće na { $productNameNew } zaktualizował
 subscriptionUpgrade-title = Wulki dźak za aktualizowanje!
@@ -525,16 +548,9 @@ verifyPrimary-subject = Primarnu e-mejlowu adresu wobkrućić
 verifyPrimary-action = E-mejlowu adresu wobkrućić
 verifyPrimary-action-plaintext = { verifyPrimary-action }:
 verifyPrimary-post-verify = Hdyž su wobkrućene, su kontowe změny móžne, kaž na přikład přidawanje sekundarneje e-mejloweje adresy z tutoho grata.
-verifySecondary-subject = Sekundarnu e-mejlowu adresu wobkrućić
-verifySecondary-title = Druhu e-mejlowu adresu wobkrućić
-# Variables:
-#  $email (String) - A user's unverified secondary email address
-verifySecondary-explainer = Slědowace konto { -product-firefox-account } je požadało, { $email } jako druhu e-mejlowu adresu wužiwać:
-verifySecondary-action = E-mejlowu adresu wobkrućić
-verifySecondary-prompt = { verifySecondary-action }:
-verifySecondary-post-verification = Tak ruče kaž je so wobkrućiła, tuta adresa započnje, wěstotne zdźělenki a wobkrućenja dóstawać.
 verifySecondaryCode-subject = Sekundarnu e-mejlowu adresu wobkrućić
 verifySecondaryCode-title = Druhu e-mejlowu adresu wobkrućić
+verifySecondaryCode-action = E-mejlowu adresu wobkrućić
 # Variables:
 #  $email (string) A user's unverified secondary email address
 verifySecondaryCode-explainer = Slědowace konto { -product-firefox-account } je požadało, { $email } jako druhu e-mejlowu adresu wužiwać:

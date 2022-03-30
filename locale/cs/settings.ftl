@@ -42,6 +42,17 @@ alert-bar-close-message = Zavřít zprávu
         [ins] Firefoxem
     }
     .gender = masculine
+-brand-google =
+    { $case ->
+       *[nom] Google
+        [gen] Googlu
+        [dat] Googlu
+        [acc] Google
+        [voc] Google
+        [loc] Googlu
+        [ins] Googlem
+    }
+    .gender = masculine
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $case ->
@@ -133,6 +144,7 @@ product-firefox-monitor =
         [loc] Firefox Monitoru
         [ins] Firefox Monitorem
     }
+product-firefox-relay = Firefox Relay
 
 ##
 
@@ -171,6 +183,7 @@ bento-menu-firefox-title = { -brand-firefox } je technologie, která bojuje za v
 bento-menu-vpn = { product-mozilla-vpn }
 bento-menu-monitor = { product-firefox-monitor }
 bento-menu-pocket = { product-pocket }
+bento-menu-firefox-relay = { product-firefox-relay }
 bento-menu-firefox-desktop = Prohlížeč { -brand-firefox } pro počítač
 bento-menu-firefox-mobile = Prohlížeč { -brand-firefox } pro mobily
 bento-menu-made-by-mozilla = Od { -brand-mozilla(case: "gen") }
@@ -246,6 +259,16 @@ datablock-copy =
 datablock-print =
     .message = Vytištěno
 
+## Data collection section
+
+dc-heading = Sběr dat a jejich použití
+dc-subheader = Pomozte zlepšit { -product-firefox-accounts(case: "acc", capitalization: "lower") }
+dc-subheader-content = Povolte { -product-firefox-accounts(case: "dat", capitalization: "lower") } zasílat technická data a data o interakcích { -brand-mozilla(case: "dat") }.
+dc-opt-out-success = Odhlášení bylo úspěšné. { -product-firefox-accounts } nebude { -brand-mozilla(case: "dat") } odesílat technická data ani data o interakcích.
+dc-opt-in-success = Díky! Sdílení těchto dat nám pomáhá se zlepšovat { -product-firefox-accounts(case: "acc", capitalization: "lower") }.
+dc-opt-in-out-error = Je nám líto, ale při změně předvolby shromažďování dat došlo k problému.
+dc-learn-more = Zjistit více
+
 # DropDownAvatarMenu component
 
 drop-down-menu-title = Nabídka { -product-firefox-account(case: "gen", capitalization: "lower") }
@@ -286,6 +309,14 @@ input-password-show = Zobrazit heslo
 input-password-hide-aria = Skrýt heslo z obrazovky.
 input-password-show-aria = Zobrazit heslo v čitelné podobě. Vaše heslo bude viditelné na obrazovce.
 
+## Linked Accounts section
+
+la-heading = Propojené účty
+la-unlink-button = Odpojit
+la-unlink-account-button = Odpojit
+la-unlink-heading = Odpojit od účtu třetí strany
+nav-linked-accounts = { la-heading }
+
 ## Modal
 
 modal-close-title = Zavřít
@@ -308,6 +339,7 @@ nav-settings = Nastavení
 nav-profile = Profil
 nav-security = Zabezpečení
 nav-connected-services = Propojené služby
+nav-data-collection = Sběr dat a jejich použití
 nav-paid-subs = Předplatné
 nav-email-comm = E-mailová komunikace
 
@@ -319,6 +351,8 @@ tfa-replace-code-success =
     kódy na bezpečném místě. Budete je potřebovat pro přístup ke svému účtu
     v případě, že u sebe nebudete mít své mobilní zařízení.
 tfa-replace-code-success-alert = Obnovovací kódy k vašemu účtu byly aktualizovány.
+tfa-replace-code-1-2 = Krok 1 ze 2
+tfa-replace-code-2-2 = Krok 2 ze 2
 
 ## Avatar change page
 
@@ -385,8 +419,8 @@ delete-account-step-1-2 = Krok 1 ze 2
 delete-account-step-2-2 = Krok 2 ze 2
 delete-account-confirm-title-2 = Připojili jste svůj { -product-firefox-account(case: "acc", capitalization: "lower") } k produktům { -brand-mozilla(case: "gen") }, které vám na webu pomohou zajistit bezpečí a produktivitu:
 delete-account-acknowledge = Potvrďte prosím, že smazáním účtu:
-delete-account-chk-box-1 =
-    .label = budou zrušena všechna vaše předplatná
+delete-account-chk-box-1-v2 =
+    .label = Všechna placená předplatná, která máte, budou zrušena (kromě služby { product-pocket })
 delete-account-chk-box-2 =
     .label = můžete ztratit uložené informace a funkce produktů { -brand-mozilla(case: "gen") }
 delete-account-chk-box-3 =
@@ -441,9 +475,6 @@ add-secondary-email-enter-address =
 add-secondary-email-cancel-button = Zrušit
 add-secondary-email-save-button = Uložit
 
-##
-
-
 ## Verify secondary email page
 
 add-secondary-email-step-2 = Krok 2 ze 2
@@ -488,7 +519,10 @@ tfa-scan-this-code =
 # This is the image alt text for a QR code.
 # Variables:
 #   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
 tfa-qa-code-alt = Pro nastavení dvoufázového ověřování v podporovaných aplikacích použijte kód { $secret }.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = Nemůžete kód naskenovat?
 # When the user cannot use a QR code.
 tfa-enter-secret-key = Zadejte tento bezpečnostní kód do své ověřovací aplikace:
@@ -513,12 +547,6 @@ profile-picture =
     .header = Obrázek
 profile-display-name =
     .header = Zobrazované jméno
-profile-password =
-    .header = Heslo
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Vytvořeno { $date }
 profile-primary-email =
     .header = Hlavní e-mailová adresa
 
@@ -528,6 +556,23 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Zabezpečení
+security-password =
+    .header = Heslo
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Vytvořeno { $date }
+
+## Switch component
+
+# Used as "title" attribute when the switch is "on" and interaction turns the switch to "off"
+switch-turn-off = Vypnout
+# Used as "title" attribute when the switch is "off" and interaction turns the switch to "on"
+switch-turn-on = Zapnout
+# Used as "title" attribute when switch has been interacted with and form is submitting
+switch-submitting = Odesílá se…
+switch-is-on = zapnuto
+switch-is-off = vypnuto
 
 ## Sub-section row Defaults
 
@@ -591,6 +636,8 @@ se-default-content = Získejte přístup ke svému účtu, pokud se vám nepoda�
 se-content-note =
     Poznámka: pro získání přístupu k vašim datům nestačí záložní e-mail,
     ale budete potřebovat také <a>obnovovací klíč</a>.
+# Default value for the secondary email
+se-secondary-email-none = Žádný
 
 ##
 
@@ -622,6 +669,7 @@ tfa-row-change-modal-explain = Tuto akci nelze vzít zpět.
 
 auth-error-102 = Neznámý účet
 auth-error-103 = Nesprávné heslo
+auth-error-105 = Neplatný ověřovací kód
 auth-error-110 = Neplatný token
 # This string is the amount of time required before a user can attempt another request.
 # Variables:
@@ -632,5 +680,7 @@ auth-error-110 = Neplatný token
 #                           (for example: "in 15 minutes")
 auth-error-114 = Vyčerpali jste příliš mnoho pokusů. Zkuste to znovu { $retryAfter }.
 auth-error-138 = Neověřená relace
+auth-error-139 = Záložní e-mailová adresa musí být jiná než adresa účtu
 auth-error-155 = TOTP token nenalezen
+auth-error-183 = Neplatný nebo starý ověřovací kód
 auth-error-1008 = Vaše staré a nové heslo nesmí být stejné

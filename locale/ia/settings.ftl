@@ -23,6 +23,7 @@ alert-bar-close-message = Clauder message
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox Accounts
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -101,7 +102,7 @@ cs-cannot-disconnect = Cliente non trovate, impossibile disconnecter
 # Variables:
 #   $service (String) - the name of a device or service that uses Firefox Accounts
 #                       (for example: "Firefox Lockwise")
-cs-logged-out = Session de { $servicio } claudite.
+cs-logged-out = Session de { $service } claudite.
 cs-refresh-button =
     .title = Actualisar le servicios connectite
 # Link text to a support page on missing or duplicate devices
@@ -203,6 +204,17 @@ input-password-hide = Celar contrasigno
 input-password-show = Monstrar contrasigno
 input-password-hide-aria = Celar le contrasigno ab le schermo.
 input-password-show-aria = Monstrar le contrasigno como texto simple. Tu contrasigno sera visibile sur le schermo.
+
+## Linked Accounts section
+
+la-heading = Contos ligate
+la-description = Tu ha autorisate accesso al sequente contos.
+la-unlink-button = Disligar
+la-unlink-account-button = Disligar
+la-unlink-heading = Disligar ab conto de tertie parte
+la-unlink-content = Desira tu vermente disligar tu conto { -brand-google }? Disligante tu conto non tu non te disconnecte automaticamente de ille servicios. Pro facer lo tu debera manualmente clauder le connexion ab le section Servicios connexe.
+la-unlink-content-2 = Desira tu vermente disligar tu conto? Disligante tu conto non te disconnecte automaticamente de ille servicios. Pro facer lo tu debera manualmente clauder le connexion ab le section Servicios connexe.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -438,12 +450,6 @@ profile-picture =
     .header = Imagine
 profile-display-name =
     .header = Nomine a monstrar
-profile-password =
-    .header = Contrasigno
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Create le { $date }
 profile-primary-email =
     .header = Adresse de e-mail primari
 
@@ -453,6 +459,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Securitate
+security-password =
+    .header = Contrasigno
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Create le { $date }
 
 ## Switch component
 

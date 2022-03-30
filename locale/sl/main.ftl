@@ -10,7 +10,15 @@ project-brand = Firefox Računi
 -brand-name-firefox = Firefox
 -brand-name-paypal = PayPal
 -brand-name-stripe = Stripe
--brand-name-google = Google
+-brand-name-google =
+    { $sklon ->
+       *[imenovalnik] Google
+        [rodilnik] Googla
+        [dajalnik] Googlu
+        [tozilnik] Google
+        [mestnik] Googlu
+        [orodnik] Googlom
+    }
 -brand-name-apple = Apple
 -brand-name-pocket = Pocket
 # the following are not terms because they are not used directly in messages,
@@ -95,6 +103,8 @@ payment-cc =
     .label = Vaša kartica
 payment-ccn =
     .label = Številka kartice
+payment-exp =
+    .label = Velja do
 payment-zip =
     .label = Poštna številka
 
@@ -272,6 +282,7 @@ coupon-discount = Popust
 coupon-submit = Uveljavi
 coupon-remove = Odstrani
 coupon-error = Koda, ki ste jo vnesli, je neveljavna ali pretečena.
+coupon-error-expired = Kodi, ki ste jo vnesli, je potekla veljavnost.
 coupon-enter-code =
     .placeholder = Vnesite kodo
 
@@ -331,6 +342,7 @@ payment-confirmation-amount-year =
        *[other] { $amount } vsakih { $intervalCount } let
     }
 payment-confirmation-download-button = Nadaljuj prenos
+payment-confirmation-cc-card-ending-in = Kartica, ki se končuje s { $last4 }
 
 ## new user email form
 

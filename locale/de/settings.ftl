@@ -23,6 +23,7 @@ alert-bar-close-message = Nachricht schließen
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox-Konten
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -207,6 +208,17 @@ input-password-hide = Passwort verbergen
 input-password-show = Passwort anzeigen
 input-password-hide-aria = Passwort vom Bildschirm ausblenden.
 input-password-show-aria = Passwort als Klartext anzeigen Ihr Passwort ist auf dem Bildschirm sichtbar.
+
+## Linked Accounts section
+
+la-heading = Verknüpfte Konten
+la-description = Sie haben den Zugriff auf folgende Konten genehmigt.
+la-unlink-button = Verknüpfung aufheben
+la-unlink-account-button = Verknüpfung aufheben
+la-unlink-heading = Verknüpfung zu Drittanbieterkonto entfernen
+la-unlink-content = Möchten Sie die Verknüpfung Ihres { -brand-google }-Kontos wirklich aufheben? Durch das Aufheben der Verknüpfung Ihres Kontos werden Sie nicht automatisch von diesen Diensten abgemeldet. Dazu müssen Sie sich manuell im Abschnitt „Verbundene Dienste“ abmelden.
+la-unlink-content-2 = Möchten Sie die Verknüpfung Ihres Kontos wirklich aufheben? Durch das Aufheben der Verknüpfung Ihres Kontos werden Sie nicht automatisch von diesen Diensten abgemeldet. Dazu müssen Sie sich manuell im Abschnitt „Verbundene Dienste“ abmelden.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -440,12 +452,6 @@ profile-picture =
     .header = Bild
 profile-display-name =
     .header = Anzeigename
-profile-password =
-    .header = Passwort
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Erstellt: { $date }
 profile-primary-email =
     .header = Primäre E-Mail-Adresse
 
@@ -455,6 +461,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Sicherheit
+security-password =
+    .header = Passwort
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Erstellt: { $date }
 
 ## Switch component
 

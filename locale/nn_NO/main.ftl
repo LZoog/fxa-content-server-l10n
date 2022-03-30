@@ -338,6 +338,16 @@ plan-details-header = Produktdetaljar
 plan-details-show-button = Vis detaljar
 plan-details-hide-button = Gøym detaljar
 plan-details-total-label = Totalt
+plan-details-list-price = Listepris
+
+## coupons
+
+coupon-discount = Rabatt
+coupon-discount-applied = Rabatt brukt
+coupon-submit = Bruk
+coupon-remove = Fjern
+coupon-enter-code =
+    .placeholder = Skriv inn kode
 
 ## payment-processing
 
@@ -402,7 +412,13 @@ new-user-email =
 new-user-confirm-email =
     .label = Stadfest e-postadressa di
 new-user-email-validate = E-postadressa er ikkje gyldig
+new-user-email-validate-confirm = E-postadressene matchar ikkje
+new-user-already-has-account-sign-in = Du har allereie ein konto. <a>Logg inn</a>
+new-user-card-title = Skriv inn betalingskortinformasjon
 new-user-submit = Abonner no
-# $prefix (string) - If header is part of a multi step process and needs a header. eg. '2.'
-payment-method-header-prefix = { $prefix } Vel betalingsmåte
+manage-pocket-title = Ser du etter premium-abonnementet ditt på { -brand-name-pocket }?
+manage-pocket-body = For å handsame det, <a>trykk her</a>.
+payment-method-header = Vel betalingsmåte
+# This message is used to indicate the second step in a multi step process.
+payment-method-header-second-step = 2. { payment-method-header }
 payment-method-required = Påkravd

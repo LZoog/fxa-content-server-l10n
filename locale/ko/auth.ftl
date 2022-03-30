@@ -27,12 +27,16 @@
 fxa-privacy-url = { -brand-mozilla } 개인정보처리방침
 fxa-service-url = { -product-firefox-cloud } 이용약관
 subplat-automated-email = 자동으로 발송된 이메일입니다; 잘못 온 경우, 별도의 조치가 필요하지 않습니다.
+subplat-privacy-notice = 개인 정보 보호 정책
 subplat-privacy-plaintext = 개인정보처리방침:
 subplat-update-billing-plaintext = { subplat-update-billing }:
 # Variables:
 #  $email (String) - A user's primary email address
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subplat-explainer-specific = 이 이메일은 { $email }에 { -product-firefox-account }가 있고 { $productName }에 가입했기 때문에 발송되었습니다.
+# Variables:
+#  $email (String) - A user's primary email address
+subplat-explainer-reminder-form = 이 이메일은 { $email }에 { -product-firefox-account }가 있기 때문에 발송되었습니다.
 subplat-explainer-multiple = 이 이메일은 { $email }에 { -product-firefox-account }가 있고 여러 제품을 구독했기 때문에 발송되었습니다.
 subplat-manage-account = <a data-l10n-name="subplat-account-page">계정 페이지</a> 를 방문하여 { -product-firefox-account } 설정을 관리하세요.
 subplat-terms-policy = 약관 및 취소 정책
@@ -42,12 +46,20 @@ subplat-cancel-plaintext = { subplat-cancel }:
 subplat-reactivate = 구독 재활성
 subplat-reactivate-plaintext = { subplat-reactivate }:
 subplat-update-billing = 결제 정보 업데이트
+subplat-privacy-policy = { -brand-mozilla } 개인 정보 보호 정책
 subplat-privacy-policy-plaintext = { subplat-privacy-policy }:
+subplat-cloud-terms = { -product-firefox-cloud } 이용약관
 subplat-cloud-terms-plaintext = { subplat-cloud-terms }:
 subplat-legal = 법적 고지
 subplat-legal-plaintext = { subplat-legal }:
 subplat-privacy = 개인 정보 정책
 subplat-privacy-website-plaintext = { subplat-privacy }:
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-android-badge = <img data-l10n-name="google-play-badge" alt="{ -google-play }에서 { $productName } 다운로드">
+# Variables:
+#  $productName (String) - The name of the product to be downloaded, e.g. Mozilla VPN, or Firefox
+body-ios-badge = <img data-l10n-name="apple-app-badge" alt="{ -app-store }에서 { $productName } 다운로드">
 another-desktop-device = 또는 <a data-l10n-name="anotherDeviceLink">다른 데스크톱 기기</a> 에 설치합니다.
 another-device = 또는 <a data-l10n-name="anotherDeviceLink">다른 기기</a> 에 설치합니다.
 automated-email-change = 자동으로 발송된 이메일입니다. 승인하지 않은 작업인 경우 <a data-l10n-name="passwordChangeLink">비밀번호를 변경</a>하십시오. 자세한 내용은 <a data-l10n-name="supportLink"> { -brand-mozilla }지원 페이지</a>를 참조하십시오.
@@ -64,6 +76,7 @@ automated-email-reset =
 # Variables:
 #  $resetLink (String) - Link to https://accounts.firefox.com/reset_password
 automated-email-reset-plaintext = 비밀번호를 변경하지 않으셨다면 지금 { $resetLink }에서 비밀번호를 재설정하세요.
+cancellationSurvey = 간단한 <a data-l10n-name="cancellationSurveyUrl")s>설문 조사</a>에 참여하여, 서비스 개선에 도움을 주세요.
 # After the colon, there's a link to https://survey.alchemer.com/s3/6534408/Privacy-Security-Product-Cancellation-of-Service-Q4-21
 cancellationSurvey-plaintext = 이 짧은 설문조사에 참여하셔서 서비스 개선에 도움을 주십시오.
 change-password-plaintext = 만약 누군가가 당신의 계정에 접근 시도를 했다고 의심이 된다면, 비밀번호를 변경해주세요.
@@ -72,27 +85,70 @@ change-password-plaintext = 만약 누군가가 당신의 계정에 접근 시�
 user-ip = IP 주소: { $ip }
 manage-account = 계정 관리
 manage-account-plaintext = { manage-account }:
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+payment-plan-invoice-number = 청구서 번호: { $invoiceNumber }
+# Variables:
+#  $invoiceDateOnly (String) - The date of the invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+payment-plan-charged = 청구됨: { $invoiceDateOnly }에 { $invoiceTotal }
+# Variables
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+payment-plan-next-invoice = 다음 청구일자: { $nextInvoiceDateOnly }
+# After the colon is how the user paid, e.g. PayPal or credit card
+payment-method = 지불 방식:
+payment-provider-paypal-plaintext = { payment-method } { -brand-paypal }
+# Variables:
+#  $cardType (String) - The type of the credit card, e.g. Visa
+#  $lastFour (String) - The last four digits of the credit card, e.g. 5309
+card-ending-in = { $lastFour }로 끝나는 { $cardType } 카드
 subscriptionSupport = 구독에 관해 궁금한 점이 있으신가요? <a data-l10n-name="subscriptionSupportUrl">지원팀</a>이 도와드리겠습니다.
 # After the colon, there's a link to https://accounts.firefox.com/support
 subscriptionSupport-plaintext = 구독에 대한 질문이 있으십니까? 지원팀이 도와드리겠습니다.
+# Variables
+#   $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSupportContact = { $productName }를 구독해 주셔서 감사합니다. 구독에 대해 문의하거나 { $productName }에 대해 더 알아보려면 <a data-l10n-name="subscriptionSupportUrl">연락</a>을 해주세요.
+# After the colon, there's a link to https://accounts.firefox.com/support
+subscriptionSupportContact-plaintext = { $productName }를 구독해 주셔서 감사합니다. 구독에 대해 문의하거나 { $productName }에 대해 더 알아보려면 다음으로 연락을 해주세요.
+subscriptionUpdateBillingEnsure = <a data-l10n-name="updateBillingUrl">여기</a>에서 귀하의 결제 방법과 계정 정보가 최신 상태인지 확인할 수 있습니다.
+# After the colon, there's a link to https://accounts.firefox.com/subscriptions
+subscriptionUpdateBillingEnsure-plaintext = 다음에서 결제 방법과 계정 정보가 최신 상태인지 확인할 수 있습니다:
+subscriptionUpdateBillingTry = 며칠 동안 귀하의 결제를 다시 시도하겠지만, <a data-l10n-name="updateBillingUrl">결제 정보를 업데이트</a>하여 문제를 해결하는 데 귀하의 도움이 필요할 수 있습니다.
+# After the colon, there's a link to https://accounts.firefox.com/subscriptions
+subscriptionUpdateBillingTry-plaintext = 며칠 동안 귀하의 결제를 다시 시도하겠지만 결제 정보를 업데이트하여 문제를 해결하는 데 귀하의 도움이 필요할 수 있습니다.
 subscriptionUpdatePayment = 서비스 중단을 방지하려면 가능한 한 빨리 <a data-l10n-name="updateBillingUrl">결제 정보를 업데이트</a>하시기 바랍니다.
 # After the colon, there's a link to https://accounts.firefox.com/subscriptions
 subscriptionUpdatePayment-plaintext = 서비스 중단을 방지하려면 가능한 한 빨리 결제 정보를 업데이트하십시오.
 # Variables:
 #  $supportUrl (String) - Link to https://accounts.firefox.com/support
 support-message = 자세한 내용은 { $supportUrl } 페이지를 참조하십시오.
+view-invoice = <a data-l10n-name="invoiceLink">청구서를 확인</a>하세요.
 cadReminderFirst-subject = 알림: 동기화 설정을 완료하는 방법
 cadReminderFirst-action = 다른 기기 동기화
 cadReminderFirst-title = 기기 동기화 알림입니다.
 cadReminderSecond-subject = 알림: 동기화 설정 완료
 cadReminderSecond-action = 다른 기기 동기화
 cadReminderSecond-title = 기기 동기화 마지막 알림!
+cadReminderSecond-description = 다른 기기와 { -brand-firefox }를 동기화 하면 비공개로 개인 북마크, 비밀번호 및 기타 { -brand-firefox } 데이터가 { -brand-firefox }를 사용하는 모든 곳에서 동일하게 유지됩니다.
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-subject = { $productName }에 오신 것을 환영합니다.
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-title = { $productName }에 오신 것을 환영합니다.
+#  Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+downloadSubscription-link-action = { $productName } 다운로드
 # The user has a low number of valid recovery codes remaining for use
 codes-reminder-title = 복구 코드가 얼마 남지 않았습니다
 codes-reminder-description = 복구 코드가 부족한 것을 확인했습니다. 계정이 잠겨 사용 불가능한 상황을 피하기 위해 새 코드 생성을 권장합니다.
 codes-generate = 코드 생성하기
 codes-generate-plaintext = { codes-generate }:
 lowRecoveryCodes-action = 코드 생성하기
+lowRecoveryCodes-subject =
+    { $numberRemaining ->
+       *[other] 남은 복구 코드 { $numberRemaining }개
+    }
 # Variables:
 # $clientName (String) - A client the user hasn't signed into before (e.g. Firefox, Sync)
 newDeviceLogin-subject = { $clientName }에 대한 새 로그인
@@ -110,6 +166,7 @@ passwordChangeRequired-sign-in = { -product-firefox-account } 계정을 사용�
 passwordChangeRequired-different-password = <b>중요:</b> 이전에 사용하던 것과 다른 비밀번호를 선택하고 이메일 계정과 다른지 확인하세요.
 passwordChangeRequired-signoff = 최고,
 passwordChangeRequired-signoff-name = { -product-firefox-accounts } 팀
+passwordChangeRequired-different-password-plaintext = 중요: 이전에 사용했던 것과 다른 비밀번호를 선택하세요. 이메일 계정과 다른 비밀번호인지 확인하세요.
 passwordReset-subject = 비밀번호 수정 완료
 passwordReset-title = 계정 비밀번호가 변경됨
 passwordReset-description = 동기화를 다시 시작하려면 다른 기기에서 새 비밀번호를 입력해야 합니다.
@@ -122,7 +179,9 @@ passwordResetAccountRecovery-regen-required = 새 복구 키를 생성해야합�
 passwordResetAccountRecovery-create-key = 새로운 복구 키 생성:
 postAddAccountRecovery-subject = 계정 복구 키가 생성됨
 postAddAccountRecovery-title = 계정 복구 키가 생성됨
+postAddAccountRecovery-description = 다음 기기를 이용해 성공적으로 { -product-firefox-account } 계정 복구 키를 생성하였습니다.
 postAddAccountRecovery-action = 계정 관리
+postAddAccountRecovery-recovery = 본인이 아닌 경우, <a data-l10n-name="revokeAccountRecoveryLink">여기를 클릭하세요</a>.
 postAddAccountRecovery-revoke = 본인이 한 행동이 아니라면, 키 발급을 취소하세요.
 postAddTwoStepAuthentication-subject = 2단계 인증을 사용합니다
 postAddTwoStepAuthentication-title = 2단계 인증을 사용합니다

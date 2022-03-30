@@ -1,11 +1,11 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 22:07+0000\n"
-"PO-Revision-Date: 2019-10-09 05:40+0000\n"
-"Last-Translator: Sander Lepik <sander.lepik@eesti.ee>\n"
+"POT-Creation-Date: 2022-03-24 22:07+0000\n"
+"PO-Revision-Date: 2022-03-25 05:30+0000\n"
+"Last-Translator: Sander Lepik <mozilla@lepik.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
@@ -105,41 +105,41 @@ msgstr "Ühendatud"
 msgid "Unknown account. <a href=\"/signup\">Sign up</a>"
 msgstr "Tundmatu konto. <a href=\"/signup\">Registreeru</a>"
 
-#: .es5/views/sign_up_password.js:84
+#: .es5/views/sign_up_password.js:86
 msgid "Account no longer exists. Recreate it?"
 msgstr "Kontot pole enam olemas. Kas soovid selle uuesti luua?"
 
 #: .es5/views/support.js:269 .es5/templates/support.mustache:9
 msgid "Other"
-msgstr ""
+msgstr "Muu"
 
 #: .es5/views/support.js:270
 msgid "Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b>. We'll contact you via email as soon as possible."
-msgstr ""
+msgstr "Täname, et võtsid ühendust Mozilla toega teemal <b>%(escapedLowercaseTopic)s</b>. Võtame sinuga e-posti teel ühendust esimesel võimalusel."
 
 #: .es5/views/support.js:272
 msgid "Thank you for reaching out to Mozilla Support about <b>%(escapedLowercaseTopic)s</b> for <b>%(escapedSelectedProduct)s</b>. We'll contact you via email as soon as possible."
-msgstr ""
+msgstr "Täname, et võtsid ühendust Mozilla toega teemal <b>%(escapedLowercaseTopic)s</b> teenuse <b>%(escapedSelectedProduct)s</b> kohta. Võtame sinuga e-posti teel ühendust esimesel võimalusel."
 
 #: .es5/views/post_verify/verified.js:53
 msgid "Your sync data is protected"
-msgstr ""
+msgstr "Sinu sünkroniseeritud andmed on kaitstud"
 
 #: .es5/views/post_verify/verified.js:54
 msgid "If you lose access to your account, you’ll be able to restore your sync data."
-msgstr ""
+msgstr "Kui kaotad ligipääsu oma kontole, siis saad oma sünkroniseeritud andmed taastada."
 
 #: .es5/views/post_verify/verified.js:55 .es5/templates/ready.mustache:2 .es5/templates/sms_sent.mustache:8
 msgid "Start browsing"
-msgstr ""
+msgstr "Alusta veebilehitsemist"
 
 #: .es5/views/post_verify/verified.js:58
 msgid "Account notifications will now also be sent to %(secondaryEmail)s."
-msgstr ""
+msgstr "Konto teavitusi saadetakse edaspidi ka aadressile %(secondaryEmail)s."
 
 #: .es5/views/post_verify/verified.js:59
 msgid "Continue to %(serviceName)s "
-msgstr ""
+msgstr "Jätka teenusega %(serviceName)s"
 
 #: .es5/views/mixins/account-reset-mixin.js:47 .es5/lib/auth-errors.js:119
 msgid "Your account has been locked for security reasons"
@@ -179,7 +179,7 @@ msgstr "Ava Restmail"
 
 #: .es5/views/mixins/password-mixin.js:149
 msgid "Hide password"
-msgstr ""
+msgstr "Peida parool"
 
 #: .es5/views/mixins/password-mixin.js:169 .es5/templates/partial/show-password.mustache:1 .es5/templates/partial/show-password.mustache:2
 msgid "Show password"
@@ -223,23 +223,23 @@ msgstr "Konto kinnitamine õnnestus"
 
 #: .es5/models/support-form.js:25
 msgid "payment & billing"
-msgstr ""
+msgstr "maksed ja arveldamine"
 
 #: .es5/models/support-form.js:25
 msgid "account issues"
-msgstr ""
+msgstr "konto probleemid"
 
 #: .es5/models/support-form.js:25
 msgid "technical issues"
-msgstr ""
+msgstr "tehnilised probleemid"
 
 #: .es5/models/support-form.js:25
 msgid "provide feedback / request features"
-msgstr ""
+msgstr "anna tagasisidet / taotle uut funktsionaalsust"
 
 #: .es5/models/support-form.js:25
 msgid "not listed"
-msgstr ""
+msgstr "pole loetletud"
 
 #: .es5/models/sync-engines.js:58
 msgid "Bookmarks"
@@ -251,7 +251,7 @@ msgstr "Ajalugu"
 
 #: .es5/models/sync-engines.js:66
 msgid "Logins and Passwords"
-msgstr ""
+msgstr "Kasutajatunnused ja paroolid"
 
 #: .es5/models/sync-engines.js:70
 msgid "Add-ons"
@@ -259,7 +259,7 @@ msgstr "Lisad"
 
 #: .es5/models/sync-engines.js:74
 msgid "Open Tabs"
-msgstr ""
+msgstr "Avatud kaardid"
 
 #: .es5/models/sync-engines.js:78
 msgid "Preferences"
@@ -271,11 +271,11 @@ msgstr "Aadressid"
 
 #: .es5/models/sync-engines.js:94
 msgid "Credit Cards"
-msgstr ""
+msgstr "Krediitkaardid"
 
 #: .es5/models/reliers/browser.js:88
 msgid "Firefox"
-msgstr ""
+msgstr "Firefox"
 
 #: .es5/models/auth_brokers/base.js:110
 msgid "Primary email verified successfully"
@@ -407,7 +407,7 @@ msgstr "Selle e-posti aadressi kinnitas juba teine kasutaja"
 
 #: .es5/lib/auth-errors.js:160
 msgid "Unverified session"
-msgstr ""
+msgstr "Kinnitamata seanss"
 
 #: .es5/lib/auth-errors.js:164
 msgid "Secondary email must be different than your account email"
@@ -415,11 +415,11 @@ msgstr "Teine e-posti aadress peab erinema konto peamisest e-posti aadressist."
 
 #: .es5/lib/auth-errors.js:172
 msgid "You have reached the maximum allowed secondary emails"
-msgstr ""
+msgstr "Oled jõudnud maksimaalselt lubatud teiseste e-posti aadresside arvuni"
 
 #: .es5/lib/auth-errors.js:176
 msgid "This email already exists on your account"
-msgstr ""
+msgstr "See e-posti aadress on juba sinu kontoga seotud"
 
 #: .es5/lib/auth-errors.js:184
 msgid "Primary account email required for sign-in"
@@ -511,15 +511,15 @@ msgstr "Kehtetu maksevahend tellimuse esitamiseks."
 
 #: .es5/lib/auth-errors.js:280
 msgid "Subscription has already been cancelled"
-msgstr ""
+msgstr "Tellimus on juba tühistatud"
 
 #: .es5/lib/auth-errors.js:284
 msgid "Update was rejected, please try again"
-msgstr ""
+msgstr "Uuendamine lükati tagasi, palun proovi uuesti"
 
 #: .es5/lib/auth-errors.js:288
 msgid "Invalid or expired verification code"
-msgstr ""
+msgstr "Vigane või aegunud kinnituskood"
 
 #: .es5/lib/auth-errors.js:292 .es5/lib/auth-errors.js:493
 msgid "Server busy, try again soon"
@@ -692,15 +692,15 @@ msgstr "Palun sisesta kinnituskood"
 
 #: .es5/lib/auth-errors.js:601
 msgid "Invalid redirect"
-msgstr ""
+msgstr "Vigane ümbersuunamine"
 
 #: .es5/lib/auth-errors.js:613
 msgid "Mistyped email? %(domain)s does not offer email."
-msgstr ""
+msgstr "Kirjutasid e-posti aadressi valesti? %(domain)s ei paku e-posti teenust."
 
 #: .es5/lib/auth-errors.js:617
 msgid "The image file size is too large to be uploaded."
-msgstr ""
+msgstr "Pildifaili suurus on üleslaadimiseks liiga suur."
 
 #: .es5/lib/config-loader.js:117
 msgid "Missing configuration"
@@ -716,7 +716,7 @@ msgstr "Eksisid e-posti aadressiga?"
 
 #: .es5/lib/newsletters.js:25
 msgid "Test new Firefox products"
-msgstr ""
+msgstr "Testi uusi Firefoxi tooteid"
 
 #: .es5/lib/newsletters.js:29 .es5/lib/newsletters.js:48
 msgid "Get the latest news about Mozilla and Firefox"
@@ -724,23 +724,23 @@ msgstr "Hangi viimased Mozilla ja Firefoxi uudised"
 
 #: .es5/lib/newsletters.js:33
 msgid "Take action to keep the internet healthy"
-msgstr ""
+msgstr "Võta kasutusele meetmeid interneti tervena hoidmiseks"
 
 #: .es5/lib/newsletters.js:37
 msgid "Be safer and smarter online"
-msgstr ""
+msgstr "Ole võrgus turvaliselt ja targalt"
 
 #: .es5/lib/newsletters.js:44
 msgid "Testing Firefox products"
-msgstr ""
+msgstr "Firefoxi toodete testimine"
 
 #: .es5/lib/newsletters.js:52
 msgid "Taking action to keep the internet healthy"
-msgstr ""
+msgstr "Meetmete kasutusele võtmine, et hoida internet tervena"
 
 #: .es5/lib/newsletters.js:56
 msgid "Safety and privacy online with Firefox and Mozilla"
-msgstr ""
+msgstr "Turvalisus ja privaatsus veebis Firefoxi ja Mozillaga"
 
 #: .es5/lib/oauth-errors.js:34
 msgid "Unknown client"
@@ -796,19 +796,19 @@ msgstr "Puuduv OAuth parameeter: %(param)s"
 
 #: .es5/lib/oauth-errors.js:181
 msgid "User is not signed in"
-msgstr ""
+msgstr "Kasutaja pole sisse logitud"
 
 #: .es5/lib/oauth-errors.js:186
 msgid "A different user is signed in"
-msgstr ""
+msgstr "Teine kasutaja on sisse logitud"
 
 #: .es5/lib/oauth-errors.js:191
 msgid "Unverified user or session"
-msgstr ""
+msgstr "Kinnitamata kasutaja või seanss"
 
 #: .es5/lib/oauth-errors.js:196
 msgid "Invalid id_token_hint"
-msgstr ""
+msgstr "Vigane id_token_hint"
 
 #: .es5/lib/pairing-channel-client-errors.js:44
 msgid "Invalid message from the remote device"
@@ -839,15 +839,12 @@ msgid "Invalid Token"
 msgstr "Vigane turvatõend"
 
 #: .es5/lib/strings.js:25
-msgid ""
-"By proceeding, you agree to the <a id=\"service-tos\" href=\"%(termsUri)s\">Terms of Service</a> and<a id=\"service-pp\" href=\"%(privacyUri)s\">Privacy Notice</a> of %(serviceName)s "
-"(%(serviceUri)s)."
-msgstr ""
-"Jätkates nõustud <a id=\"service-tos\" href=\"%(termsUri)s\">Teenusetingimuste</a> ja teenuse %(serviceName)s (%(serviceUri)s) <a id=\"service-pp\" href=\"%(privacyUri)s\">Privaatsuspoliitikaga</a>."
+msgid "By proceeding, you agree to the <a id=\"service-tos\" href=\"%(termsUri)s\">Terms of Service</a> and<a id=\"service-pp\" href=\"%(privacyUri)s\">Privacy Notice</a> of %(serviceName)s (%(serviceUri)s)."
+msgstr "Jätkates nõustud <a id=\"service-tos\" href=\"%(termsUri)s\">Teenusetingimuste</a> ja teenuse %(serviceName)s (%(serviceUri)s) <a id=\"service-pp\" href=\"%(privacyUri)s\">Privaatsuspoliitikaga</a>."
 
 #: .es5/lib/strings.js:31
 msgid "<a href=\"https://support.mozilla.org/kb/im-having-problems-my-firefox-account\">Help</a>"
-msgstr ""
+msgstr "<a href=\"https://support.mozilla.org/kb/im-having-problems-my-firefox-account\">Abi</a>"
 
 #: .es5/lib/strings.js:34
 msgid "Get the latest news about Mozilla and Firefox."
@@ -912,8 +909,7 @@ msgid "Please enter the one time use recovery key you stored in a safe place to 
 msgstr "Palun sisesta ühekordseks kasutamiseks mõeldud taastamisvõti, mille oled turvalises kohas säilitanud Firefoxi kontole ligipääsu taastamiseks."
 
 #: .es5/templates/account_recovery_confirm_key.mustache:8
-msgid ""
-"<span class=\"note\">NOTE:</span> If you reset your password and don't have account recovery key saved, some of your data will be erased (including synced server data like history and bookmarks)."
+msgid "<span class=\"note\">NOTE:</span> If you reset your password and don't have account recovery key saved, some of your data will be erased (including synced server data like history and bookmarks)."
 msgstr ""
 "<span class=\"note\">MÄRKUS:</span> Kui lähtestad parooli ilma konto taastamisvõtmeta, kustutatakse osa sinu andmetest (kaasa arvatud sünkroonitud andmed serveris, näiteks ajalugu ja järjehoidjad)."
 
@@ -944,15 +940,15 @@ msgstr "Rohkem teavet"
 
 #: .es5/templates/choose_what_to_sync.mustache:1 .es5/templates/sign_up_password.mustache:13
 msgid "Choose what to sync:"
-msgstr ""
+msgstr "Sünkroniseeritavate asjade valik:"
 
 #: .es5/templates/choose_what_to_sync.mustache:4
 msgid "Sync selections"
-msgstr ""
+msgstr "Sünkroniseerimise valikud"
 
 #: .es5/templates/choose_what_to_sync.mustache:5 .es5/templates/would-you-like-to-sync.mustache:3
 msgid "Don’t sync this device"
-msgstr ""
+msgstr "Ära sünkroniseeri seda seadet"
 
 #: .es5/templates/complete_reset_password.mustache:5
 msgid "Reset password link damaged"
@@ -971,6 +967,8 @@ msgid ""
 "<span>REMEMBER:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt "
 "your data with your password to protect your privacy. You’ll still keep any subscriptions you may have and Pocket data will not be affected."
 msgstr ""
+"<span>PEA MEELES:</span> Kui lähtestad selle parooli, siis lähtestatakse ka sinu konto. Võid selle käigus kaotada osa enda isiklikest andmetest (muuhulgas ajaloo, järjehoidjad ja paroolid). See on "
+"nii seepärast, et krüpteerime sinu andmed privaatsuse kaitsmiseks parooli abil. Alles jäävad kõik võimalikud tellimused ja Pocketi andmeid see samuti ei mõjuta."
 
 #: .es5/templates/complete_reset_password.mustache:11
 msgid "You have successfully restored your account using your recovery key. Create a new password to secure your data, and store it in a safe location."
@@ -1045,15 +1043,15 @@ msgstr "Uue parooli loomiseks klõpsa e-postiga aadressile %(email)s saadetud li
 #: .es5/templates/confirm_signup_code.mustache:1 .es5/templates/post_verify/secondary_email/confirm_secondary_email.mustache:1
 #: .es5/templates/post_verify/secondary_email/confirm_secondary_email.mustache:4
 msgid "Enter verification code"
-msgstr ""
+msgstr "Sisesta kinnituskood"
 
 #: .es5/templates/confirm_signup_code.mustache:2 .es5/templates/index.mustache:2 .es5/templates/sign_in_password.mustache:2 .es5/templates/sign_up_password.mustache:2
 msgid "Continue to <div class=\"graphic %(serviceLogo)s\">%(serviceName)s</div>"
-msgstr ""
+msgstr "Jätka teenusega <div class=\"graphic %(serviceLogo)s\">%(serviceName)s</div>"
 
 #: .es5/templates/confirm_signup_code.mustache:5 .es5/templates/post_verify/secondary_email/confirm_secondary_email.mustache:5
 msgid "Please enter the verification code that was sent to %(escapedEmail)s within 5 minutes."
-msgstr ""
+msgstr "Palun sisesta kinnituskood, mis saadeti 5 minuti jooksul aadressile %(escapedEmail)s."
 
 #: .es5/templates/confirm_signup_code.mustache:6 .es5/templates/sign_in_token_code.mustache:4 .es5/templates/sign_in_totp_code.mustache:4
 #: .es5/templates/post_verify/secondary_email/confirm_secondary_email.mustache:6
@@ -1067,7 +1065,7 @@ msgstr "Kinnita"
 
 #: .es5/templates/confirm_signup_code.mustache:8 .es5/templates/sign_in_token_code.mustache:6 .es5/templates/post_verify/secondary_email/confirm_secondary_email.mustache:8
 msgid "Need another code? Resend"
-msgstr ""
+msgstr "Vajad uut koodi? Saada uuesti"
 
 #: .es5/templates/connect_another_device.mustache:1 .es5/templates/sms_send.mustache:4 .es5/templates/pair/index.mustache:1
 msgid "Connect another device"
@@ -1083,7 +1081,7 @@ msgstr "E-post on kinnitatud"
 
 #: .es5/templates/connect_another_device.mustache:9
 msgid "Complete your set-up"
-msgstr ""
+msgstr "Vii seadistamine lõpule"
 
 #: .es5/templates/connect_another_device.mustache:10
 msgid "Sign in to this Firefox to complete set-up"
@@ -1158,11 +1156,11 @@ msgstr "Jätka"
 
 #: .es5/templates/inline_recovery_setup.mustache:1
 msgid "Save recovery codes"
-msgstr ""
+msgstr "Salvesta taastekoodid"
 
 #: .es5/templates/inline_recovery_setup.mustache:3
 msgid "Store these one-time use codes in a safe place for when you don't have your mobile device."
-msgstr ""
+msgstr "Salvesta need ühekordselt kasutatavad koodid turvaliselt, et kasutada neid siis, kui mobiilset seadet pole käepärast."
 
 #: .es5/templates/inline_recovery_setup.mustache:5 .es5/templates/post_verify/account_recovery/save_recovery_key.mustache:5
 msgid "Download"
@@ -1179,19 +1177,19 @@ msgstr "Prindi"
 
 #: .es5/templates/inline_recovery_setup.mustache:11 .es5/templates/inline_recovery_setup.mustache:18 .es5/templates/inline_totp_setup.mustache:5 .es5/templates/inline_totp_setup.mustache:21
 msgid "Cancel setup"
-msgstr ""
+msgstr "Katkesta seadistamine"
 
 #: .es5/templates/inline_recovery_setup.mustache:12
 msgid "Confirm recovery code"
-msgstr ""
+msgstr "Kinnita taastekood"
 
 #: .es5/templates/inline_recovery_setup.mustache:14
 msgid "To ensure that you will be able to regain access to your account, in the event of a lost device, please enter one of your saved recovery codes."
-msgstr ""
+msgstr "Seadme kaotamise korral oma kontole ligipääsu taastamiseks sisesta üks oma salvestatud taastekoodidest."
 
 #: .es5/templates/inline_recovery_setup.mustache:15
 msgid "Recovery code"
-msgstr ""
+msgstr "Taastekood"
 
 #: .es5/templates/inline_recovery_setup.mustache:16 .es5/templates/post_verify/account_recovery/confirm_recovery_key.mustache:7
 msgid "Confirm"
@@ -1199,7 +1197,7 @@ msgstr "Kinnita"
 
 #: .es5/templates/inline_totp_setup.mustache:1
 msgid "Enable two-step authentication"
-msgstr ""
+msgstr "Luba kaheastmeline autentimine"
 
 #: .es5/templates/inline_totp_setup.mustache:3
 msgid "Add a layer of security to your account by requiring security codes from one of <a %(escapedTotpSupportAttributes)s>these authentication apps</a>."
@@ -1207,11 +1205,11 @@ msgstr "Enda konto turvalisemaks muutmiseks võid nõuda mõnest <a %(escapedTot
 
 #: .es5/templates/inline_totp_setup.mustache:7
 msgid "Scan authentication code"
-msgstr ""
+msgstr "Skanni autentimiskood"
 
 #: .es5/templates/inline_totp_setup.mustache:10
 msgid "Enter code manually"
-msgstr ""
+msgstr "Sisesta kood käsitsi"
 
 #: .es5/templates/inline_totp_setup.mustache:12
 msgid "Scan the QR code in your authentication app and then enter the security code it provides."
@@ -1223,15 +1221,15 @@ msgstr "Ei saa koodi skaneerida?"
 
 #: .es5/templates/inline_totp_setup.mustache:14 .es5/templates/inline_totp_setup.mustache:18
 msgid "Once complete, it will begin generating security codes for you to enter."
-msgstr ""
+msgstr "Kui see tegevus on lõpule viidud, siis hakkab see genereerima sisestamiseks vajalikke turvakoode."
 
 #: .es5/templates/inline_totp_setup.mustache:16
 msgid "Type this secret key into your authentication app."
-msgstr ""
+msgstr "Sisesta see turvakood oma autentimisrakendusse."
 
 #: .es5/templates/inline_totp_setup.mustache:17
 msgid "Scan QR code instead?"
-msgstr ""
+msgstr "Kas selle asemel skannida QR-kood?"
 
 #: .es5/templates/inline_totp_setup.mustache:19
 msgid "Security code"
@@ -1239,7 +1237,7 @@ msgstr "Turvakood"
 
 #: .es5/templates/inline_totp_setup.mustache:20
 msgid "Ready"
-msgstr ""
+msgstr "Valmis"
 
 #: .es5/templates/legal.mustache:1
 msgid "Legal"
@@ -1294,7 +1292,7 @@ msgstr "Õnnestus"
 
 #: .es5/templates/ready.mustache:4
 msgid "You are now ready to use <div class=\"graphic %(serviceLogo)s\">%(serviceName)s</div>"
-msgstr ""
+msgstr "Oled nüüd valmis kasutama teenust <div class=\"graphic %(serviceLogo)s\">%(serviceName)s</div>"
 
 #: .es5/templates/ready.mustache:10 .es5/templates/ready.mustache:16
 msgid "Continue to my account"
@@ -1329,6 +1327,8 @@ msgid ""
 "<span>NOTE:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt your "
 "data with your password to protect your privacy. You’ll still keep any subscriptions you may have and Pocket data will not be affected."
 msgstr ""
+"<span>MÄRKUS:</span> Kui lähtestad selle parooli, siis lähtestatakse ka sinu konto. Võid selle käigus kaotada osa enda isiklikest andmetest (muuhulgas ajaloo, järjehoidjad ja paroolid). See on nii "
+"seepärast, et krüpteerime sinu andmed privaatsuse kaitsmiseks parooli abil. Alles jäävad kõik võimalikud tellimused ja Pocketi andmeid see samuti ei mõjuta."
 
 #: .es5/templates/reset_password.mustache:6
 msgid "Begin reset"
@@ -1336,15 +1336,15 @@ msgstr "Alusta lähtestamist"
 
 #: .es5/templates/security_events.mustache:1
 msgid "Recent Activity"
-msgstr ""
+msgstr "Hiljutine tegevus"
 
 #: .es5/templates/security_events.mustache:2
 msgid "Security Events"
-msgstr ""
+msgstr "Turvasündmused"
 
 #: .es5/templates/security_events.mustache:3
 msgid "Event Name"
-msgstr ""
+msgstr "Sündmuse nimi"
 
 #: .es5/templates/security_events.mustache:4
 msgid "Verified"
@@ -1352,15 +1352,15 @@ msgstr "Kinnitatud"
 
 #: .es5/templates/security_events.mustache:5
 msgid "Created At"
-msgstr ""
+msgstr "Loodud"
 
 #: .es5/templates/security_events.mustache:7
 msgid "Delete events"
-msgstr ""
+msgstr "Kustuta sündmused"
 
 #: .es5/templates/security_events.mustache:8
 msgid "Back to settings"
-msgstr ""
+msgstr "Tagasi sätetesse"
 
 #: .es5/templates/sign_in_bounced.mustache:1
 msgid "Sorry. We’ve locked your&nbsp;account."
@@ -1386,6 +1386,11 @@ msgid ""
 "              Firefox’s <a id=\"fxa-tos\" href=\"/legal/terms\">Terms of Service</a> and <a id=\"fxa-pp\" href=\"/legal/privacy\">Privacy Notice</a>\n"
 "            "
 msgstr ""
+"\n"
+"              Jätkates nõustud järgnevaga:<br />\n"
+"              Pocketi <a id=\"pocket-tos\" href=\"https://getpocket.com/en/tos/\">teenusetingimustega</a> ja <a id=\"pocket-pp\" href=\"https://getpocket.com/en/privacy/\">privaatsusreeglitega</a><br />\n"
+"              Firefoxi <a id=\"fxa-tos\" href=\"/legal/terms\">teenusetingimustega</a> ja <a id=\"fxa-pp\" href=\"/legal/privacy\">privaatsusreeglitega</a>\n"
+"            "
 
 #: .es5/templates/sign_in_recovery_code.mustache:1
 msgid "Enter recovery code"
@@ -1401,7 +1406,7 @@ msgstr "Sisesta 10-kohaline taastamiskood"
 
 #: .es5/templates/sign_in_recovery_code.mustache:7
 msgid "Are you locked out?"
-msgstr ""
+msgstr "Kas sa oled välja lukustatud?"
 
 #: .es5/templates/sign_in_reported.mustache:1
 msgid "Thank you for your vigilance"
@@ -1430,7 +1435,7 @@ msgstr "Ava oma autentimise äpp ja sisesta selle poolt genereeritud turvakood."
 
 #: .es5/templates/sign_in_totp_code.mustache:7
 msgid "Trouble entering code?"
-msgstr ""
+msgstr "Kas sul on koodi sisestamisega probleeme?"
 
 #: .es5/templates/sign_in_unblock.mustache:3
 msgid "Check your email for the authorization code sent to %(email)s."
@@ -1446,7 +1451,7 @@ msgstr "Firefoxi konto loomine"
 
 #: .es5/templates/sign_up_password.mustache:5
 msgid "Change email"
-msgstr ""
+msgstr "Muuda e-posti aadressi"
 
 #: .es5/templates/sign_up_password.mustache:8
 msgid "Repeat password"
@@ -1454,11 +1459,11 @@ msgstr "Korda parooli"
 
 #: .es5/templates/sign_up_password.mustache:9
 msgid "You need this password to access any encrypted data you store with us.<br/>A reset means potentially losing data like passwords and bookmarks."
-msgstr ""
+msgstr "Sa vajad seda parooli, et pääseda ligi meie juures salvestatud krüptitud andmetele.<br/>Lähtestamine tähendab andmete, nagu paroolid ja järjehoidjad, potentsiaalset kaotamist."
 
 #: .es5/templates/sign_up_password.mustache:10
 msgid "Practical knowledge is coming to your inbox. Sign up for more:"
-msgstr ""
+msgstr "Praktilised teadmised tulevad sinu postkasti. Lisateabe saamiseks registreeru:"
 
 #: .es5/templates/sign_up_password.mustache:17
 msgid "Create account"
@@ -1472,14 +1477,19 @@ msgid ""
 "            Firefox’s <a id=\"fxa-tos\" href=\"/legal/terms\">Terms of Service</a> and <a id=\"fxa-pp\" href=\"/legal/privacy\">Privacy Notice</a>\n"
 "          "
 msgstr ""
+"\n"
+"              Jätkates nõustud järgnevaga:<br />\n"
+"              Pocketi <a id=\"pocket-tos\" href=\"https://getpocket.com/en/tos/\">teenusetingimustega</a> ja <a id=\"pocket-pp\" href=\"https://getpocket.com/en/privacy/\">privaatsusreeglitega</a><br />\n"
+"              Firefoxi <a id=\"fxa-tos\" href=\"/legal/terms\">teenusetingimustega</a> ja <a id=\"fxa-pp\" href=\"/legal/privacy\">privaatsusreeglitega</a>\n"
+"            "
 
 #: .es5/templates/sms_send.mustache:5
 msgid "Would you like to sync your phone?"
-msgstr ""
+msgstr "Kas soovid sünkroniseerida oma telefoni?"
 
 #: .es5/templates/sms_send.mustache:8
 msgid "Send a link by SMS to install Firefox on your phone."
-msgstr ""
+msgstr "Saada SMSiga link Firefoxi telefoni paigaldamiseks."
 
 #: .es5/templates/sms_send.mustache:9
 msgid "Mobile phone number"
@@ -1491,7 +1501,7 @@ msgstr "Saada"
 
 #: .es5/templates/sms_send.mustache:11
 msgid "SMS &amp; data rates may apply. The recipient’s consent is required. <a %(escapedLearnMoreAttributes)s>Learn more</a>"
-msgstr ""
+msgstr "SMS &amp; rakenduda võivad andmesidetasud. Nõutav on saaja nõusolek. <a %(escapedLearnMoreAttributes)s>Rohkem teavet</a>"
 
 #: .es5/templates/sms_send.mustache:12 .es5/templates/why_connect_another_device.mustache:1
 msgid "Why sync multiple devices?"
@@ -1499,27 +1509,27 @@ msgstr "Miks sünkroonida mitut seadet?"
 
 #: .es5/templates/sms_send.mustache:13
 msgid "Not now"
-msgstr ""
+msgstr "Mitte praegu"
 
 #: .es5/templates/sms_sent.mustache:1
 msgid "Check your texts"
-msgstr ""
+msgstr "Kontrolli oma sõnumeid"
 
 #: .es5/templates/sms_sent.mustache:2
 msgid "We've sent you a text message"
-msgstr ""
+msgstr "Saatsime sulle SMSi"
 
 #: .es5/templates/sms_sent.mustache:3
 msgid "A link to the Firefox app was sent to %(escapedPhoneNumber)s"
-msgstr ""
+msgstr "Link Firefoxi rakendusele saadeti numbrile %(escapedPhoneNumber)s"
 
 #: .es5/templates/sms_sent.mustache:4
 msgid "Wrong number?"
-msgstr ""
+msgstr "Vale number?"
 
 #: .es5/templates/sms_sent.mustache:5
 msgid "If you are not receiving the SMS message, you can also search your app store for “Firefox.”"
-msgstr ""
+msgstr "Kui sa ei saanud SMSi, siis võid proovida ka otsida oma rakenduste poest fraasi “Firefox”."
 
 #: .es5/templates/sms_sent.mustache:6
 msgid "Didn't arrive? Resend"
@@ -1527,7 +1537,7 @@ msgstr "Ei jõudnud kohale? Saada uuesti"
 
 #: .es5/templates/sms_sent.mustache:7
 msgid "Why sign in on another device?"
-msgstr ""
+msgstr "Miks logida sisse teises seadmes?"
 
 #: .es5/templates/support.mustache:1
 msgid "Firefox Accounts"
@@ -1535,7 +1545,7 @@ msgstr "Firefox Accounts"
 
 #: .es5/templates/support.mustache:2
 msgid "Account Home"
-msgstr ""
+msgstr "Konto avaleht"
 
 #: .es5/templates/support.mustache:3
 msgid "Subscriptions"
@@ -1543,51 +1553,51 @@ msgstr "Tellimused"
 
 #: .es5/templates/support.mustache:4 .es5/templates/support.mustache:5
 msgid "Contact Us"
-msgstr ""
+msgstr "Võta meiega ühendust"
 
 #: .es5/templates/support.mustache:6
 msgid "What are you contacting us about?"
-msgstr ""
+msgstr "Mille pärast sa meiega ühendust võtad?"
 
 #: .es5/templates/support.mustache:7 .es5/templates/support.mustache:11 .es5/templates/support.mustache:18
 msgid "Please select one"
-msgstr ""
+msgstr "Vali üks"
 
 #: .es5/templates/support.mustache:10
 msgid "What do you need help with?"
-msgstr ""
+msgstr "Millega sa abi vajad?"
 
 #: .es5/templates/support.mustache:12
 msgid "Payment & billing"
-msgstr ""
+msgstr "Maksed ja arveldamine"
 
 #: .es5/templates/support.mustache:13
 msgid "Account issues"
-msgstr ""
+msgstr "Konto probleemid"
 
 #: .es5/templates/support.mustache:14
 msgid "Technical issues"
-msgstr ""
+msgstr "Tehnilised probleemid"
 
 #: .es5/templates/support.mustache:15
 msgid "Provide feedback / request features"
-msgstr ""
+msgstr "Anna tagasisidet / taotle uut funktsionaalsust"
 
 #: .es5/templates/support.mustache:16
 msgid "Not listed"
-msgstr ""
+msgstr "Pole loetletud"
 
 #: .es5/templates/support.mustache:17
 msgid "Do you need help with a specific app or service? (optional)"
-msgstr ""
+msgstr "Kas vajad abi kindla rakenduse või teenusega? (valikuline)"
 
 #: .es5/templates/support.mustache:19
 msgid "Subject (optional)"
-msgstr ""
+msgstr "Teema (valikuline)"
 
 #: .es5/templates/support.mustache:20
 msgid "Description of issue"
-msgstr ""
+msgstr "Probleemi kirjeldus"
 
 #: .es5/templates/why_connect_another_device.mustache:2
 msgid "The Sync service isn’t a permanent backup, it’s simply a secure way to transfer saved bookmarks, history and passwords between your own devices."
@@ -1603,11 +1613,11 @@ msgstr "Sain aru"
 
 #: .es5/templates/would-you-like-to-sync.mustache:1
 msgid "Would you like to sync this device to your account?"
-msgstr ""
+msgstr "Kas soovid selle seadme oma kontoga sünkroniseerida?"
 
 #: .es5/templates/would-you-like-to-sync.mustache:2
 msgid "Sync this device"
-msgstr ""
+msgstr "Sünkroniseeri see seade"
 
 #: .es5/templates/settings/account_recovery/confirm_password.mustache:1
 msgid "Step 1 of 2: Re-enter password"
@@ -1623,15 +1633,15 @@ msgstr "Sisesta parool"
 
 #: .es5/templates/push/completed.mustache:2 .es5/templates/pair/auth_complete.mustache:2
 msgid "Successfully connected"
-msgstr ""
+msgstr "Ühendus õnnestus"
 
 #: .es5/templates/push/completed.mustache:3
 msgid "Please close this page and continue on the other device."
-msgstr ""
+msgstr "Palun sulge see leht ja jätka teises seadmes."
 
 #: .es5/templates/push/confirm_login.mustache:1
 msgid "New sign-in to Firefox"
-msgstr ""
+msgstr "Uus sisselogimine Firefoxi"
 
 #: .es5/templates/push/confirm_login.mustache:3
 msgid "Confirm sign-in"
@@ -1639,31 +1649,31 @@ msgstr "Kinnita sisselogimine"
 
 #: .es5/templates/push/confirm_login.mustache:4
 msgid "If you suspect that someone is trying to gain access to your account, <a id=\"change-password\" href=\"/settings/change_password\">please change your password.</a>"
-msgstr ""
+msgstr "Kui kahtlustad, et keegi teine püüab sinu kontot kasutada, siis <a id=\"change-password\" href=\"/settings/change_password\">palun vaheta oma parool ära</a>."
 
 #: .es5/templates/push/send_login.mustache:2
 msgid "Send login push notification"
-msgstr ""
+msgstr "Saadetakse sisselogimise teavitusi"
 
 #: .es5/templates/push/send_login.mustache:3
 msgid "Check your connected Firefox devices for the sign-in confirmation tab we've sent."
-msgstr ""
+msgstr "Kontrolli oma ühendatud Firefoxi seadmeid, et näha saadetud sisselogimise kinnituskaarti."
 
 #: .es5/templates/push/send_login.mustache:4
 msgid "Resend tab"
-msgstr ""
+msgstr "Saada kaart uuesti"
 
 #: .es5/templates/push/send_login.mustache:5
 msgid "Tab not arriving? Send an email instead"
-msgstr ""
+msgstr "Kaart ei saabu? Saada selle asemel e-kiri"
 
 #: .es5/templates/post_verify/secondary_email/add_secondary_email.mustache:1 .es5/templates/post_verify/secondary_email/add_secondary_email.mustache:4
 msgid "Add a secondary email address"
-msgstr ""
+msgstr "Lisa teine e-posti aadress"
 
 #: .es5/templates/post_verify/secondary_email/add_secondary_email.mustache:5
 msgid "Adding a secondary email helps you get back into your account if you are locked out and can not access %(escapedEmail)s."
-msgstr ""
+msgstr "Teise e-posti aadressi lisamine aitab sind sinu kontosse tagasi, kui oled välja lukustatud ja ei pääse ligi aadressi %(escapedEmail)s kirjadele."
 
 #: .es5/templates/post_verify/secondary_email/add_secondary_email.mustache:6
 msgid "Secondary email"
@@ -1676,24 +1686,24 @@ msgstr "Ehk hiljem"
 
 #: .es5/templates/post_verify/secondary_email/confirm_secondary_email.mustache:9
 msgid "Use a different email"
-msgstr ""
+msgstr "Kasuta teist e-posti"
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:1 .es5/templates/post_verify/password/force_password_change.mustache:4
 msgid "Please change your password"
-msgstr ""
+msgstr "Palun muuda oma parooli,"
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:2
 msgid "to continue to %(serviceName)s"
-msgstr ""
+msgstr "et jätkata teenusega %(serviceName)s"
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:5
 msgid ""
 "We detected suspicious behavior on your Firefox account. To protect your account, please create a new password. You’ll use this password to sign back in to all of your Firefox account services."
-msgstr ""
+msgstr "Tuvastasime sinu Firefoxi kontol kahtlase käitumise. Oma konto kaitsmiseks loo palun uus parool. Kasuta seda parooli kõigisse oma Firefoxi konto teenustesse uuesti sisselogimiseks."
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:6
 msgid "Synced history, bookmarks, logins, and other personal data will not be lost."
-msgstr ""
+msgstr "Sünkroniseeritud ajalugu, järjehoidjad, kasutajakontod ja muud isiklikud andmed ei lähe kaduma."
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:7
 msgid "Old password"
@@ -1701,7 +1711,7 @@ msgstr "Vana parool"
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:9
 msgid "Re-enter new password"
-msgstr ""
+msgstr "Sisesta uus parool uuesti"
 
 #: .es5/templates/post_verify/password/force_password_change.mustache:10
 msgid "Change password"
@@ -1709,152 +1719,156 @@ msgstr "Muuda parool"
 
 #: .es5/templates/post_verify/newsletters/add_newsletters.mustache:3
 msgid "Sign up for more"
-msgstr ""
+msgstr "Lisateabe saamiseks registreeru"
 
 #: .es5/templates/post_verify/newsletters/add_newsletters.mustache:4
 msgid "Practical knowledge is coming to your inbox."
-msgstr ""
+msgstr "Praktilised teadmised tulevad sinu postkasti."
 
 #: .es5/templates/post_verify/newsletters/add_newsletters.mustache:6
 msgid "Get practical knowledge in your inbox about:"
-msgstr ""
+msgstr "Hangi oma postkasti praktilisi teadmisi:"
 
 #: .es5/templates/post_verify/newsletters/add_newsletters.mustache:8
 msgid "Subscribe %(email)s"
-msgstr ""
+msgstr "Telli %(email)s"
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:2
 msgid "The link you clicked was missing characters, and may have been broken by your email client."
-msgstr ""
+msgstr "Lingil, millel klõpsasid, puudusid tähemärgid ja sinu e-posti klient võis selle rikkuda."
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:5
 msgid "Continue to %(productName)s"
-msgstr ""
+msgstr "Jätka teenusega %(productName)s"
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:8
 msgid "Enter a password"
-msgstr ""
+msgstr "Sisesta parool"
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:9 .es5/templates/post_verify/account_recovery/confirm_password.mustache:1
 #: .es5/templates/post_verify/account_recovery/confirm_password.mustache:4
 msgid "Confirm password"
-msgstr ""
+msgstr "Kinnita parool"
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:10
 msgid "Create Password"
-msgstr ""
+msgstr "Määra parool"
 
 #: .es5/templates/post_verify/cad_qr/connected.mustache:1
 msgid "Device connected!"
-msgstr ""
+msgstr "Seade on ühendatud!"
 
 #: .es5/templates/post_verify/cad_qr/connected.mustache:4
 msgid "Connect another one"
-msgstr ""
+msgstr "Ühenda veel üks"
 
 #: .es5/templates/post_verify/cad_qr/connected.mustache:5
 msgid "Use SMS instead"
-msgstr ""
+msgstr "Kasuta selle asemel SMSi"
 
 #: .es5/templates/post_verify/cad_qr/connected.mustache:6
 msgid "I'm done for now"
-msgstr ""
+msgstr "Olen praeguseks lõpetanud"
 
 #: .es5/templates/post_verify/cad_qr/get_started.mustache:1
 msgid "Sync Firefox between devices"
-msgstr ""
+msgstr "Sünkroniseeri Firefox seadmete vahel"
 
 #: .es5/templates/post_verify/cad_qr/get_started.mustache:2
 msgid "Sync bookmarks, history, and passwords to Firefox on your mobile devices. It only takes a few minutes."
-msgstr ""
+msgstr "Sünkroniseeri järjehoidjad, ajalugu ja paroolid Firefoxi oma kõigis mobiilsetes seadmetes. See võtab vaid mõne minuti."
 
 #: .es5/templates/post_verify/cad_qr/get_started.mustache:3
 msgid "Get started"
-msgstr ""
+msgstr "Tee algust"
 
 #: .es5/templates/post_verify/cad_qr/get_started.mustache:4 .es5/templates/post_verify/cad_qr/ready_to_scan.mustache:4
 msgid "I'll do this later, send me a reminder"
-msgstr ""
+msgstr "Teen seda hiljem, saatke mulle meeldetuletus"
 
 #: .es5/templates/post_verify/cad_qr/ready_to_scan.mustache:1
 msgid "Download Firefox with your camera app"
-msgstr ""
+msgstr "Laadi Firefox alla kaamera äpi abil"
 
 #: .es5/templates/post_verify/cad_qr/ready_to_scan.mustache:2
 msgid "Installing Firefox and syncing between at least two devices also protects against losing your data."
-msgstr ""
+msgstr "Firefox paigaldamine ja sünkroniseerimine vähemalt kahte seadmesse kaitseb ka teie andmeid kadumise eest."
 
 #: .es5/templates/post_verify/cad_qr/ready_to_scan.mustache:3
 msgid "Ready to scan"
-msgstr ""
+msgstr "Skannimiseks valmis"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:1
 msgid "<h1 id=\"fxa-cad-qr-connect-your-mobile-device-header\">Connect your mobile device</h1><p>with a QR code we've created just for you</p>"
-msgstr ""
+msgstr "<h1 id=\"fxa-cad-qr-connect-your-mobile-device-header\">Ühenda oma mobiilne seade</h1><p>kasutades just sinule loodud QR-koodi</p>"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:2
 msgid "Open the camera app on your device"
-msgstr ""
+msgstr "Ava oma seadmes kaameraäpp"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:3
 msgid "Point the camera at the QR code and tap the link that appears"
-msgstr ""
+msgstr "Suuna kaamera QR-koodile ning puuduta kuvatavat linki"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:4
 msgid "Install Firefox and open it on your device"
-msgstr ""
+msgstr "Paigalda Firefox ja ava see oma seadmes"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:5
 msgid "Sign into your account"
-msgstr ""
+msgstr "Logi sisse oma kontole"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:6
 msgid "<span class=\"number\">1</span>Open the camera app on your device"
-msgstr ""
+msgstr "<span class=\"number\">1</span>Ava oma seadmes kaameraäpp"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:7
 msgid "<span class=\"number\">2</span>Point the camera at the QR code and tap the link that appears"
-msgstr ""
+msgstr "<span class=\"number\">2</span>Suuna kaamera QR-koodile ja puuduta kuvatavat linki"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:8
 msgid "<span class=\"number\">3</span>Install Firefox and open it on your device"
-msgstr ""
+msgstr "<span class=\"number\">3</span>Paigalda Firefox ja ava see oma seadmes"
 
 #: .es5/templates/post_verify/cad_qr/scan_code.mustache:9
 msgid "<span class=\"number\">4</span>Sign into your account"
-msgstr ""
+msgstr "<span class=\"number\">4</span>Logi sisse oma kontole"
 
 #: .es5/templates/post_verify/account_recovery/add_recovery_key.mustache:1 .es5/templates/post_verify/account_recovery/add_recovery_key.mustache:4
 msgid "Protect your data with a recovery key"
-msgstr ""
+msgstr "Kaitse oma andmeid taastevõtmega"
 
 #: .es5/templates/post_verify/account_recovery/add_recovery_key.mustache:5
 msgid "Your synced data can include passwords you've saved."
-msgstr ""
+msgstr "Sinu sünkroniseeritud andmed võivad sisaldada salvestatud paroole."
 
 #: .es5/templates/post_verify/account_recovery/add_recovery_key.mustache:6
 msgid "Because this information is critical to your security, Firefox deletes it to protect you when your password is reset to prevent other people from accessing it."
-msgstr ""
+msgstr "Kuna need andmed on sinu turvalisuse jaoks kriitilised, siis kustutab Firefox need sinu kaitsmiseks parooli lähtestamisel, et takistada teistel inimestel ligipääsu neile andmetele."
 
 #: .es5/templates/post_verify/account_recovery/add_recovery_key.mustache:7
 msgid "Get a Recovery Key"
-msgstr ""
+msgstr "Hangi taastevõti"
 
 #: .es5/templates/post_verify/account_recovery/confirm_password.mustache:5
 msgid "Please confirm your password for %(escapedEmail)s to generate your recovery key."
-msgstr ""
+msgstr "Taastevõtme loomiseks kinnita palun oma konto %(escapedEmail)s parool."
 
 #: .es5/templates/post_verify/account_recovery/confirm_recovery_key.mustache:5
 msgid "Enter your recovery key to confirm that you've saved a copy."
-msgstr ""
+msgstr "Sisesta oma taastevõti, et kinnitada, et oled selle koopia salvestanud."
 
 #: .es5/templates/post_verify/account_recovery/save_recovery_key.mustache:1 .es5/templates/post_verify/account_recovery/save_recovery_key.mustache:4
 msgid "Save recovery key"
-msgstr ""
+msgstr "Salvesta taastevõti"
 
 #: .es5/templates/post_verify/account_recovery/save_recovery_key.mustache:10
 msgid "Done"
 msgstr "Valmis"
+
+#: .es5/templates/partial/account-suggestion.mustache:1
+msgid "Why do I need to create this account? <a %(escapedSuggestionAttrs)s>Find out here</a>"
+msgstr "Miks ma pean selle konto looma? <a %(escapedSuggestionAttrs)s>Vaata teavet siit</a>"
 
 #: .es5/templates/partial/coppa-age-input.mustache:1
 msgid "How old are you?"
@@ -1886,47 +1900,47 @@ msgstr "IP-aadress: %(ipAddress)s"
 
 #: .es5/templates/partial/firefox-family-services.mustache:1
 msgid "One account, many services"
-msgstr ""
+msgstr "Üks konto, palju teenuseid"
 
 #: .es5/templates/partial/firefox-family-services.mustache:2
 msgid "Firefox browser"
-msgstr ""
+msgstr "Firefoxi brauser"
 
 #: .es5/templates/partial/firefox-family-services.mustache:3
 msgid "Sync your bookmarks, passwords, and more on every device."
-msgstr ""
+msgstr "Sünkroniseeri oma järjehoidjad, paroolid ja muu kõigisse seadmetesse."
 
 #: .es5/templates/partial/firefox-family-services.mustache:4
 msgid "Mozilla VPN"
-msgstr ""
+msgstr "Mozilla VPN"
 
 #: .es5/templates/partial/firefox-family-services.mustache:5
 msgid "A VPN from the trusted pioneer in internet privacy."
-msgstr ""
+msgstr "VPN interneti privaatsuse usaldusväärselt pioneerilt."
 
 #: .es5/templates/partial/firefox-family-services.mustache:6
 msgid "Pocket"
-msgstr ""
+msgstr "Pocket"
 
 #: .es5/templates/partial/firefox-family-services.mustache:7
 msgid "Save and discover the best stories from across the web."
-msgstr ""
+msgstr "Salvesta ja avasta parimaid lugusid kogu veebist."
 
 #: .es5/templates/partial/firefox-family-services.mustache:8
 msgid "Firefox Relay"
-msgstr ""
+msgstr "Firefox Relay"
 
 #: .es5/templates/partial/firefox-family-services.mustache:9
 msgid "Sign up for new accounts without handing over your email address."
-msgstr ""
+msgstr "Registreeri uusi kontosid ilma oma e-posti aadressi edastamata."
 
 #: .es5/templates/partial/firefox-family-services.mustache:10
 msgid "See all"
-msgstr ""
+msgstr "Vaata kõiki"
 
 #: .es5/templates/partial/password-strength-balloon.mustache:1
 msgid "Stay safe &mdash; don't reuse passwords."
-msgstr ""
+msgstr "Ole kaitstud &mdash; ära kasuta paroole uuesti."
 
 #: .es5/templates/partial/password-strength-balloon.mustache:6
 msgid "Must not be your email address"
@@ -1938,19 +1952,31 @@ msgstr "Ei tohi kattuda <a %(escapedCommonPasswordLinkAttrs)s>sageli kasutatava 
 
 #: .es5/templates/partial/support-form-error.mustache:1
 msgid "Hmm, we're having trouble with our system. We're working on fixing it for you and apologize for the inconvenience. Please try again later."
-msgstr ""
+msgstr "Hmm, meil on süsteemiga probleeme. Töötame selle sinu eest parandamise nimel ja palume ebamugavuste pärast vabandust. Palun proovi hiljem uuesti."
 
 #: .es5/templates/partial/support-form-success.mustache:1
 msgid "Your message was sent to Support"
-msgstr ""
+msgstr "Sinu sõnum saadeti toele"
 
 #: .es5/templates/partial/support-form-success.mustache:2
 msgid "Back to Subscriptions"
-msgstr ""
+msgstr "Tagasi tellimuste juurde"
 
 #: .es5/templates/partial/sync-suggestion.mustache:1
 msgid "Looking for Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Get started here</a>"
 msgstr "Otsid Firefox Synci? <a %(escapedSyncSuggestionAttrs)s>Alusta siit</a>"
+
+#: .es5/templates/partial/third-party-auth.mustache:1
+msgid "or"
+msgstr "või"
+
+#: .es5/templates/partial/third-party-auth.mustache:2
+msgid "Continue with Google"
+msgstr "Jätka Google'iga"
+
+#: .es5/templates/partial/third-party-auth.mustache:3
+msgid "Continue with Apple"
+msgstr "Jätka Apple'iga"
 
 #: .es5/templates/pair/auth_allow.mustache:1
 msgid "Approve new device <small>for %(email)s</small>"
@@ -1966,7 +1992,7 @@ msgstr "Seade on ühendatud"
 
 #: .es5/templates/pair/auth_complete.mustache:3
 msgid "You are now syncing with:"
-msgstr ""
+msgstr "Sünkroniseerid nüüd järgnevaga:"
 
 #: .es5/templates/pair/auth_complete.mustache:4
 msgid "Manage devices"
@@ -1986,7 +2012,7 @@ msgstr "Seadistusprotsess katkestati."
 
 #: .es5/templates/pair/index.mustache:2
 msgid "Scan to connect another device"
-msgstr ""
+msgstr "Teise seadme ühendamiseks skanni"
 
 #: .es5/templates/pair/index.mustache:3
 msgid "Open the code scanner on your Firefox app and show code when ready."
@@ -1998,7 +2024,7 @@ msgstr "Näita koodi"
 
 #: .es5/templates/pair/success.mustache:2
 msgid "Device successfully paired"
-msgstr ""
+msgstr "Seade edukalt paaristatud"
 
 #: .es5/templates/pair/success.mustache:3
 msgid "Pairing was successful."
@@ -2024,18 +2050,18 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgstr "<a href=\"https://support.mozilla.org/kb/im-having-problems-with-my-firefox-account\">Abi</a>"
 
 #~ msgid ""
-#~ "<span>REMEMBER:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we "
-#~ "encrypt your data with your password to protect your privacy."
-#~ msgstr ""
-#~ "<span>PEA MEELES:</span> Kui lähtestad selle parooli, siis lähtestatakse ka sinu konto. Võid selle käigus kaotada osa enda isiklikest andmetest (muuhulgas ajaloo, järjehoidjad ja paroolid). See "
-#~ "on nii seepärast, et krüpteerime sinu andmed privaatsuse kaitsmiseks parooli abil."
-
-#~ msgid ""
-#~ "<span>NOTE:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt "
+#~ "<span>REMEMBER:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt "
 #~ "your data with your password to protect your privacy."
 #~ msgstr ""
-#~ "<span>MÄRKUS:</span> Kui lähtestad selle parooli, siis lähtestatakse ka sinu konto. Võid selle käigus kaotada osa enda isiklikest andmetest (muuhulgas ajaloo, järjehoidjad ja paroolid). See on "
+#~ "<span>PEA MEELES:</span> Kui lähtestad selle parooli, siis lähtestatakse ka sinu konto. Võid selle käigus kaotada osa enda isiklikest andmetest (muuhulgas ajaloo, järjehoidjad ja paroolid). See on "
 #~ "nii seepärast, et krüpteerime sinu andmed privaatsuse kaitsmiseks parooli abil."
+
+#~ msgid ""
+#~ "<span>NOTE:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt your "
+#~ "data with your password to protect your privacy."
+#~ msgstr ""
+#~ "<span>MÄRKUS:</span> Kui lähtestad selle parooli, siis lähtestatakse ka sinu konto. Võid selle käigus kaotada osa enda isiklikest andmetest (muuhulgas ajaloo, järjehoidjad ja paroolid). See on nii "
+#~ "seepärast, et krüpteerime sinu andmed privaatsuse kaitsmiseks parooli abil."
 
 #~ msgid "Once you're finished, use your new password to sign in on all of your devices."
 #~ msgstr "Kui oled lõpetanud, kasuta uut parooli sisselogimiseks kõigis oma seadmetes."
@@ -2293,8 +2319,7 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgid "Step 2 of 2: Save Recovery key"
 #~ msgstr "2. samm: taastamisvõtme salvestamine"
 
-#~ msgid ""
-#~ "<span class=\"note\">NOTE: </span>If you forget your password, this key is required to regain access to your data. Save your recovery key in a safe location, where you can find it easily later."
+#~ msgid "<span class=\"note\">NOTE: </span>If you forget your password, this key is required to regain access to your data. Save your recovery key in a safe location, where you can find it easily later."
 #~ msgstr "<span class=\"note\">MÄRKUS: </span>Kui unustad parooli, siis nõutakse andmetele ligipääsuks seda võtit. Salvesta võti turvalisse kohta, kust selle hiljem kergesti leiad."
 
 #~ msgid "Done, Recovery key saved"
@@ -2309,8 +2334,8 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgid ""
 #~ "SMS service only available in certain countries. SMS &amp; data rates may apply. The intended recipient of the email or SMS must have consented. <a %(escapedLearnMoreAttributes)s>Learn more</a>"
 #~ msgstr ""
-#~ "SMS-teenus on saadaval vaid teatud riikides. Rakenduda võivad SMS-i ja andmesideteenuse tasud. Kirja või SMS-sõnumi saaja peab olema andnud oma nõusoleku. <a "
-#~ "%(escapedLearnMoreAttributes)s>Rohkem teavet</a>"
+#~ "SMS-teenus on saadaval vaid teatud riikides. Rakenduda võivad SMS-i ja andmesideteenuse tasud. Kirja või SMS-sõnumi saaja peab olema andnud oma nõusoleku. <a %(escapedLearnMoreAttributes)s>Rohkem "
+#~ "teavet</a>"
 
 #~ msgid "Account already exists. <a href=\"/signin\">Sign in</a>"
 #~ msgstr "Konto on juba olemas. <a href=\"/signin\">Logi sisse</a>"
@@ -2439,11 +2464,11 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgstr "Halda sätteid"
 
 #~ msgid ""
-#~ "If you use this account for Mozilla apps and services like AMO, Pocket, and Screenshots you should first log in and remove any saved personal information. Once you delete your account here you "
-#~ "may lose access to it everywhere."
+#~ "If you use this account for Mozilla apps and services like AMO, Pocket, and Screenshots you should first log in and remove any saved personal information. Once you delete your account here you may "
+#~ "lose access to it everywhere."
 #~ msgstr ""
-#~ "Kui kasutad seda kontot Mozilla teistes rakendustes või teenustes, näiteks AMO-s, Pocketis või Screenshots teenuses, peaksid kõigepealt sisse logima ning eemaldama salvestatud isiklikud andmed. "
-#~ "Kui oled enda konto kustutanud, siis võid ligipääsu sellele kaotada."
+#~ "Kui kasutad seda kontot Mozilla teistes rakendustes või teenustes, näiteks AMO-s, Pocketis või Screenshots teenuses, peaksid kõigepealt sisse logima ning eemaldama salvestatud isiklikud andmed. Kui "
+#~ "oled enda konto kustutanud, siis võid ligipääsu sellele kaotada."
 
 #~ msgid "verified"
 #~ msgstr "kinnitatud"
@@ -2456,8 +2481,7 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 
 #~ msgid "These are your one time use recovery codes. Store them in a safe place in the event you lose access to your mobile device. You will not be able to see these codes again."
 #~ msgstr ""
-#~ "Need on ühekordseks kasutamiseks mõeldud taastamiskoodid. Säilita neid turvalises kohas juhuks, kui peaksid kaotama ligipääsu enda mobiilsele seadmele. Sul pole võimalik neid koode uuesti "
-#~ "vaadata."
+#~ "Need on ühekordseks kasutamiseks mõeldud taastamiskoodid. Säilita neid turvalises kohas juhuks, kui peaksid kaotama ligipääsu enda mobiilsele seadmele. Sul pole võimalik neid koode uuesti vaadata."
 
 #~ msgid "Manually enter this secret key into your authentication app:"
 #~ msgstr "Sisesta käsitsi järgmine turvavõti oma autentimise äppi:"
@@ -2603,12 +2627,8 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgid "Cookies and local storage are required."
 #~ msgstr "Küpsiste ja kohaliku salvestusruumi kasutamine tuleb lubada."
 
-#~ msgid ""
-#~ "By proceeding, you agree to the <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">Terms of Service</a> and <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex=\"-1\">Privacy Notice</a> of "
-#~ "Firefox cloud services."
-#~ msgstr ""
-#~ "Jätkates nõustud <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">Teenusetingimuste</a> ja Firefoxi pilveteenuste <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex="
-#~ "\"-1\">Privaatsuspoliitikaga</a>."
+#~ msgid "By proceeding, you agree to the <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">Terms of Service</a> and <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex=\"-1\">Privacy Notice</a> of Firefox cloud services."
+#~ msgstr "Jätkates nõustud <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">Teenusetingimuste</a> ja Firefoxi pilveteenuste <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex=\"-1\">Privaatsuspoliitikaga</a>."
 
 #~ msgid "Firefox cloud services"
 #~ msgstr "Firefoxi pilveteenused"
@@ -2652,8 +2672,8 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgid ""
 #~ "SMS service available to U.S. phone numbers only. SMS &amp; data rates may apply. The intended recipient of the email or SMS must have consented. <a %(escapedLearnMoreAttributes)s>Learn more</a>"
 #~ msgstr ""
-#~ "SMS-teenus on saadaval vaid Ameerika Ühendriikide numbritele. Lisanduda võivad SMS-i ja andmesidetasud. Kirja või sõnumi saaja peab olema nõusoleku andnud. <a "
-#~ "%(escapedLearnMoreAttributes)s>Rohkem teavet</a>"
+#~ "SMS-teenus on saadaval vaid Ameerika Ühendriikide numbritele. Lisanduda võivad SMS-i ja andmesidetasud. Kirja või sõnumi saaja peab olema nõusoleku andnud. <a %(escapedLearnMoreAttributes)s>Rohkem "
+#~ "teavet</a>"
 
 #~ msgid "App link sent to %(escapedPhoneNumber)s. <a %(escapedBackLinkAttrs)s>Mistyped number?</a>"
 #~ msgstr "Rakenduse link saadeti numbrile %(escapedPhoneNumber)s. <a %(escapedBackLinkAttrs)s>Eksisid numbriga?</a>"
@@ -2662,11 +2682,11 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgstr "Miks peaks sünkroonima kaht (või enamat) seadet?"
 
 #~ msgid ""
-#~ "Sync lets you share the bookmarks, history and passwords you save to Firefox on one device with Firefox on other devices. Sign in to Firefox on your phone or tablet and everything you've saved "
-#~ "to Firefox for desktop will appear."
+#~ "Sync lets you share the bookmarks, history and passwords you save to Firefox on one device with Firefox on other devices. Sign in to Firefox on your phone or tablet and everything you've saved to "
+#~ "Firefox for desktop will appear."
 #~ msgstr ""
-#~ "Sync võimaldab sul jagada Firefoxi järjehoidjaid, ajalugu ja paroole ühes seadmes teiste Firefoxiga seadmetega. Logi Firefoxi sisse oma telefonis või tahvelarvutis ning pääsed ligi kõigele "
-#~ "töölaua Firefoxi salvestatule."
+#~ "Sync võimaldab sul jagada Firefoxi järjehoidjaid, ajalugu ja paroole ühes seadmes teiste Firefoxiga seadmetega. Logi Firefoxi sisse oma telefonis või tahvelarvutis ning pääsed ligi kõigele töölaua "
+#~ "Firefoxi salvestatule."
 
 #~ msgid ""
 #~ "Sync isn't designed as a permanent backup – it's just sharing what is saved locally. If you reset your password and your data isn't stored on at least one other device, you could lose all the "
@@ -2778,18 +2798,18 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgstr "Logi sisse"
 
 #~ msgid ""
-#~ "<span>REMEMBER:</span> If you reset your password, some of your data will be erased (including synced server data like history and bookmarks). That’s because we encrypt your data with your "
-#~ "password to protect your privacy."
+#~ "<span>REMEMBER:</span> If you reset your password, some of your data will be erased (including synced server data like history and bookmarks). That’s because we encrypt your data with your password "
+#~ "to protect your privacy."
 #~ msgstr ""
 #~ "<span>PEA MEELES:</span> Kui enda parooli lähtestad, kustutatakse osa sinu andmetest (kaasa arvatud sünkroonitud andmed serveris, nagu ajalugu ja järjehoidjad). See on nii sellepärast, et sinu "
 #~ "andmed on privaatsuse kaitsmiseks parooliga krüptitud."
 
 #~ msgid ""
-#~ "<span>NOTE:</span> If you reset your password, some of your data will be erased (including synced server data like history and bookmarks). That’s because we encrypt your data with your password "
-#~ "to protect your privacy."
+#~ "<span>NOTE:</span> If you reset your password, some of your data will be erased (including synced server data like history and bookmarks). That’s because we encrypt your data with your password to "
+#~ "protect your privacy."
 #~ msgstr ""
-#~ "<span>MÄRKUS:</span> Kui enda parooli lähtestad, kustutatakse osa sinu andmetest (kaasa arvatud sünkroonitud andmed serveris, nagu ajalugu ja järjehoidjad). See on nii sellepärast, et sinu "
-#~ "andmed on privaatsuse kaitsmiseks parooliga krüptitud."
+#~ "<span>MÄRKUS:</span> Kui enda parooli lähtestad, kustutatakse osa sinu andmetest (kaasa arvatud sünkroonitud andmed serveris, nagu ajalugu ja järjehoidjad). See on nii sellepärast, et sinu andmed on"
+#~ " privaatsuse kaitsmiseks parooliga krüptitud."
 
 #~ msgid "Add a layer of security to your account by requiring security codes from one of <a %(escapedTotpSupportAttributes)s>these authentication apps.</a>"
 #~ msgstr "Enda konto saad turvalisemaks muuta, nõudes turvakoode ühest <a %(escapedTotpSupportAttributes)s>järgmistest autentimisrakendustest</a>."
@@ -2904,19 +2924,18 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgid "Sync preferences"
 #~ msgstr "Synci eelistused"
 
-#~ msgid ""
-#~ "Looking for Firefox Sync? <a href=\"https://mozilla.org/firefox/sync?utm_source=fx-website&utm_medium=fx-accounts&utm_campaign=fx-signup&utm_content=fx-sync-get-started\">Get started here</a>"
+#~ msgid "Looking for Firefox Sync? <a href=\"https://mozilla.org/firefox/sync?utm_source=fx-website&utm_medium=fx-accounts&utm_campaign=fx-signup&utm_content=fx-sync-get-started\">Get started here</a>"
 #~ msgstr "Otsid Firefox Sync'i? <a href=\"https://mozilla.org/firefox/sync?utm_source=fx-website&utm_medium=fx-accounts&utm_campaign=fx-signup&utm_content=fx-sync-get-started\">Alusta siit</a>."
 
 #~ msgid "Have an account with a different email? <a href=\"%(signinUri)s\">Sign in</a>"
 #~ msgstr "Sul on teise e-posti aadressiga konto? <a href=\"%(signinUri)s\">Logi sisse</a>"
 
 #~ msgid ""
-#~ "Firefox is available for <a href=\"%(linkWindows)s\">Windows</a>, <a href=\"%(linkOSX)s\">OS X</a>, <a href=\"%(linkAndroid)s\">Android</a>, <a href=\"%(linkIOS)s\">iOS</a> and <a href="
-#~ "\"%(linkLinux)s\">Linux</a>."
+#~ "Firefox is available for <a href=\"%(linkWindows)s\">Windows</a>, <a href=\"%(linkOSX)s\">OS X</a>, <a href=\"%(linkAndroid)s\">Android</a>, <a href=\"%(linkIOS)s\">iOS</a> and <a "
+#~ "href=\"%(linkLinux)s\">Linux</a>."
 #~ msgstr ""
-#~ "Firefox on saadaval <a href=\"%(linkWindows)s\">Windowsile</a>, <a href=\"%(linkOSX)s\">OS X-ile</a>, <a href=\"%(linkAndroid)s\">Androidile</a>, <a href=\"%(linkIOS)s\">iOS-ile</a> ja <a href="
-#~ "\"%(linkLinux)s\">Linuxile</a>."
+#~ "Firefox on saadaval <a href=\"%(linkWindows)s\">Windowsile</a>, <a href=\"%(linkOSX)s\">OS X-ile</a>, <a href=\"%(linkAndroid)s\">Androidile</a>, <a href=\"%(linkIOS)s\">iOS-ile</a> ja <a "
+#~ "href=\"%(linkLinux)s\">Linuxile</a>."
 
 #~ msgid "Last active: %(translatedTimeAgo)s"
 #~ msgstr "Viimane tegevus: %(translatedTimeAgo)s"
@@ -3021,8 +3040,7 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgstr "Avamise meil on saadetud"
 
 #~ msgid "For security reasons your account was put on lockdown. To perform account-level activities, please re-verify your account by clicking the verification link sent to %(email)s"
-#~ msgstr ""
-#~ "Turvakaalutlustel on sinu konto lukustatud. Kui soovid kontoga seotud tegevusi teha, siis palun kinnita oma konto uuesti, klõpsates selleks kinnituslingile, mis saadeti aadressile %(email)s"
+#~ msgstr "Turvakaalutlustel on sinu konto lukustatud. Kui soovid kontoga seotud tegevusi teha, siis palun kinnita oma konto uuesti, klõpsates selleks kinnituslingile, mis saadeti aadressile %(email)s"
 
 #~ msgid "Signup has been disabled"
 #~ msgstr "Registreerumine on keelatud"
@@ -3280,19 +3298,11 @@ msgstr "Kas kasutasid süsteemset kaamerat? Paaristama peab kasutades Firefoxi �
 #~ msgid "Already have an account? Sign in."
 #~ msgstr "Konto juba olemas? Logi sisse."
 
-#~ msgid ""
-#~ "By proceeding, I agree to the <a id=\"service-tos\" href=\"%(termsUri)s\">Terms of Service</a> and<a id=\"service-pp\" href=\"%(privacyUri)s\">Privacy Notice</a> of %(serviceName)s "
-#~ "(%(serviceUri)s)."
-#~ msgstr ""
-#~ "Jätkates nõustud teenuse %(serviceName)s (%(serviceUri)s)<a id=\"service-tos\" href=\"%(termsUri)s\">Teenusetingimuste</a> ja <a id=\"service-pp\" href=\"%(privacyUri)s\">Privatsuspoliitikaga</"
-#~ "a>."
+#~ msgid "By proceeding, I agree to the <a id=\"service-tos\" href=\"%(termsUri)s\">Terms of Service</a> and<a id=\"service-pp\" href=\"%(privacyUri)s\">Privacy Notice</a> of %(serviceName)s (%(serviceUri)s)."
+#~ msgstr "Jätkates nõustud teenuse %(serviceName)s (%(serviceUri)s)<a id=\"service-tos\" href=\"%(termsUri)s\">Teenusetingimuste</a> ja <a id=\"service-pp\" href=\"%(privacyUri)s\">Privatsuspoliitikaga</a>."
 
-#~ msgid ""
-#~ "By proceeding, I agree to the <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">Terms of Service</a> and <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex=\"-1\">Privacy Notice</a> of "
-#~ "Firefox cloud services."
-#~ msgstr ""
-#~ "Jätkates nõustud sa Firefoxi pilveteenuste <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">teenuste tingimuste</a> ja <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex="
-#~ "\"-1\">privaatsusreeglitega</a>."
+#~ msgid "By proceeding, I agree to the <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">Terms of Service</a> and <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex=\"-1\">Privacy Notice</a> of Firefox cloud services."
+#~ msgstr "Jätkates nõustud sa Firefoxi pilveteenuste <a id=\"fxa-tos\" href=\"/legal/terms\" tabindex=\"-1\">teenuste tingimuste</a> ja <a id=\"fxa-pp\" href=\"/legal/privacy\" tabindex=\"-1\">privaatsusreeglitega</a>."
 
 #~ msgid "Subscribe to Firefox news and tips"
 #~ msgstr "Telli Firefoxi uudised ja näpunäited"

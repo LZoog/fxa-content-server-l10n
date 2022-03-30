@@ -38,11 +38,11 @@ subplat-update-billing-plaintext = { subplat-update-billing }:
 # Variables:
 #  $email (String) - A user's primary email address
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subplat-explainer-specific = Rydych yn derbyn yr e-bost hwn oherwydd bod gan %(email)s { -product-firefox-account } a'ch bod wedi cofrestru ar gyfer { $productName }.
+subplat-explainer-specific = Rydych yn derbyn yr e-bost hwn oherwydd bod gan { $email } { -product-firefox-account } a'ch bod wedi cofrestru ar gyfer { $productName }.
 # Variables:
 #  $email (String) - A user's primary email address
 subplat-explainer-reminder-form = Rydych yn derbyn yr e-bost hwn oherwydd bod gan { $email } gyfrif { -product-firefox-account }x
-subplat-explainer-multiple = Rydych yn derbyn yr e-bost hwn oherwydd bod gan %(email)s { -product-firefox-account } a'ch bod wedi tanysgrifio i nifer o gynnyrch.
+subplat-explainer-multiple = Rydych yn derbyn yr e-bost hwn oherwydd bod gan { $email } { -product-firefox-account } a'ch bod wedi tanysgrifio i nifer o gynnyrch.
 subplat-manage-account = Rheolwch osodiadau eich { -product-firefox-account } trwy ymweld â <a data-l10n-name="subplat-account-page">thudalen eich cyfrif </a>.
 subplat-terms-policy = Polisi telerau a chanslo
 subplat-terms-policy-plaintext = { subplat-terms-policy }:
@@ -77,6 +77,8 @@ automated-email =
     Mae hwn yn e-bost awtomatig; os gwnaethoch ei dderbyn trwy gamgymeriad, nid oes angen gweithredu.
     Am ragor o wybodaeth, ewch i <a data-l10n-name="supportLink">Cymorth { -brand-mozilla }</a>.
 automated-email-plaintext = E-bost awtomatig yw hwn; os ydych wedi derbyn yr e-bost hwn ar gam, nid oes angen gweithredu.
+#  After the colon, there's a link to https://accounts.firefox.com/settings/change_password
+automated-email-not-authorized-plaintext = E-bost awtomataidd yw hwn; os na wnaethoch awdurdodi'r weithred hon, yna newidiwch eich cyfrinair:
 automated-email-reset =
     Mae hwn yn e-bost awtomatig; os na wnaethoch chi awdurdodi'r weithred hon, yna <a data-l10n-name="resetLink"> newidiwch eich cyfrinair</a>.
     Am ragor o wybodaeth, ewch i <a data-l10n-name="supportLink">Cymorth { -brand-mozilla }</a>.
@@ -89,7 +91,7 @@ cancellationSurvey-plaintext = Helpwch ni i wella ein gwasanaethau trwy lanw’r
 change-password-plaintext = Os ydych yn amau bod rhywun yn ceisio cael mynediad at eich cyfrif, newidiwch eich cyfrinair.
 # Variables:
 #  $ip (Number) - User's IP address
-user-ip = Cyfeiriad IP: %(ip)s
+user-ip = Cyfeiriad IP: { $ip }
 manage-account = Rheoli cyfrif
 manage-account-plaintext = { manage-account }:
 payment-details = Manylion talu:
@@ -149,12 +151,8 @@ downloadSubscription-subject = Croeso i { $productName }.
 #  Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 downloadSubscription-title = Croeso i { $productName }
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-content = Os nad ydych eisoes wedi llwytho %(productName)s i lawr, gadewch i ni ddechrau defnyddio'r holl nodweddion sydd wedi'u cynnwys yn eich tanysgrifiad:
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-link-action = Llwythwch { $productName } i lawr
+downloadSubscription-content-2 = Gadewch i ni ddechrau defnyddio'r holl nodweddion sydd wedi'u cynnwys yn eich tanysgrifiad:
+downloadSubscription-link-action-2 = Cychwyn Arni
 # The user has a low number of valid recovery codes remaining for use
 codes-reminder-title = Prinder codau adfer
 codes-reminder-description = Rydym wedi sylwi eich bod yn brin o godau adfer. Ystyriwch greu codau newydd er mwyn osgoi cael eich cloi allan o’ch cyfrif.
@@ -204,6 +202,11 @@ postAddAccountRecovery-description = Rydych wedi cynhyrchu allwedd adfer ar gyfe
 postAddAccountRecovery-action = Rheoli cyfrif
 postAddAccountRecovery-recovery = Os nad chi oedd hwn, <a data-l10n-name="revokeAccountRecoveryLink">>cliciwch yma.</a>
 postAddAccountRecovery-revoke = Os nad chi oedd hwn, diddymwch yr allwedd.
+postAddLinkedAccount-subject = Cyfrif newydd yn gysylltiedig â { -brand-firefox }
+#  Variables:
+#  $providerName (String) - The name of the provider, e.g. Apple, Google
+postAddLinkedAccount-title = Mae eich cyfrif { $providerName } wedi'i gysylltu â'ch { -product-firefox-account }
+postAddLinkedAccount-action = Rheoli cyfrif
 postAddTwoStepAuthentication-subject = Mae dilysu dau gam wedi ei alluogi
 postAddTwoStepAuthentication-title = Mae dilysu dau gam wedi ei alluogi
 postAddTwoStepAuthentication-description-plaintext = Rydych wedi galluogi dilysu dau gam yn llwyddiannus ar eich { -product-firefox-account } o'r ddyfais ganlynol. Bydd angen codau diogel o'ch ap dilysu bob tro fyddwch yn mewngofnodi.
@@ -278,10 +281,8 @@ subscriptionAccountFinishSetup-subject = Croeso i { $productName }: Cyflwynwch e
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionAccountFinishSetup-title = Croeso i { $productName }.
 subscriptionAccountFinishSetup-content-processing = Mae'ch taliad yn cael ei brosesu a gall gymryd hyd at bedwar diwrnod gwaith i'w gwblhau. Bydd eich tanysgrifiad yn adnewyddu'n awtomatig bob cyfnod bilio oni bai eich bod yn dewis ei orffen.
-# Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionAccountFinishSetup-content-create = Nesaf, byddwch chi'n creu cyfrinair cyfrif Firefox ac yn llwytho { $productName } i lawr.
-subscriptionAccountFinishSetup-action = Crëwch gyfrinair
+subscriptionAccountFinishSetup-content-create-2 = Nesaf, byddwch yn creu cyfrinair { -product-firefox-account } i ddechrau defnyddio'ch tanysgrifiad newydd.
+subscriptionAccountFinishSetup-action-2 = Cychwyn arni
 subscriptionAccountReminderFirst-subject = Nodyn atgoffa: Gorffennwch greu eich cyfrif
 subscriptionAccountReminderFirst-title = Nid oes modd i chi gael mynediad i'ch tanysgrifiad eto
 subscriptionAccountReminderFirst-content-info = Ychydig ddyddiau yn ôl fe wnaethoch chi greu Cyfrif { -product-firefox-account } ond heb  ei wirio. Rydym yn gobeithio y byddwch chi'n gorffen creu'ch cyfrif, fel y gallwch chi ddefnyddio'ch tanysgrifiad newydd.
@@ -317,7 +318,7 @@ subscriptionDowngrade-content-switch = Rydych wedi symud o { $productNameOld } i
 # $productPaymentCycleNew (String) - The interval of time from the end of one payment statement date to the next payment statement date of the new subscription, e.g. month
 # $productPaymentCycleOld (String) - The interval of time from the end of one payment statement date to the next payment statement date of the old subscription, e.g. month
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
-subscriptionDowngrade-content-charge-info = O'ch bil nesaf ymlaen, bydd eich taliad yn newid o { $paymentAmountOld } y { $productPaymentCycleOld } i { $paymentAmountNew } bob { $productPaymentCycleNew }. Bryd hynny, byddwch hefyd yn derbyn credyd am unwaith o { $paymentProrated } i adlewyrchu'r tâl is am weddill y { $productPaymentCycle }.
+subscriptionDowngrade-content-charge-info = O'ch bil nesaf ymlaen, bydd eich taliad yn newid o { $paymentAmountOld } y { $productPaymentCycleOld } i { $paymentAmountNew } bob { $productPaymentCycleNew }. Bryd hynny, byddwch hefyd yn derbyn credyd am unwaith o { $paymentProrated } i adlewyrchu'r tâl is am weddill y { $productPaymentCycleOld }.
 # Variables:
 # $productNameNew (String) - The name of the new subscribed product, e.g. Mozilla VPN
 subscriptionDowngrade-content-install = Os oes yna feddalwedd newydd i chi ei osod er mwyn defnyddio { $productNameNew }, byddwch yn derbyn e-bost ar wahân gyda chyfarwyddiadau llwytho i lawr.
@@ -328,7 +329,7 @@ subscriptionFailedPaymentsCancellation-subject = Mae eich tanysgrifiad i { $prod
 subscriptionFailedPaymentsCancellation-title = Mae eich tanysgrifiad wedi'i ddiddymu
 #  Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFailedPaymentsCancellation-content = Rydym wedi diddymu eich tanysgrifiad %(productName)s oherwydd bod sawl ymgais talu wedi methu. I gael mynediad eto, dechreuwch danysgrifiad newydd gyda dull talu wedi'i ddiweddaru.
+subscriptionFailedPaymentsCancellation-content = Rydym wedi diddymu eich tanysgrifiad { $productName } oherwydd bod sawl ymgais talu wedi methu. I gael mynediad eto, dechreuwch danysgrifiad newydd gyda dull talu wedi'i ddiweddaru.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionFirstInvoice-subject = Cadarnhawyd y taliad am { $productName }
@@ -338,7 +339,7 @@ subscriptionFirstInvoice-title = Diolch am danysgrifio i { $productName }
 subscriptionFirstInvoice-content-processing = Mae'ch taliad yn cael ei brosesu ar hyn o bryd a gall gymryd hyd at bedwar diwrnod busnes i'w gwblhau.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoice-content-install = Byddwch yn derbyn e-bost ar wahân gyda chyfarwyddiadau llwytho i lawr ar sut i ddechrau defnyddio { $productName }.
+subscriptionFirstInvoice-content-install-2 = Byddwch yn derbyn e-bost ar wahân ar sut i ddechrau defnyddio { $productName } .
 subscriptionFirstInvoice-content-auto-renew = Bydd eich tanysgrifiad yn adnewyddu pob cyfnod bilio yn awtomatig oni bai eich bod yn dewis diddymu.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -362,7 +363,7 @@ subscriptionFirstInvoiceDiscount-title = Diolch am danysgrifio i { $productName 
 subscriptionFirstInvoiceDiscount-content-processing = Mae'ch taliad yn cael ei brosesu ar hyn o bryd a gall gymryd hyd at bedwar diwrnod busnes i'w gwblhau.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoiceDiscount-content-install = Byddwch yn derbyn e-bost ar wahân gyda chyfarwyddiadau llwytho i lawr ar sut i ddechrau defnyddio { $productName }.
+subscriptionFirstInvoiceDiscount-content-install-2 = Byddwch yn derbyn e-bost ar wahân ar sut i ddechrau defnyddio { $productName } .
 subscriptionFirstInvoiceDiscount-content-auto-renew = Bydd eich tanysgrifiad yn adnewyddu pob cyfnod bilio yn awtomatig oni bai eich bod yn dewis diddymu.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -375,7 +376,7 @@ subscriptionFirstInvoiceDiscount-content-invoice-number-plaintext = Rhif Anfoneb
 subscriptionFirstInvoiceDiscount-content-subtotal = Is-gyfanswm: { $invoiceSubtotal }
 # Variables:
 #  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
-subscriptionFirstInvoiceDiscount-content-onetime-discount = Gostyngiad un-tro: -{ $invoiceDiscountAmount }
+subscriptionFirstInvoiceDiscount-content-discount = Gostyngiad: -{ $invoiceDiscountAmount }
 # Variables:
 #  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 #  $invoiceTotal (String) - The amount, after discount, of the subscription invoice, including currency, e.g. $8.00
@@ -464,6 +465,35 @@ subscriptionSubsequentInvoice-content-charged = Codwyd { $invoiceTotal } ar { $i
 #  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
 subscriptionSubsequentInvoice-content-next-invoice = Yr Anfoneb Nesaf: { $nextInvoiceDateOnly }
 # Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-subject = Derbyniwyd taliad am { $productName }
+subscriptionSubsequentInvoiceDiscount-title = Diolch am fod yn danysgrifiwr!
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-content-received = Rydym wedi derbyn eich taliad diweddaraf am { $productName }.
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number = Rhif Anfoneb: <b>{ $invoiceNumber }</b>
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number-plaintext = Rhif Anfoneb: { $invoiceNumber }
+# Variables:
+# $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-plan-change = Newid cynllun: { $paymentProrated }
+# Variables:
+# $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-charge = Codwyd { $invoiceTotal } ar { $invoiceDateOnly }
+# Variables:
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
+subscriptionSubsequentInvoiceDiscount-content-next-invoice = Yr Anfoneb Nesaf: { $nextInvoiceDateOnly }
+# Variables:
+#  $invoiceSubtotal (String) - The amount, before discount, of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-subtotal = Is-gyfanswm: { $invoiceSubtotal }
+# Variables:
+#  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
+subscriptionSubsequentInvoiceDiscount-content-discount = Gostyngiad: -{ $invoiceDiscountAmount }
+# Variables:
 # $productNameNew (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-subject = Rydych wedi uwchraddio i { $productNameNew }
 subscriptionUpgrade-title = Diolch am uwchraddio!
@@ -477,7 +507,7 @@ subscriptionUpgrade-upgrade-info = Rydych wedi symud o { $productNameOld } i { $
 # $productPaymentCycleNew (String) - The interval of time from the end of one payment statement date to the next payment statement date of the new subscription, e.g. month
 # $productPaymentCycleOld (String) - The interval of time from the end of one payment statement date to the next payment statement date of the old subscription, e.g. month
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
-subscriptionUpgrade-content-charge-info = O'ch bil nesaf ymlaen, bydd eich taliad yn newid o { $paymentAmountOld } y { $productPaymentCycleOld } i { $paymentAmountNew } bob { $productPaymentCycleNew }. Bryd hynny, byddwn yn codi ffi am unwaith o { $paymentProrated } i adlewyrchu'r tâl uwch am weddill y { $productPaymentCycle }.
+subscriptionUpgrade-content-charge-info = O'ch bil nesaf ymlaen, bydd eich taliad yn newid o { $paymentAmountOld } y { $productPaymentCycleOld } i { $paymentAmountNew } bob { $productPaymentCycleNew }. Bryd hynny, byddwn yn codi ffi am unwaith o { $paymentProrated } i adlewyrchu'r tâl uwch am weddill y { $productPaymentCycleOld }.
 # Variables:
 # $productNameNew (String) - The name of the new subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-install = Os oes yna feddalwedd newydd i chi ei osod er mwyn defnyddio { $productNameNew }, byddwch yn derbyn e-bost ar wahân gyda chyfarwyddiadau llwytho i lawr.
@@ -517,7 +547,7 @@ verifyLogin-subject = Cadarnhewch y mewngofnodi newydd i { $clientName }
 verifyLogin-action = Cadarnhau eich mewngofnodi
 # Variables:
 #  $serviceName (String) - A service the user hasn't signed into before (e.g. Firefox)
-verifyLoginCode-subject-line = Cod mewngofnodi ar gyfer %(serviceName)s
+verifyLoginCode-subject-line = Cod mewngofnodi ar gyfer { $serviceName }
 verifyLoginCode-title = Ai hwn yw chi’n allgofnodi?
 verifyLoginCode-prompt = Os ydyw, defnyddiwch y cod dilysu hwn:
 verifyLoginCode-expiry-notice = Daw i ben mewn 5 munud.
@@ -527,16 +557,9 @@ verifyPrimary-subject = Cadarnhau’r prif e-bost
 verifyPrimary-action = Dilysu’r e-bost
 verifyPrimary-action-plaintext = { verifyPrimary-action }:
 verifyPrimary-post-verify = Unwaith bydd wedi ei ddilysu, bydd newid cyfrif fel ychwanegu ail e-bost yn bosib o’r ddyfais hon.
-verifySecondary-subject = Cadarnhau’r ail e-bost
-verifySecondary-title = Dilysu’r ail gyfrif
-# Variables:
-#  $email (String) - A user's unverified secondary email address
-verifySecondary-explainer = Mae cais i ddefnyddio { $email } fel ail e-bost wedi ei wneud o'r { -product-firefox-account } canlynol:
-verifySecondary-action = Dilysu’r e-bost
-verifySecondary-prompt = { verifySecondary-action }:
-verifySecondary-post-verification = Unwaith iddo gael ei ddilysu, bydd y cyfrif hwn yn cychwyn derbyn hysbysiadau diogelwch a negeseuon cadarnhau.
 verifySecondaryCode-subject = Cadarnhau’r ail e-bost
 verifySecondaryCode-title = Dilysu’r ail gyfrif
+verifySecondaryCode-action = Dilysu'r e-bost
 # Variables:
 #  $email (string) A user's unverified secondary email address
 verifySecondaryCode-explainer = Mae cais i ddefnyddio { $email } fel ail e-bost wedi ei wneud o'r { -product-firefox-account } canlynol:

@@ -316,6 +316,8 @@ sub-item-cancel-msg =
 sub-item-cancel-confirm =
     Ακύρωση πρόσβασης και αποθηκευμένων πληροφοριών στο
     { $name } στις { $period }
+invoice-not-found = Δεν βρέθηκε επόμενο τιμολόγιο
+sub-item-no-such-subsequent-invoice = Δεν βρέθηκε επόμενο τιμολόγιο για αυτήν τη συνδρομή.
 
 ## subscription iap item
 
@@ -342,6 +344,8 @@ sub-subscription-error =
     .title = Πρόβλημα φόρτωσης συνδρομών
 sub-customer-error =
     .title = Πρόβλημα φόρτωσης πελάτη
+sub-invoice-error =
+    .title = Πρόβλημα φόρτωσης τιμολογίων
 sub-billing-update-success = Τα στοιχεία χρέωσής σας ενημερώθηκαν με επιτυχία
 sub-route-payment-modal-heading = Μη έγκυρα στοιχεία χρέωσης
 sub-route-payment-modal-message = Φαίνεται ότι υπάρχει σφάλμα με τον λογαριασμό σας στο { -brand-name-paypal }. Θα πρέπει να λάβετε τα απαραίτητα μέτρα για την επίλυση αυτού του προβλήματος πληρωμής.
@@ -371,7 +375,13 @@ coupon-discount-applied = Εφαρμόστηκε έκπτωση
 coupon-submit = Εφαρμογή
 coupon-remove = Αφαίρεση
 coupon-error = Ο κωδικός που καταχωρίσατε δεν είναι έγκυρος ή έχει λήξει.
+coupon-error-generic = Προέκυψε σφάλμα κατά την επεξεργασία του κωδικού. Παρακαλούμε δοκιμάστε ξανά.
+coupon-error-expired = Ο κωδικός που καταχωρήσατε έληξε.
+coupon-error-limit-reached = Ο κωδικός που καταχωρήσατε έφτασε στο όριο του.
+coupon-error-invalid = Ο κωδικός που καταχωρήσατε δεν είναι έγκυρος.
 coupon-success = Το πρόγραμμά σας θα ανανεωθεί αυτόματα στην τιμή καταλόγου.
+# $couponDurationDate (Date) - The date at which the coupon is no longer valid, and the subscription is billed the list price.
+coupon-success-repeating = Το πρόγραμμά σας θα ανανεωθεί αυτόματα μετά τις { $couponDurationDate } στην τιμή καταλόγου.
 coupon-enter-code =
     .placeholder = Εισαγωγή κωδικού
 

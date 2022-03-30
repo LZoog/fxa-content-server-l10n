@@ -186,7 +186,7 @@ sub-redirect-skip-survey = No gratias, monstra me solo mi producto.
 ## fields
 
 default-input-error = Campo obligatori
-input-error-is-required = { $etiquetta } es necessari
+input-error-is-required = { $label } es necessari
 
 ## subscription upgrade
 
@@ -274,24 +274,24 @@ pay-update-change-btn = Cambiar
 ## reactivate
 ## $name (String) - The name of the subscribed product.
 
-reactivate-confirm-dialog-header = Vole tu continuar usar { $nomine }?
+reactivate-confirm-dialog-header = Vole tu continuar usar { $name }?
 # $amount (Number) - The amount billed. It will be formatted as currency.
 # $last (String) - The last 4 digits of the card that will be charged
 # $endDate (Date) - Last day of product access
-reactivate-confirm-copy = Tu accesso a { $nomine } continuara e tu termino de facturation e pagamento remanera identic. Tu amonta successive sera { $amonta } al carta finiente in { $ultime } le { $endDate }.
+reactivate-confirm-copy = Tu accesso a { $name } continuara e tu termino de facturation e pagamento remanera identic. Tu amonta successive sera { $amount } al carta finiente in { $last } le { $endDate }.
 # Alternate copy used when a payment method is not available, e.g. for free trials
 # $amount (Number) - The amount billed. It will be formatted as currency.
 # $endDate (Date) - Last day of product access
 reactivate-confirm-without-payment-method-copy =
-    Tu accesso a { $nomine } continuara e tu termino de facturation
+    Tu accesso a { $name } continuara e tu termino de facturation
      e pagamento remanera identic. Tu amonta successive sera 
-    { $amonta } le { $endDate }.
+    { $amount } le { $endDate }.
 reactivate-confirm-button = Renovar le subscription
 
 ##  $date (Date) - Last day of product access
 
 reactivate-panel-date = Tu ha cancellate tu abonamento le { $date }.
-reactivate-panel-copy = Tu perdera accesso a { $nomine } le <strong>{ $date }</strong>.
+reactivate-panel-copy = Tu perdera accesso a { $name } le <strong>{ $date }</strong>.
 reactivate-success-copy = Gratias! Toto preste.
 reactivate-success-button = Clauder
 
@@ -304,8 +304,10 @@ sub-item-missing-msg = Retenta plus tarde.
 sub-item-no-such-plan = Nulle tal plano pro iste subscription.
 sub-item-cancel-sub = Cancellar subscription
 sub-item-stay-sub = Resta abonate
-sub-item-cancel-msg = Tu non sera plus capace usar { $nomine } post { $periodo }, le ultime die de tu termino de facturation.
-sub-item-cancel-confirm = Cancellar mi credentiales e mi informationes salvate intra { $nomine } le { $periodo }
+sub-item-cancel-msg = Tu non sera plus capace usar { $name } post { $period }, le ultime die de tu termino de facturation.
+sub-item-cancel-confirm = Cancellar mi credentiales e mi informationes salvate intra { $name } le { $period }
+invoice-not-found = Factura posterior no trovate
+sub-item-no-such-subsequent-invoice = Factura posterior non trovate pro iste abonamento.
 
 ## subscription iap item
 
@@ -324,14 +326,16 @@ sub-route-idx-cancel-msg-title = Nos regretta de vider te ir
 # $name (String) - The name of the subscribed product.
 # $date (Date) - Last day of product access
 sub-route-idx-cancel-msg =
-    Tu subscription a { $nomine } ha essite cancellate.
+    Tu subscription a { $name } ha essite cancellate.
           <br />
-          Tu habera ancora accesso a { $nomine } usque { $date }.
+          Tu habera ancora accesso a { $name } usque { $date }.
 sub-route-idx-cancel-aside = Ha tu questiones? Visita le <a>supporto de { -brand-name-mozilla }</a>.
 sub-subscription-error =
     .title = Problema cargante le subscriptiones
 sub-customer-error =
     .title = Problema al cargamento del cliente
+sub-invoice-error =
+    .title = Problema a cargar le facturas
 sub-billing-update-success = Tu informationes de facturation ha essite  actualisate con successo!
 sub-route-payment-modal-heading = Informationes de facturation non valide
 sub-route-payment-modal-message = Il pare esser un error con tu conto de { -brand-name-paypal }, nos besonia que tu face le passos necessari pro resolver iste problema de pagamento.
@@ -366,6 +370,8 @@ coupon-error-expired = Le codice que tu ha inserite ha expirate.
 coupon-error-limit-reached = Le codice que tu ha inserite ha attingite su limite.
 coupon-error-invalid = Le codice que tu ha inserite non es valide.
 coupon-success = Tu plan automaticamente se renovara al lista precio.
+# $couponDurationDate (Date) - The date at which the coupon is no longer valid, and the subscription is billed the list price.
+coupon-success-repeating = Tu plano se renovara automaticamente depost le { $couponDurationDate } al precio de lista.
 coupon-enter-code =
     .placeholder = Insere le codice
 

@@ -23,6 +23,7 @@ alert-bar-close-message = Закрыть сообщение
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $case ->
@@ -220,6 +221,17 @@ input-password-hide = Скрыть пароль
 input-password-show = Показать пароль
 input-password-hide-aria = Скрыть пароль с экрана.
 input-password-show-aria = Показать пароль в виде обычного текста. Ваш пароль будет виден на экране.
+
+## Linked Accounts section
+
+la-heading = Связанные аккаунты
+la-description = Вы разрешили доступ к следующим аккаунтам.
+la-unlink-button = Отвязать
+la-unlink-account-button = Отвязать
+la-unlink-heading = Отвязать от стороннего аккаунта
+la-unlink-content = Вы уверены, что хотите отвязать свой аккаунт { -brand-google }? Отвязывание аккаунта не приведёт к автоматическому выходу из соответствующих служб. Выход вам нужно будет выполнить вручную в разделе «‎Подключённые службы»‎.
+la-unlink-content-2 = Вы уверены, что хотите отвязать свой аккаунт? Отвязывание аккаунта не приведёт к автоматическому выходу из соответствующих служб. Выход вам нужно будет выполнить вручную в разделе «‎Подключённые службы»‎.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -457,12 +469,6 @@ profile-picture =
     .header = Фото
 profile-display-name =
     .header = Отображаемое имя
-profile-password =
-    .header = Пароль
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Установлен { $date }
 profile-primary-email =
     .header = Основной адрес электронной почты
 
@@ -472,6 +478,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Безопасность
+security-password =
+    .header = Пароль
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Создан { $date }
 
 ## Switch component
 

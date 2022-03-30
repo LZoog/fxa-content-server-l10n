@@ -23,6 +23,7 @@ alert-bar-close-message = 關閉訊息
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox Accounts
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -116,7 +117,7 @@ cs-disconnect-sync-reason = 要取消連結此裝置的主要原因是什麼？
 ## The following are the options for selecting a reason for disconnecting the
 ## device
 
-cs-disconnect-sync-opt-prefix = 裝置是:
+cs-disconnect-sync-opt-prefix = 裝置是：
 cs-disconnect-sync-opt-suspicious = 此裝置看來很可疑
 cs-disconnect-sync-opt-lost = 已遺失此裝置
 cs-disconnect-sync-opt-old = 已經不再使用此裝置
@@ -193,6 +194,17 @@ input-password-hide = 隱藏密碼
 input-password-show = 顯示密碼
 input-password-hide-aria = 在畫面上隱藏密碼。
 input-password-show-aria = 用明文顯示密碼在螢幕上。
+
+## Linked Accounts section
+
+la-heading = 連結帳號
+la-description = 您已授權連結下列帳號。
+la-unlink-button = 解除連結
+la-unlink-account-button = 解除連結
+la-unlink-heading = 解除與第三方帳號的連結
+la-unlink-content = 您確定要解除連結 { -brand-google } 帳號嗎？解除連結不會將您自動從該服務登出，若想要登出，請到「已連結的服務」區塊手動登出。
+la-unlink-content-2 = 您確定要解除連結帳號嗎？解除連結不會將您自動從該服務登出，若想要登出，請到「已連結的服務」區塊手動登出。
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -291,8 +303,8 @@ delete-account-header =
     .title = 刪除帳號
 delete-account-step-1-2 = 第 1 步，共 2 步
 delete-account-step-2-2 = 第 2 步，共 2 步
-delete-account-confirm-title-2 = 您已將 { -product-firefox-account } 連結到可讓您在網路世界中更加安全、做事更有效率的 { -brand-mozilla } 產品:
-delete-account-acknowledge = 請確認若刪除帳號:
+delete-account-confirm-title-2 = 您已將 { -product-firefox-account } 連結到可讓您在網路世界中更加安全、做事更有效率的 { -brand-mozilla } 產品：
+delete-account-acknowledge = 請確認若刪除帳號：
 delete-account-chk-box-1-v2 =
     .label = 將取消所有付費訂閱項目（{ product-pocket } 除外）
 delete-account-chk-box-2 =
@@ -397,7 +409,7 @@ tfa-qa-code =
     .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = 無法掃描條碼？
 # When the user cannot use a QR code.
-tfa-enter-secret-key = 請在驗證程式輸入下列安全金鑰:
+tfa-enter-secret-key = 請在驗證程式輸入下列安全金鑰：
 tfa-enter-totp = 現在請輸入驗證應用程式當中的安全碼。
 tfa-input-enter-totp =
     .label = 請輸入安全碼
@@ -416,12 +428,6 @@ profile-picture =
     .header = 照片
 profile-display-name =
     .header = 顯示名稱
-profile-password =
-    .header = 密碼
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = 建立於 { $date }
 profile-primary-email =
     .header = 主要電子郵件地址
 
@@ -431,6 +437,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = 安全性
+security-password =
+    .header = 密碼
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = 建立於 { $date }
 
 ## Switch component
 

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 22:07+0000\n"
-"PO-Revision-Date: 2022-02-04 23:06+0000\n"
+"POT-Creation-Date: 2022-03-24 22:07+0000\n"
+"PO-Revision-Date: 2022-03-25 11:40+0000\n"
 "Last-Translator: Melo46 <melo@carmu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ia\n"
@@ -104,7 +104,7 @@ msgstr "Connectite"
 msgid "Unknown account. <a href=\"/signup\">Sign up</a>"
 msgstr "Conto incognite. <a href=\"/signup\">Inscribe te</a>"
 
-#: .es5/views/sign_up_password.js:84
+#: .es5/views/sign_up_password.js:86
 msgid "Account no longer exists. Recreate it?"
 msgstr "Le conto non existe plus. Recrear lo?"
 
@@ -1870,6 +1870,10 @@ msgstr "Salvar clave de recuperation"
 msgid "Done"
 msgstr "Facite"
 
+#: .es5/templates/partial/account-suggestion.mustache:1
+msgid "Why do I need to create this account? <a %(escapedSuggestionAttrs)s>Find out here</a>"
+msgstr "Perque besonia io de crear iste conto? <a %(escapedSuggestionAttrs)s>Discoperi hic</a>"
+
 #: .es5/templates/partial/coppa-age-input.mustache:1
 msgid "How old are you?"
 msgstr "Que etate ha tu?"
@@ -1965,6 +1969,18 @@ msgstr "Retornar al subscriptiones"
 #: .es5/templates/partial/sync-suggestion.mustache:1
 msgid "Looking for Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Get started here</a>"
 msgstr "Desira tu probar Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Comencia ci</a>"
+
+#: .es5/templates/partial/third-party-auth.mustache:1
+msgid "or"
+msgstr "o"
+
+#: .es5/templates/partial/third-party-auth.mustache:2
+msgid "Continue with Google"
+msgstr "Continuar con Google"
+
+#: .es5/templates/partial/third-party-auth.mustache:3
+msgid "Continue with Apple"
+msgstr "Continuar con Apple"
 
 #: .es5/templates/pair/auth_allow.mustache:1
 msgid "Approve new device <small>for %(email)s</small>"

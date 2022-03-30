@@ -23,6 +23,7 @@ alert-bar-close-message = Κλείσιμο μηνύματος
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $case ->
@@ -243,6 +244,17 @@ input-password-hide = Απόκρυψη κωδικού πρόσβασης
 input-password-show = Εμφάνιση κωδικού πρόσβασης
 input-password-hide-aria = Απόκρυψη κωδικού πρόσβασης από την οθόνη.
 input-password-show-aria = Εμφάνιση κωδικού πρόσβασης ως απλό κείμενο. Θα είναι ορατός στην οθόνη.
+
+## Linked Accounts section
+
+la-heading = Συνδεδεμένοι λογαριασμοί
+la-description = Έχετε παραχωρήσει πρόσβαση στους εξής λογαριασμούς.
+la-unlink-button = Αποσύνδεση
+la-unlink-account-button = Αποσύνδεση
+la-unlink-heading = Αποσύνδεση από τρίτο λογαριασμό
+la-unlink-content = Θέλετε σίγουρα να αποσυνδέσετε τον λογαριασμό { -brand-google } σας; Η αποσύνδεση του λογαριασμού σας δεν θα σας αποσυνδέσει αυτόματα από αυτές τις υπηρεσίες. Για να το κάνετε αυτό, θα πρέπει να αποσυνδεθείτε χειροκίνητα από την ενότητα «Συνδεδεμένες υπηρεσίες».
+la-unlink-content-2 = Θέλετε σίγουρα να αποσυνδέσετε τον λογαριασμό σας; Η αποσύνδεση του λογαριασμού σας δεν θα σας αποσυνδέσει αυτόματα από αυτές τις υπηρεσίες. Για να το κάνετε αυτό, θα πρέπει να αποσυνδεθείτε χειροκίνητα από την ενότητα «Συνδεδεμένες υπηρεσίες».
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -480,12 +492,6 @@ profile-picture =
     .header = Εικόνα
 profile-display-name =
     .header = Εμφανιζόμενο όνομα
-profile-password =
-    .header = Κωδικός πρόσβασης
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Δημιουργήθηκε στις { $date }
 profile-primary-email =
     .header = Κύριο email
 
@@ -495,6 +501,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Ασφάλεια
+security-password =
+    .header = Κωδικός πρόσβασης
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Δημιουργία: { $date }
 
 ## Switch component
 

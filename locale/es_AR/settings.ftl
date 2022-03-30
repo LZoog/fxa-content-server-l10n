@@ -23,6 +23,7 @@ alert-bar-close-message = Cerrar mensaje
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox Accounts
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -209,6 +210,17 @@ input-password-hide = Ocultar contraseña
 input-password-show = Mostrar contraseña
 input-password-hide-aria = Ocultar contraseña de pantalla
 input-password-show-aria = Mostrar contraseña como texto plano. La contraseña será visible en pantalla.
+
+## Linked Accounts section
+
+la-heading = Cuentas vinculadas
+la-description = Tenés acceso autorizado a las siguientes cuentas.
+la-unlink-button = Desvincular
+la-unlink-account-button = Desvincular
+la-unlink-heading = Desvincular de cuenta de terceros
+la-unlink-content = ¿Estás seguro de querer desvincular tu cuenta de { -brand-google }? Desvincular tu cuenta no te desconecta automáticamente de esos servicios. Para hacerlo, tenés que cerrar sesión manualmente en la sección Servicios conectados.
+la-unlink-content-2 = ¿Estás seguro de querer desvincular tu cuenta? Desvincular tu cuenta no te desconecta automáticamente de esos servicios. Para hacerlo, tenés que cerrar sesión manualmente en la sección Servicios conectados.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -442,12 +454,6 @@ profile-picture =
     .header = Foto
 profile-display-name =
     .header = Nombre para mostrar
-profile-password =
-    .header = Contraseña
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Creado el { $date }
 profile-primary-email =
     .header = Correo electrónico principal
 
@@ -457,6 +463,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Seguridad
+security-password =
+    .header = Contraseña
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Creado el { $date }
 
 ## Switch component
 

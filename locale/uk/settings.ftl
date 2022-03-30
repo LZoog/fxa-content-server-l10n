@@ -23,6 +23,7 @@ alert-bar-close-message = Закрити повідомлення
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $case ->
@@ -264,6 +265,17 @@ input-password-show = Показати пароль
 input-password-hide-aria = Сховати пароль з екрана.
 input-password-show-aria = Показати пароль як звичайний текст. Ваш пароль буде видимим на екрані.
 
+## Linked Accounts section
+
+la-heading = Пов’язані облікові записи
+la-description = Ви авторизували доступ до таких облікових записів.
+la-unlink-button = Відв'язати
+la-unlink-account-button = Відв'язати
+la-unlink-heading = Відв’язати від стороннього облікового запису
+la-unlink-content = Ви впевнені, що хочете відв’язати свій обліковий запис { -brand-google }? Відв’язування облікового запису не призведе до автоматичного виходу з цих служб. Для цього вам потрібно вручну вийти з розділу Під'єднані служби.
+la-unlink-content-2 = Ви впевнені, що хочете відв’язати свій обліковий запис? Відв’язування облікового запису не призведе до автоматичного виходу з цих служб. Для цього вам потрібно вручну вийти з розділу Під'єднані служби.
+nav-linked-accounts = { la-heading }
+
 ## Modal
 
 modal-close-title = Закрити
@@ -500,12 +512,6 @@ profile-picture =
     .header = Зображення
 profile-display-name =
     .header = Ім’я для показу
-profile-password =
-    .header = Пароль
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Створено { $date }
 profile-primary-email =
     .header = Основна адреса е-пошти
 
@@ -515,6 +521,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Безпека
+security-password =
+    .header = Пароль
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Створено { $date }
 
 ## Switch component
 

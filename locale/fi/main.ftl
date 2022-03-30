@@ -19,6 +19,11 @@ project-brand = Firefox-tilit
 -brand-name-google = Google
 -brand-name-apple = Apple
 -brand-name-pocket = Pocket
+# the following are not terms because they are not used directly in messages,
+# but rather looked up in code and passed into the message as variables.
+brand-name-google-play = { -brand-name-google } Play Kauppa
+# App Store here refers to Apple's App Store not the generic app store.
+brand-name-apple-app-store = App Store
 document =
     .title = Firefox-tilit
 
@@ -39,6 +44,8 @@ payment-error-manage-subscription-button = Hallitse tilausta
 country-currency-mismatch = Tämän tilauksen valuutta ei ole voimassa maksun tapahtumamaassa.
 currency-currency-mismatch = Pahoittelut, et voi vaihtaa valuuttojen välillä.
 no-subscription-change = Valitettavasti et voi muuttaa tilaustyyppiäsi.
+# $mobileAppStore (String) - "Google Play Store" or "App Store", localized when the translation is available.
+iap-already-subscribed = Olet jo tilannut sovelluskaupan { $mobileAppStore } kautta.
 expired-card-error = Luottokorttisi vaikuttaa vanhentuneen. Kokeile toista korttia.
 insufficient-funds-error = Vaikuttaa siltä, että kortilla ei ole riittävästi varoja. Kokeile toista korttia.
 withdrawal-count-limit-exceeded-error = Vaikuttaa siltä, että tämä tapahtuma ylittää luottorajasi. Kokeile toista korttia.
@@ -63,6 +70,7 @@ settings-subscriptions-title = Tilaukset
 
 terms = Käyttöehdot
 privacy = Tietosuojakäytäntö
+terms-download = Latausehdot
 
 ## Subscription titles
 
@@ -139,6 +147,30 @@ payment-zip =
 
 ##  $amount (Number) - The amount billed. It will be formatted as currency.
 
+# $intervalCount (Number) - The interval between payments, in days.
+payment-confirm-with-legal-links-day =
+    { $intervalCount ->
+        [one] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } päivittäin</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+       *[other] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } { $intervalCount } päivän välein</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+    }
+#  $intervalCount (Number) - The interval between payments, in weeks.
+payment-confirm-with-legal-links-week =
+    { $intervalCount ->
+        [one] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } viikoittain</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+       *[other] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } { $intervalCount } viikon välein</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+    }
+#  $intervalCount (Number) - The interval between payments, in months.
+payment-confirm-with-legal-links-month =
+    { $intervalCount ->
+        [one] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } kuukausittain</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+       *[other] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } { $intervalCount } kuukauden välein</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+    }
+#  $intervalCount (Number) - The interval between payments, in years.
+payment-confirm-with-legal-links-year =
+    { $intervalCount ->
+        [one] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } vuosittain</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+       *[other] Valtuutan { -brand-name-mozilla }n, { -brand-name-firefox }-tuotteiden tekijän, veloittaa maksutapaani <strong>{ $amount } { $intervalCount } vuoden välein</strong>, <termsOfServiceLink>käyttöehtojen</termsOfServiceLink> ja <privacyNoticeLink>tietosuojakäytännön</privacyNoticeLink> mukaisesti, kunnes peruutan tilaukseni.
+    }
 payment-confirm = Valtuutan Mozillan, Firefox-tuotteiden tekijän, veloittamaan maksutapaani <strong>{ $amount } $ per { $interval }</strong> maksuehtojen mukaisesti, kunnes peruutan tilauksen.
 
 ##
@@ -168,10 +200,13 @@ product-plan-change-heading = Tarkista muutos
 sub-change-failed = Tilaustyypin vaihtaminen epäonnistui
 sub-update-payment-title = Maksun tiedot
 sub-update-card-exp = Vanhenee { $cardExpMonth }/{ $cardExpYear }
+sub-update-copy = Tilauksesi vaihtuu välittömästi, ja sinua veloitetaan mukautettu määrä laskutuskautesi loppuun. Sinua veloitetaan täysimääräisesti { $startingDate } alkaen.
 
 ##
 
 sub-change-submit = Vahvista muutos
+sub-change-indicator =
+    .aria-label = muutosilmaisin
 sub-update-current-plan-label = Nykyinen tilaustyyppi
 sub-update-new-plan-label = Uusi tilaustyyppi
 sub-update-total-label = Uusi summa
@@ -246,6 +281,20 @@ pay-update-change-btn = Muuta
 ## $name (String) - The name of the subscribed product.
 
 reactivate-confirm-dialog-header = Haluatko jatkaa tuotteen { $name } käyttämistä?
+# $amount (Number) - The amount billed. It will be formatted as currency.
+# $last (String) - The last 4 digits of the card that will be charged
+# $endDate (Date) - Last day of product access
+reactivate-confirm-copy =
+    Palvelun { $name } käyttö jatkuu, ja laskutusjakso
+    sekä maksu pysyvät samoina kuin aiemmin. Seuraava veloitus
+    tulee olemaan { $amount } kortilta, joka päättyy { $last }, { $endDate }.
+# Alternate copy used when a payment method is not available, e.g. for free trials
+# $amount (Number) - The amount billed. It will be formatted as currency.
+# $endDate (Date) - Last day of product access
+reactivate-confirm-without-payment-method-copy =
+    Palvelun { $name } käyttö jatkuu, ja laskutusjakso
+    sekä maksu pysyvät samoina kuin aiemmin. Seuraava veloitus
+    tulee olemaan { $amount } { $endDate }.
 reactivate-confirm-button = Tilaa uudelleen
 
 ##  $date (Date) - Last day of product access
@@ -267,6 +316,9 @@ sub-item-stay-sub = Jatka tilausta
 sub-item-cancel-msg =
     Käyttöoikeutesi tuotteeseen { $name } päättyy
     { $period }, joka on laskutusjakson viimeinen päivä.
+sub-item-cancel-confirm =
+    Peru käyttömahdollisuuteni ja pääsy tietoihini
+    palvelussa { $name } { $period }
 
 ## subscription iap item
 
@@ -293,10 +345,13 @@ sub-subscription-error =
     .title = Ongelma ladatessa tilauksia
 sub-customer-error =
     .title = Ongelma ladatessa asiakasta
+sub-invoice-error =
+    .title = Ongelma laskuja ladatessa
 sub-billing-update-success = Laskutustietosi on päivitetty onnistuneesti
 sub-route-payment-modal-heading = Virheelliset laskutustiedot
 sub-route-payment-modal-message = { -brand-name-paypal }-tililläsi vaikuttaa olevan virhe. Sinun on tehtävä tarvittavat toimet tämän maksuongelman ratkaisemiseksi.
 sub-route-missing-billing-agreement-payment-alert = Virheelliset maksutiedot. Tiliisi kohdistuu virhe. <div>Hallitse</div>
+sub-route-funding-source-payment-alert = Virheelliset maksutiedot; tililläsi on virhe. Tämän hälytyksen poistaminen voi kestää jonkin aikaa, kun olet päivittänyt tietosi. <div>Hallinnoi</div>
 pay-update-manage-btn = Hallitse
 
 ## subscription create
@@ -321,6 +376,10 @@ coupon-discount-applied = Alennuspalkkio sovellettu
 coupon-submit = Käytä
 coupon-remove = Poista
 coupon-error = Antamasi koodi on virheellinen tai vanhentunut.
+coupon-error-generic = Koodia käsiteltäessä tapahtui virhe. Yritä uudelleen.
+coupon-error-expired = Antamasi koodi on vanhentunut.
+coupon-error-limit-reached = Antamasi koodi on käytetty liian monta kertaa.
+coupon-error-invalid = Antamasi koodi on virheellinen.
 coupon-success = Tilauksesi uusitaan automaattisesti listahintaan.
 coupon-enter-code =
     .placeholder = Kirjoita koodi

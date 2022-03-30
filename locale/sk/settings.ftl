@@ -23,6 +23,7 @@ alert-bar-close-message = Zavrieť správu
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $case ->
@@ -275,6 +276,17 @@ input-password-show = Zobraziť heslo
 input-password-hide-aria = Skryť heslo z obrazovky.
 input-password-show-aria = Zobraziť heslo ako obyčajný text. Vaše heslo bude viditeľné na obrazovke.
 
+## Linked Accounts section
+
+la-heading = Prepojené účty
+la-description = Máte autorizovaný prístup k nasledujúcim účtom.
+la-unlink-button = Zrušiť prepojenie
+la-unlink-account-button = Zrušiť prepojenie
+la-unlink-heading = Zrušenie prepojenia s účtom tretej strany
+la-unlink-content = Naozaj chcete odpojiť svoj účet { -brand-google }? Odpojením účtu sa automaticky neodhlásite z týchto služieb. Ak tak chcete urobiť, budete sa musieť manuálne odhlásiť v sekcii Pripojené služby.
+la-unlink-content-2 = Naozaj chcete odpojiť svoj účet? Odpojením účtu sa automaticky neodhlásite z týchto služieb. Ak tak chcete urobiť, budete sa musieť manuálne odhlásiť v sekcii Pripojené služby.
+nav-linked-accounts = { la-heading }
+
 ## Modal
 
 modal-close-title = Zavrieť
@@ -509,12 +521,6 @@ profile-picture =
     .header = Obrázok
 profile-display-name =
     .header = Zobrazované meno
-profile-password =
-    .header = Heslo
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Vytvorené { $date }
 profile-primary-email =
     .header = Hlavná e-mailová adresa
 
@@ -524,6 +530,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Bezpečnosť
+security-password =
+    .header = Heslo
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Vytvorené { $date }
 
 ## Switch component
 

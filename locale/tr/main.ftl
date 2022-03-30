@@ -51,6 +51,9 @@ card-error = İşleminiz gerçekleştirilemedi. Lütfen kredi kartı bilgilerini
 
 ##  $productName (String) - The name of the subscribed product.
 
+fxa-account-signup-error-2 = Bir sistem hatası nedeniyle { $productName } kaydınız başarısız oldu. Ödeme yönteminizden ücret alınmadı. Lütfen tekrar deneyin.
+newsletter-signup-error = Ürün güncelleme e-postalarına kayıtlı değilsiniz. Hesap ayarlarınızda tekrar deneyebilirsiniz.
+fxa-post-passwordless-sub-error = Abonelik onaylandı, ancak onay sayfası yüklenemedi. Hesabınızı ayarlamak için lütfen e-postanızı kontrol edin.
 
 ## settings
 
@@ -299,6 +302,8 @@ sub-item-cancel-sub = Aboneliği iptal et
 sub-item-stay-sub = Aboneliğimi sürdür
 sub-item-cancel-msg = Faturanızın son günü olan { $period } tarihinden sonra { $name } ürününü kullanamayacaksınız.
 sub-item-cancel-confirm = { $name } ürününe erişimimi ve kayıtlı bilgilerimi { $period } tarihinde iptal et
+invoice-not-found = Sonraki fatura bulunamadı
+sub-item-no-such-subsequent-invoice = Bu abonelik için sonraki fatura bulunamadı.
 
 ## subscription iap item
 
@@ -325,10 +330,13 @@ sub-subscription-error =
     .title = Abonelikler yüklenirken sorun oluştu
 sub-customer-error =
     .title = Müşteri yüklenirken sorun oluştu
+sub-invoice-error =
+    .title = Faturalar yüklenirken sorun oluştu
 sub-billing-update-success = Fatura bilgileriniz başarıyla güncellendi
 sub-route-payment-modal-heading = Geçersiz fatura bilgileri
 sub-route-payment-modal-message = { -brand-name-paypal } hesabınızda bir sorun var gibi görünüyor. Bu ödeme sorununu çözmek için gerekli adımları atmanız gerekiyor.
 sub-route-missing-billing-agreement-payment-alert = Geçersiz ödeme bilgileri: Hesabınızla ilgili bir sorun var. <div>Yönet</div>
+sub-route-funding-source-payment-alert = Geçersiz ödeme bilgisi: Hesabınızla ilgili bir hata var. Bilgilerinizi güncelledikten sonra bu uyarının temizlenmesi biraz zaman alabilir. <div>Yönet</div>
 pay-update-manage-btn = Yönet
 
 ## subscription create
@@ -349,9 +357,14 @@ plan-details-list-price = Liste fiyatı
 ## coupons
 
 coupon-discount = İndirim
+coupon-discount-applied = İndirim uygulandı
 coupon-submit = Uygula
 coupon-remove = Kaldır
 coupon-error = Girdiğiniz kod geçersiz veya süresi dolmuş.
+coupon-error-generic = Kod işlenirken bir hata oluştu. Lütfen tekrar deneyin.
+coupon-error-expired = Girdiğiniz kodun süresi dolmuş.
+coupon-error-limit-reached = Girdiğiniz kodun kullanım limiti doldu.
+coupon-error-invalid = Girdiğiniz kod geçersiz.
 coupon-success = Planınız liste fiyatı üzerinden otomatik olarak yenilenecektir.
 coupon-enter-code =
     .placeholder = Kodu yazın

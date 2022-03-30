@@ -39,6 +39,16 @@ alert-bar-close-message = Zapri sporočilo
         [mestnik] Firefoxu
         [orodnik] Firefoxom
     }
+-brand-google =
+    =
+    { $sklon ->
+       *[imenovalnik] Google
+        [rodilnik] Googla
+        [dajalnik] Googlu
+        [tozilnik] Google
+        [mestnik] Googlu
+        [orodnik] Googlom
+    }
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $sklon ->
@@ -197,6 +207,7 @@ dc-subheader = Pomagajte izboljšati { -product-firefox-accounts(sklon: "tožiln
 dc-subheader-content = Dovoli { -product-firefox-accounts(sklon: "dajalnik") } pošiljanje tehničnih in interakcijskih podatkov { -brand-mozilla(sklon: "dajalnik") }.
 dc-opt-out-success = Odklonitev uspešna. { -product-firefox-accounts } ne bodo pošiljali { -brand-mozilla(sklon: "dajalnik") } tehničnih ali interakcijskih podatkov.
 dc-opt-in-success = Hvala! Z deljenjem teh podatkov nam pomagate izboljševati { -product-firefox-accounts(sklon: "tožilnik") }.
+dc-opt-in-out-error = Oprostite, pri spreminjanju nastavitve o zbiranju podatkov je prišlo do težave.
 dc-learn-more = Več o tem
 
 # DropDownAvatarMenu component
@@ -238,6 +249,17 @@ input-password-hide = Skrij geslo
 input-password-show = Pokaži geslo
 input-password-hide-aria = Skrij geslo z zaslona.
 input-password-show-aria = Prikaži geslo kot navadno besedilo. Vaše geslo bo vidno na zaslonu.
+
+## Linked Accounts section
+
+la-heading = Povezani računi
+la-description = Pooblastili ste dostop do naslednjih računov.
+la-unlink-button = Odklopi
+la-unlink-account-button = Odklopi
+la-unlink-heading = Odklopi od računa tretjega ponudnika
+la-unlink-content = Ali ste prepričani, da želite prekiniti povezavo z { -brand-google } Računom? Odklop računa ne pomeni samodejne odjave iz teh storitev. Odjavite se lahko ročno v odseku Povezane storitve.
+la-unlink-content-2 = Ali ste prepričani, da želite prekiniti povezavo s svojim računom? Odklop računa ne pomeni samodejne odjave iz teh storitev. Odjavite se lahko ročno v odseku Povezane storitve.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -343,6 +365,8 @@ delete-account-step-1-2 = Korak 1 od 2
 delete-account-step-2-2 = Korak 2 od 2
 delete-account-confirm-title-2 = Svoj { -product-firefox-account(sklon: "tozilnik") } ste povezali z izdelki { -brand-mozilla(sklon: "rodilnik") }, ki vam zagotavljajo varnost in produktivnost na spletu:
 delete-account-acknowledge = Zavedajte se, da boste z izbrisom računa:
+delete-account-chk-box-1-v2 =
+    .label = Vse morebitne plačljive naročnine bodo preklicane (razen { product-pocket })
 delete-account-chk-box-2 =
     .label = lahko izgubili shranjene podatke in možnosti v izdelkih { -brand-mozilla(sklon: "rodilnik") }
 delete-account-chk-box-3 =
@@ -471,12 +495,6 @@ profile-picture =
     .header = Slika
 profile-display-name =
     .header = Prikazno ime
-profile-password =
-    .header = Geslo
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Ustvarjeno: { $date }
 profile-primary-email =
     .header = Glavna e-pošta
 
@@ -486,6 +504,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Varnost
+security-password =
+    .header = Geslo
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Ustvarjeno { $date }
 
 ## Switch component
 

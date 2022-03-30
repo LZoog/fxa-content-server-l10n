@@ -23,6 +23,7 @@ alert-bar-close-message = 关闭消息
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox 账户
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -78,7 +79,7 @@ bento-menu-made-by-mozilla = { -brand-mozilla } 出品
 ## Connect another device promo
 
 connect-another-fx-mobile = 下载适用于手机或平板电脑的 { -brand-firefox }
-connect-another-find-fx-mobile = 到 { -google-play } 或 { -app-store } 寻找 { -brand-firefox }，或是<br /><linkExternal>将下载链接发送到您的移动设备上。</linkExternal>
+connect-another-find-fx-mobile = 到 { -google-play } 或 { -app-store } 搜索 { -brand-firefox }，或<br /><linkExternal>将下载链接发送至您的移动设备。</linkExternal>
 # Alt text for Google Play and Apple App store images that will be shown if the image can't be loaded.
 # These images are used to encourage users to download Firefox on their mobile devices.
 connect-another-play-store-image =
@@ -94,7 +95,7 @@ connect-another-app-store-image-2 =
 cs-heading = 关联服务
 cs-description = 您正在使用并登录的所有项目。
 cs-cannot-refresh = 很抱歉，刷新关联服务列表时出现问题。
-cs-cannot-disconnect = 找不到客户端，无法解绑
+cs-cannot-disconnect = 找不到客户端，无法断开连接
 # This string is used in a notification message near the top of the page.
 # Variables:
 #   $service (String) - the name of a device or service that uses Firefox Accounts
@@ -111,7 +112,7 @@ cs-disconnect-sync-heading = 断开同步
 #   $device (String) - the name of a device using Firefox Accounts
 #                      (for example: "Firefox Nightly on Google Pixel 4a")
 cs-disconnect-sync-content = 您的浏览数据将继续保留在您的设备（{ $device }），但它将不再与您的账户同步。
-cs-disconnect-sync-reason = 要解绑此设备的主要原因是什么？
+cs-disconnect-sync-reason = 要断开连接此设备的主要原因是什么？
 
 ## The following are the options for selecting a reason for disconnecting the
 ## device
@@ -126,10 +127,10 @@ cs-disconnect-sync-opt-not-say = 我不想说
 ##
 
 cs-disconnect-advice-confirm = 好的，明白了
-cs-disconnect-lost-advice-heading = 丢失或被盗的设备已解绑
+cs-disconnect-lost-advice-heading = 丢失或被盗的设备已断开连接
 cs-disconnect-lost-advice-content-2 = 鉴于您的设备丢失或被盗，为了确保信息安全，您应在账户设置中更改您的 { -product-firefox-account }密码，并从设备制造商处了解如何远程抹除数据。
-cs-disconnect-suspicious-advice-heading = 可疑设备已解绑
-cs-disconnect-suspicious-advice-content = 若解绑的设备确实可疑，为了确保您的信息安全，应及时到“账户设置”中更改 { -product-firefox-account }密码，并在地址栏输入 about:logins，更改存放在 { -brand-firefox } 的所有网站密码。
+cs-disconnect-suspicious-advice-heading = 可疑设备已断开连接
+cs-disconnect-suspicious-advice-content = 若断开连接的设备确实可疑，为了确保您的信息安全，应及时到“账户设置”中更改 { -product-firefox-account }密码，并在地址栏输入 about:logins，更改存放在 { -brand-firefox } 的所有网站密码。
 cs-sign-out-button = 退出
 
 ##
@@ -193,6 +194,16 @@ input-password-hide = 隐藏密码
 input-password-show = 显示密码
 input-password-hide-aria = 在屏幕上隐藏密码。
 input-password-show-aria = 以纯文本形式显示密码，您的密码将显示在屏幕上。
+
+## Linked Accounts section
+
+la-heading = 已连接账号
+la-description = 您已授权连接下列账号。
+la-unlink-button = 断开连接
+la-unlink-account-button = 断开连接
+la-unlink-heading = 断开与第三方账号的连接
+la-unlink-content = 您确定要断开连接 { -brand-google } 账号吗？此操作不会自动将您从这些服务退出。为此，您需要到“关联服务”版块手动退出。
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -416,12 +427,6 @@ profile-picture =
     .header = 照片
 profile-display-name =
     .header = 显示名称
-profile-password =
-    .header = 密码
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = 创建于 { $date }
 profile-primary-email =
     .header = 主邮箱
 
@@ -431,6 +436,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = 账户安全
+security-password =
+    .header = 密码
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = 创建于 { $date }
 
 ## Switch component
 

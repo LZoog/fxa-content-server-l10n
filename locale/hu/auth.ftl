@@ -77,6 +77,8 @@ automated-email =
     Ez egy automatikus üzenet; ha tévedésből kapta, akkor nincs teendője.
     További információkért keresse fel a { -brand-mozilla } támogatást</a>.
 automated-email-plaintext = Ez egy automatikus üzenet, ha úgy véli tévedésből kapta, akkor nincs teendője.
+#  After the colon, there's a link to https://accounts.firefox.com/settings/change_password
+automated-email-not-authorized-plaintext = Ez egy automatikus e-mail, ha nem Ön adott engedélyt erre a műveletre, akkor változtassa meg jelszavát:
 automated-email-reset =
     Ez egy automatikus üzenet; ha nem engedélyezte ezt a műveletet, akkor <a data-l10n-name="resetLink">állítsa vissza a jelszavát</a>.
     További információkért keresse fel a <a data-l10n-name="supportLink">{ -brand-mozilla } támogatást</a>.
@@ -109,7 +111,7 @@ payment-provider-paypal-plaintext = { payment-method } { -brand-paypal }
 # Variables:
 #  $cardType (String) - The type of the credit card, e.g. Visa
 #  $lastFour (String) - The last four digits of the credit card, e.g. 5309
-card-ending-in = %(lastFour)s végződésű { $cardType } kártya
+card-ending-in = { $lastFour } végződésű { $cardType } kártya
 subscriptionSupport = Kérdése van az előfizetéséről? A <a data-l10n-name="subscriptionSupportUrl">támogatási csapatunk</a> itt van, hogy segítsen.
 # After the colon, there's a link to https://accounts.firefox.com/support
 subscriptionSupport-plaintext = Kérdése van az előfizetéséről? A támogatási csapatunk itt van, hogy segítsen:
@@ -149,12 +151,8 @@ downloadSubscription-subject = Üdvözli a { $productName }
 #  Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 downloadSubscription-title = Üdvözli a { $productName }
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-content = Ha még nem töltötte le a { $productName } terméket, akkor kezdjen neki az összes az előfizetésében lévő szolgáltatás használatának:
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-link-action = { $productName } letöltése
+downloadSubscription-content-2 = Kezdjük el használni az előfizetésében szereplő összes szolgáltatást:
+downloadSubscription-link-action-2 = Kezdő lépések
 # The user has a low number of valid recovery codes remaining for use
 codes-reminder-title = Kevés helyreállító kód maradt
 codes-reminder-description = Észrevettük, hogy kevés helyreállító kódja maradt. Fontolja meg új kódok előállítását, hogy elkerülje azt, hogy kizárja megát a fiókjából.
@@ -200,6 +198,11 @@ postAddAccountRecovery-description = Sikeresen előállított egy fiók helyreá
 postAddAccountRecovery-action = Fiók kezelése
 postAddAccountRecovery-recovery = Ha ez nem Ön volt, <a data-l10n-name="revokeAccountRecoveryLink">kattintson ide.</a>
 postAddAccountRecovery-revoke = Ha ez nem Ön volt, vonja vissza a kulcsot.
+postAddLinkedAccount-subject = Új fiók összekapcsolva a { -brand-firefox }szal
+#  Variables:
+#  $providerName (String) - The name of the provider, e.g. Apple, Google
+postAddLinkedAccount-title = A(z) { $providerName }-fiókja össze lett kapcsolva a { -product-firefox-account }jával
+postAddLinkedAccount-action = Fiók kezelése
 postAddTwoStepAuthentication-subject = Kétlépcsős hitelesítés engedélyezve
 postAddTwoStepAuthentication-title = Kétlépcsős hitelesítés engedélyezve
 postAddTwoStepAuthentication-description-plaintext = Sikeresen engedélyezte a kétlépcsős hitelesítést a { -product-firefox-account }jához. A hitelesítő alkalmazásból származó biztonsági kód minden bejelentkezésnél szükséges lesz.
@@ -274,10 +277,8 @@ subscriptionAccountFinishSetup-subject = Üdvözli a { $productName }: Állítsa
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionAccountFinishSetup-title = Üdvözli a { $productName }
 subscriptionAccountFinishSetup-content-processing = Fizetése feldolgozás alatt áll, és a befejezése akár négy munkanapot is igénybe vehet. Az előfizetés automatikusan megújul minden számlázási időszakban, hacsak nem dönt úgy, hogy lemondja.
-# Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionAccountFinishSetup-content-create = Ezután létre fog hozni egy jelszót a Firefox-fiókhoz, és letölti a { $productName } terméket.
-subscriptionAccountFinishSetup-action = Jelszó létrehozása
+subscriptionAccountFinishSetup-content-create-2 = Ezután létre kell hoznia egy jelszót a { -product-firefox-account }jához, hogy megkezdje az új előfizetés használatát.
+subscriptionAccountFinishSetup-action-2 = Kezdő lépések
 subscriptionAccountReminderFirst-subject = Emlékeztető: Fejezze be a fiókja beállítását
 subscriptionAccountReminderFirst-title = Még nem férhet hozzá az előfizetéséhez
 subscriptionAccountReminderFirst-content-info = Néhány nappal ezelőtt létrehozott egy { -product-firefox-account }ot, de nem erősítette meg. Reméljük, hogy befejezi fiókja beállítását, hogy használhassa az új előfizetését.
@@ -313,7 +314,7 @@ subscriptionDowngrade-content-switch = Sikeresen váltott erről: { $productName
 # $productPaymentCycleNew (String) - The interval of time from the end of one payment statement date to the next payment statement date of the new subscription, e.g. month
 # $productPaymentCycleOld (String) - The interval of time from the end of one payment statement date to the next payment statement date of the old subscription, e.g. month
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
-subscriptionDowngrade-content-charge-info = A következő számlától fogva a levonása megváltozik { $paymentAmountOld }/{ $productPaymentCycle } összegről a következőre: { $paymentAmountNew }/{ $productPaymentCycleNew }. Akkor kapni fog egy egyszeri { $paymentProrated } értékű jóváírást, amely a(z) { $productPaymentCycleOld } hátralévő időszakára eső különbözet.
+subscriptionDowngrade-content-charge-info = A következő számlától fogva a levonása megváltozik { $paymentAmountOld }/{ $productPaymentCycleOld } összegről a következőre: { $paymentAmountNew }/{ $productPaymentCycleNew }. Akkor kapni fog egy egyszeri { $paymentProrated } értékű jóváírást, amely a(z) { $productPaymentCycleOld } hátralévő időszakára eső különbözet.
 # Variables:
 # $productNameNew (String) - The name of the new subscribed product, e.g. Mozilla VPN
 subscriptionDowngrade-content-install = Ha új szoftver telepítése szükséges a { $productNameNew } használatához, akkor külön e-mailt fog kapni a letöltési utasításokkal.
@@ -334,14 +335,14 @@ subscriptionFirstInvoice-title = Köszönjük, hogy feliratkozott a(z) { $produc
 subscriptionFirstInvoice-content-processing = Az ön befizetése feldolgozás alatt áll, ami akár négy munkanapig is tarthat.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoice-content-install = Kapni fog egy külön e-mailt a letöltési utasításokkal, és arról, hogyan tudja használni a(z) { $productName } szolgáltatást.
+subscriptionFirstInvoice-content-install-2 = Külön e-mailt fog kapni a { $productName } használatának megkezdéséről.
 subscriptionFirstInvoice-content-auto-renew = Előfizetése számlázási időszakonként automatikusan megújul, hacsak nem dönt úgy, hogy lemondja.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
-subscriptionFirstInvoice-content-invoice-number = Számla száma: <b>%(invoiceNumber)s</b>
+subscriptionFirstInvoice-content-invoice-number = Számla száma: <b>{ $invoiceNumber }</b>
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
-subscriptionFirstInvoice-content-invoice-number-plaintext = Számla száma: %(invoiceNumber)s
+subscriptionFirstInvoice-content-invoice-number-plaintext = Számla száma: { $invoiceNumber }
 # Variables:
 #  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 #  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
@@ -358,7 +359,7 @@ subscriptionFirstInvoiceDiscount-title = Köszönjük, hogy feliratkozott a(z) {
 subscriptionFirstInvoiceDiscount-content-processing = Az Ön befizetése feldolgozás alatt áll, ami akár négy munkanapig is tarthat.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoiceDiscount-content-install = Kapni fog egy külön e-mailt a letöltési utasításokkal, és arról, hogyan tudja használni a(z) { $productName } szolgáltatást.
+subscriptionFirstInvoiceDiscount-content-install-2 = Külön e-mailt fog kapni a { $productName } használatának megkezdéséről.
 subscriptionFirstInvoiceDiscount-content-auto-renew = Előfizetése számlázási időszakonként automatikusan megújul, hacsak nem dönt úgy, hogy lemondja.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -371,7 +372,7 @@ subscriptionFirstInvoiceDiscount-content-invoice-number-plaintext = Díjbekérő
 subscriptionFirstInvoiceDiscount-content-subtotal = Részösszeg: { $invoiceSubtotal }
 # Variables:
 #  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
-subscriptionFirstInvoiceDiscount-content-onetime-discount = Egyszeri kedvezmény: -{ $invoiceDiscountAmount }
+subscriptionFirstInvoiceDiscount-content-discount = Kedvezmény: -{ $invoiceDiscountAmount }
 # Variables:
 #  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 #  $invoiceTotal (String) - The amount, after discount, of the subscription invoice, including currency, e.g. $8.00
@@ -445,10 +446,10 @@ subscriptionSubsequentInvoice-title = Köszönjük, hogy előfizető lett!
 subscriptionSubsequentInvoice-content-received = Megkaptuk legutóbbi { $productName } befizetését.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
-subscriptionSubsequentInvoice-content-invoice-number = Számla száma: <b>%(invoiceNumber)s</b>
+subscriptionSubsequentInvoice-content-invoice-number = Számla száma: <b>{ $invoiceNumber }</b>
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
-subscriptionSubsequentInvoice-content-invoice-number-plaintext = Számla száma: %(invoiceNumber)s
+subscriptionSubsequentInvoice-content-invoice-number-plaintext = Számla száma: { $invoiceNumber }
 # Variables:
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
 subscriptionSubsequentInvoice-content-plan-change = Csomagmódosítás: { $paymentProrated }
@@ -459,6 +460,35 @@ subscriptionSubsequentInvoice-content-charged = { $invoiceTotal } levonva ekkor:
 # Variables:
 #  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
 subscriptionSubsequentInvoice-content-next-invoice = Következő számla: { $nextInvoiceDateOnly }
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-subject = A(z) { $productName } befizetése megérkezett
+subscriptionSubsequentInvoiceDiscount-title = Köszönjük, hogy előfizető lett!
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-content-received = Megkaptuk legutóbbi { $productName } befizetését.
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number = Díjbekérő száma: <b>{ $invoiceNumber }</b>
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number-plaintext = Díjbekérő száma: { $invoiceNumber }
+# Variables:
+# $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-plan-change = Csomagmódosítás: { $paymentProrated }
+# Variables:
+# $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-charge = { $invoiceTotal } levonva ekkor: { $invoiceDateOnly }
+# Variables:
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
+subscriptionSubsequentInvoiceDiscount-content-next-invoice = Következő díjbekérő: { $nextInvoiceDateOnly }
+# Variables:
+#  $invoiceSubtotal (String) - The amount, before discount, of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-subtotal = Részösszeg: { $invoiceSubtotal }
+# Variables:
+#  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
+subscriptionSubsequentInvoiceDiscount-content-discount = Kedvezmény: -{ $invoiceDiscountAmount }
 # Variables:
 # $productNameNew (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-subject = Frissített erre: { $productNameNew }
@@ -473,7 +503,7 @@ subscriptionUpgrade-upgrade-info = Sikeresen frissített erről: { $productNameO
 # $productPaymentCycleNew (String) - The interval of time from the end of one payment statement date to the next payment statement date of the new subscription, e.g. month
 # $productPaymentCycleOld (String) - The interval of time from the end of one payment statement date to the next payment statement date of the old subscription, e.g. month
 # $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
-subscriptionUpgrade-content-charge-info = A következő számlától fogva a levonása megváltozik { $paymentAmountOld }/{ $productPaymentCycle } összegről a következőre: { $paymentAmountNew }/{ $productPaymentCycleNew }. Akkor egy egyszeri { $paymentProrated } értékű levonása lesz, amely a(z) { $productPaymentCycleOld } hátralévő időszakára eső különbözet.
+subscriptionUpgrade-content-charge-info = A következő számlától fogva a levonása megváltozik { $paymentAmountOld }/{ $productPaymentCycleOld } összegről a következőre: { $paymentAmountNew }/{ $productPaymentCycleNew }. Akkor egy egyszeri { $paymentProrated } értékű levonása lesz, amely a(z) { $productPaymentCycleOld } hátralévő időszakára eső különbözet.
 # Variables:
 # $productNameNew (String) - The name of the new subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-install = Ha új szoftver telepítése szükséges a { $productNameNew } használatához, akkor külön e-mailt fog kapni a letöltési utasításokkal.
@@ -523,16 +553,9 @@ verifyPrimary-subject = Elsődleges e-mail cím megerősítése
 verifyPrimary-action = E-mail cím megerősítése
 verifyPrimary-action-plaintext = { verifyPrimary-action }:
 verifyPrimary-post-verify = Amint megerősíti, a fiókváltoztatások, mint a másodlagos e-mail cím hozzáadása, lehetségesek lesznek erről az eszközről.
-verifySecondary-subject = Másodlagos e-mail megerősítése
-verifySecondary-title = Másodlagos e-mail megerősítése
-# Variables:
-#  $email (String) - A user's unverified secondary email address
-verifySecondary-explainer = A kérés, hogy a(z) { $email } címet használja másodlagos e-mail címként a következő { -product-firefox-account }ból lett küldve:
-verifySecondary-action = E-mail cím megerősítése
-verifySecondary-prompt = { verifySecondary-action }:
-verifySecondary-post-verification = Ha hitelesíti, akkor ez a cím meg fogja kapni a biztonsági értesítéseket és megerősítéseket.
 verifySecondaryCode-subject = Másodlagos e-mail megerősítése
 verifySecondaryCode-title = Másodlagos e-mail megerősítése
+verifySecondaryCode-action = E-mail-cím megerősítése
 # Variables:
 #  $email (string) A user's unverified secondary email address
 verifySecondaryCode-explainer = A kérés, hogy a(z) { $email } címet használja másodlagos e-mail címként a következő { -product-firefox-account }ból lett küldve:

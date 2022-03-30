@@ -39,6 +39,7 @@ alert-bar-close-message = Zamknij komunikat
         [ins] Firefoksem
         [loc] Firefoksie
     }
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts =
     { $case ->
@@ -290,6 +291,17 @@ input-password-show = Pokaż hasło
 input-password-hide-aria = Ukryj hasło z ekranu.
 input-password-show-aria = Pokaż hasło jako zwykły test. Twoje hasło będzie widoczne na ekranie.
 
+## Linked Accounts section
+
+la-heading = Powiązane konta
+la-description = Upoważniono dostęp do poniższych kont.
+la-unlink-button = Odwiąż
+la-unlink-account-button = Odwiąż
+la-unlink-heading = Odwiąż od konta innej firmy
+la-unlink-content = Czy na pewno odwiązać konto { -brand-google }? Nie spowoduje to automatycznego wylogowania z tych usług. Aby to zrobić, musisz ręcznie wylogować się w sekcji „Połączone usługi”.
+la-unlink-content-2 = Czy na pewno odwiązać konto? Nie spowoduje to automatycznego wylogowania z tych usług. Aby to zrobić, musisz ręcznie wylogować się w sekcji „Połączone usługi”.
+nav-linked-accounts = { la-heading }
+
 ## Modal
 
 modal-close-title = Zamknij
@@ -523,12 +535,6 @@ profile-picture =
     .header = Zdjęcie
 profile-display-name =
     .header = Wyświetlana nazwa
-profile-password =
-    .header = Hasło
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Utworzono { $date }
 profile-primary-email =
     .header = Główny adres e-mail
 
@@ -538,6 +544,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Bezpieczeństwo
+security-password =
+    .header = Hasło
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Utworzono { $date }
 
 ## Switch component
 

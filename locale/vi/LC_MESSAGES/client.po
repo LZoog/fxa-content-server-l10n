@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 22:07+0000\n"
-"PO-Revision-Date: 2022-02-05 04:16+0000\n"
+"POT-Creation-Date: 2022-03-24 22:07+0000\n"
+"PO-Revision-Date: 2022-03-24 23:09+0000\n"
 "Last-Translator: Quế Tùng <best.cloney.1301@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: vi\n"
@@ -104,7 +104,7 @@ msgstr "Đã kết nối"
 msgid "Unknown account. <a href=\"/signup\">Sign up</a>"
 msgstr "Không xác định được tài khoản. <a href=\"/signup\">Đăng ký</a>"
 
-#: .es5/views/sign_up_password.js:84
+#: .es5/views/sign_up_password.js:86
 msgid "Account no longer exists. Recreate it?"
 msgstr "Tài khoản không còn tồn tại. Tạo mới nó?"
 
@@ -1872,6 +1872,10 @@ msgstr "Lưu khóa khôi phục"
 msgid "Done"
 msgstr "Xong"
 
+#: .es5/templates/partial/account-suggestion.mustache:1
+msgid "Why do I need to create this account? <a %(escapedSuggestionAttrs)s>Find out here</a>"
+msgstr "Tại sao tôi cần tạo tài khoản này? <a %(escapedSuggestionAttrs)s>Tìm hiểu tại đây</a>"
+
 #: .es5/templates/partial/coppa-age-input.mustache:1
 msgid "How old are you?"
 msgstr "Bạn bao nhiêu tuổi?"
@@ -1967,6 +1971,18 @@ msgstr "Quay lại thuê bao"
 #: .es5/templates/partial/sync-suggestion.mustache:1
 msgid "Looking for Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Get started here</a>"
 msgstr "Bạn đang tìm kiếm Đồng bộ Firefox? <a %(escapedSyncSuggestionAttrs)s>Hãy bắt đầu tại đây</a>"
+
+#: .es5/templates/partial/third-party-auth.mustache:1
+msgid "or"
+msgstr "hoặc"
+
+#: .es5/templates/partial/third-party-auth.mustache:2
+msgid "Continue with Google"
+msgstr "Tiếp tục với Google"
+
+#: .es5/templates/partial/third-party-auth.mustache:3
+msgid "Continue with Apple"
+msgstr "Tiếp tục với Apple"
 
 #: .es5/templates/pair/auth_allow.mustache:1
 msgid "Approve new device <small>for %(email)s</small>"

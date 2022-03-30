@@ -77,6 +77,8 @@ automated-email =
     Denne mail er sendt automatisk; hvis du har modtaget denne mail ved en fejl, behøver du ikke foretage dig noget.
     For mere information, besøg <a data-l10n-name="supportLink">{ -brand-mozilla } Support</a>.
 automated-email-plaintext = Denne mail er sendt automatisk; hvis du har modtaget denne mail ved en fejl, behøver du ikke foretage dig noget.
+#  After the colon, there's a link to https://accounts.firefox.com/settings/change_password
+automated-email-not-authorized-plaintext = Denne mail er sendt automatisk. Hvis du ikke har godkendt denne handling, så skift din adgangskode:
 automated-email-reset =
     Denne mail er sendt automatisk; hvis du ikke har godkendt denne handling, så <a data-l10n-name="resetLink">nulstil din adgangskode</a>.
     For mere information, besøg <a data-l10n-name="supportLink">{ -brand-mozilla } Support</a>.
@@ -149,12 +151,8 @@ downloadSubscription-subject = Velkommen til { $productName }
 #  Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 downloadSubscription-title = Velkommen til { $productName }
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-content = Hvis du ikke allerede har hentet { $productName }, så lad os komme i gang med at bruge alle de funktioner, som følger med dit abonnement:
-#  Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-downloadSubscription-link-action = Hent { $productName }
+downloadSubscription-content-2 = Lad os komme i gang med at bruge alle funktionerne i dit abonnement:
+downloadSubscription-link-action-2 = Kom i gang
 # The user has a low number of valid recovery codes remaining for use
 codes-reminder-title = Kun få genoprettelseskoder tilbage
 codes-reminder-description = Vi har bemærket, at du ikke har så mange genoprettelseskoder tilbage. Overvej at generere nye koder for at undgå at blive låst ude af din konto.
@@ -200,6 +198,11 @@ postAddAccountRecovery-description = Du har oprettet en genoprettelsesnøgle til
 postAddAccountRecovery-action = Håndter konto
 postAddAccountRecovery-recovery = Hvis det ikke var dig , så <a data-l10n-name="revokeAccountRecoveryLink">klik her.</a>
 postAddAccountRecovery-revoke = Hvis det ikke var dig, så tilbagekald nøglen.
+postAddLinkedAccount-subject = Ny konto knyttet til { -brand-firefox }
+#  Variables:
+#  $providerName (String) - The name of the provider, e.g. Apple, Google
+postAddLinkedAccount-title = Din { $providerName }-konto er blevet knyttet til din { -product-firefox-account }
+postAddLinkedAccount-action = Håndter konto
 postAddTwoStepAuthentication-subject = Totrinsgodkendelse aktiveret
 postAddTwoStepAuthentication-title = Totrinsgodkendelse aktiveret
 postAddTwoStepAuthentication-description-plaintext = Du har aktiveret totrinsgodkendelse på din { -product-firefox-account }. Sikkerhedskoder fra din godkendelsesapp vil nu være påkrævet ved hvert login.
@@ -274,10 +277,8 @@ subscriptionAccountFinishSetup-subject = Velkommen til { $productName }: Angiv d
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionAccountFinishSetup-title = Velkommen til { $productName }
 subscriptionAccountFinishSetup-content-processing = Din betaling behandles og kan tage op til fire arbejdsdage at gennemføre. Dit abonnement fornys automatisk hver faktureringsperiode, medmindre du vælger at annullere.
-# Variables:
-#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionAccountFinishSetup-content-create = Opret en adgangskode til din Firefox-konto og hent { $productName }.
-subscriptionAccountFinishSetup-action = Opret en adgangskode
+subscriptionAccountFinishSetup-content-create-2 = Opret herefter en adgangskode til { -product-firefox-account } for at begynde at bruge dit nye abonnement.
+subscriptionAccountFinishSetup-action-2 = Kom i gang
 subscriptionAccountReminderFirst-subject = Påmindelse: Færdiggør opsætningen af din konto
 subscriptionAccountReminderFirst-title = Du kan ikke få adgang til dit abonnement endnu
 subscriptionAccountReminderFirst-content-info = For et par dage siden oprettede du en { -product-firefox-account }, men bekræftede den aldrig. Vi håber, at du vil færdiggøre opsætningen af din konto, så du kan bruge dit nye abonnement.
@@ -334,7 +335,7 @@ subscriptionFirstInvoice-title = Tak fordi du abonnerer på { $productName }
 subscriptionFirstInvoice-content-processing = Din betaling behandles i øjeblikket og kan tage op til fire arbejdsdage at fuldføre.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoice-content-install = Du vil modtage en separat mail med vejledning i, hvordan du henter og begynder at bruge { $productName }.
+subscriptionFirstInvoice-content-install-2 = Du vil modtage en separat mail om, hvordan du begynder at bruge { $productName }.
 subscriptionFirstInvoice-content-auto-renew = Dit abonnement fornys automatisk hver faktureringsperiode, medmindre du vælger at annullere.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -358,7 +359,7 @@ subscriptionFirstInvoiceDiscount-title = Tak fordi du abonnerer på { $productNa
 subscriptionFirstInvoiceDiscount-content-processing = Din betaling behandles i øjeblikket og kan tage op til fire arbejdsdage at fuldføre.
 # Variables:
 #  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
-subscriptionFirstInvoiceDiscount-content-install = Du vil modtage en separat mail med vejledning i, hvordan du henter og begynder at bruge { $productName }.
+subscriptionFirstInvoiceDiscount-content-install-2 = Du vil modtage en separat mail om, hvordan du begynder at bruge { $productName }.
 subscriptionFirstInvoiceDiscount-content-auto-renew = Dit abonnement fornys automatisk hver faktureringsperiode, medmindre du vælger at annullere.
 # Variables:
 #  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
@@ -371,7 +372,7 @@ subscriptionFirstInvoiceDiscount-content-invoice-number-plaintext = Fakturanumme
 subscriptionFirstInvoiceDiscount-content-subtotal = Subtotal: { $invoiceSubtotal }
 # Variables:
 #  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
-subscriptionFirstInvoiceDiscount-content-onetime-discount = Engangsrabat: -{ $invoiceDiscountAmount }
+subscriptionFirstInvoiceDiscount-content-discount = Rabat: -{ $invoiceDiscountAmount }
 # Variables:
 #  $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
 #  $invoiceTotal (String) - The amount, after discount, of the subscription invoice, including currency, e.g. $8.00
@@ -460,6 +461,35 @@ subscriptionSubsequentInvoice-content-charged = Opkrævet { $invoiceTotal } den 
 #  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
 subscriptionSubsequentInvoice-content-next-invoice = Næste faktura: { $nextInvoiceDateOnly }
 # Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-subject = Betaling for { $productName } modtaget
+subscriptionSubsequentInvoiceDiscount-title = Tak fordi du er abonnent!
+# Variables:
+#  $productName (String) - The name of the subscribed product, e.g. Mozilla VPN
+subscriptionSubsequentInvoiceDiscount-content-received = Vi modtog din seneste betaling for { $productName }.
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number = Fakturanummer: <b>{ $invoiceNumber }</b>
+# Variables:
+#  $invoiceNumber (String) - The invoice number of the subscription invoice, e.g. 8675309
+subscriptionSubsequentInvoiceDiscount-content-invoice-number-plaintext = Fakturanummer: { $invoiceNumber }
+# Variables:
+# $paymentProrated (String) - The one time fee to reflect the higher charge for the remainder of the payment cycle, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-plan-change = Planændring: { $paymentProrated }
+# Variables:
+# $invoiceDateOnly (String) - The date of the next invoice, e.g. 01/20/2016
+#  $invoiceTotal (String) - The amount of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-charge = Opkrævet { $invoiceTotal } den { $invoiceDateOnly }
+# Variables:
+#  $nextInvoiceDateOnly (String) - The date of the next invoice, e.g. 2016/01/20
+subscriptionSubsequentInvoiceDiscount-content-next-invoice = Næste faktura: { $nextInvoiceDateOnly }
+# Variables:
+#  $invoiceSubtotal (String) - The amount, before discount, of the subscription invoice, including currency, e.g. $10.00
+subscriptionSubsequentInvoiceDiscount-content-subtotal = Subtotal: { $invoiceSubtotal }
+# Variables:
+#  $invoiceDiscountAmount (String) - The amount of the discount of the subscription invoice, including currency, e.g. $2.00
+subscriptionSubsequentInvoiceDiscount-content-discount = Rabat: -{ $invoiceDiscountAmount }
+# Variables:
 # $productNameNew (String) - The name of the subscribed product, e.g. Mozilla VPN
 subscriptionUpgrade-subject = Du har opgraderet til { $productNameNew }
 subscriptionUpgrade-title = Tak fordi du opgraderer!
@@ -523,16 +553,9 @@ verifyPrimary-subject = Bekræft primær mailadresse
 verifyPrimary-action = Bekræft mailadresse
 verifyPrimary-action-plaintext = { verifyPrimary-action }:
 verifyPrimary-post-verify = Når denne mailadresse er blevet bekræftet, kan ændringer af kontoen som fx tilføjelse af en sekundær mailadresse foretages fra denne enhed.
-verifySecondary-subject = Bekræft sekundær mailadresse
-verifySecondary-title = Bekræft sekundær mailadresse
-# Variables:
-#  $email (String) - A user's unverified secondary email address
-verifySecondary-explainer = Fra følgende { -product-firefox-account } kommer en forespørgsel om at bruge { $email } som sekundær mailadresse:
-verifySecondary-action = Bekræft mailadresse
-verifySecondary-prompt = { verifySecondary-action }:
-verifySecondary-post-verification = Når denne mailadresse er blevet bekræftet, vil den begynde at modtage sikkerhedsmeddelelser og bekræftelser.
 verifySecondaryCode-subject = Bekræft sekundær mailadresse
 verifySecondaryCode-title = Bekræft sekundær mailadresse
+verifySecondaryCode-action = Bekræft mailadresse
 # Variables:
 #  $email (string) A user's unverified secondary email address
 verifySecondaryCode-explainer = Fra følgende { -product-firefox-account } kommer en forespørgsel om at bruge { $email } som sekundær mailadresse:

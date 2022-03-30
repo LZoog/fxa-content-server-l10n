@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 22:07+0000\n"
-"PO-Revision-Date: 2022-02-04 12:05+0000\n"
+"POT-Creation-Date: 2022-03-24 22:07+0000\n"
+"PO-Revision-Date: 2022-03-25 12:03+0000\n"
 "Last-Translator: Marcelo Ghelman <marcelo.ghelman@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -105,7 +105,7 @@ msgstr "Conectado"
 msgid "Unknown account. <a href=\"/signup\">Sign up</a>"
 msgstr "Conta desconhecida. <a href=\"/signup\">Cadastre-se</a>"
 
-#: .es5/views/sign_up_password.js:84
+#: .es5/views/sign_up_password.js:86
 msgid "Account no longer exists. Recreate it?"
 msgstr "A conta não existe mais. Recriar?"
 
@@ -1604,11 +1604,11 @@ msgstr "Descrição do problema"
 
 #: .es5/templates/why_connect_another_device.mustache:2
 msgid "The Sync service isn’t a permanent backup, it’s simply a secure way to transfer saved bookmarks, history and passwords between your own devices."
-msgstr "O serviço de sincronização não é uma cópia de segurança permanente, é simplesmente uma maneira segura de transferir favoritos, histórico e senhas salvos entre seus dispositivos."
+msgstr "O serviço de sincronização não é uma cópia de segurança permanente, é simplesmente uma maneira segura de transferir entre seus dispositivos os favoritos, histórico e senhas salvos."
 
 #: .es5/templates/why_connect_another_device.mustache:3
 msgid "You should install Firefox and sync at least two devices to protect against losing your data if you need to restore it but forget your password."
-msgstr "Você deve instalar o Firefox e sincronizar pelo menos dois dispositivos para se proteger contra perda de dados, caso precise restaurar mas tenha esquecido sua senha."
+msgstr "Você deve instalar o Firefox e sincronizar em pelo menos dois dispositivos para se proteger contra perda de dados, caso precise restaurar mas tenha esquecido sua senha."
 
 #: .es5/templates/why_connect_another_device.mustache:4
 msgid "Got it"
@@ -1869,6 +1869,10 @@ msgstr "Salvar chave de recuperação"
 msgid "Done"
 msgstr "Concluído"
 
+#: .es5/templates/partial/account-suggestion.mustache:1
+msgid "Why do I need to create this account? <a %(escapedSuggestionAttrs)s>Find out here</a>"
+msgstr "Por que preciso criar esta conta? <a %(escapedSuggestionAttrs)s>Descubra aqui</a>"
+
 #: .es5/templates/partial/coppa-age-input.mustache:1
 msgid "How old are you?"
 msgstr "Quantos anos você tem?"
@@ -1964,6 +1968,18 @@ msgstr "Voltar a inscrições"
 #: .es5/templates/partial/sync-suggestion.mustache:1
 msgid "Looking for Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Get started here</a>"
 msgstr "Procurando o Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Comece aqui</a>"
+
+#: .es5/templates/partial/third-party-auth.mustache:1
+msgid "or"
+msgstr "ou"
+
+#: .es5/templates/partial/third-party-auth.mustache:2
+msgid "Continue with Google"
+msgstr "Continuar com Google"
+
+#: .es5/templates/partial/third-party-auth.mustache:3
+msgid "Continue with Apple"
+msgstr "Continuar com Apple"
 
 #: .es5/templates/pair/auth_allow.mustache:1
 msgid "Approve new device <small>for %(email)s</small>"

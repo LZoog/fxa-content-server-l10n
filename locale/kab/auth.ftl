@@ -17,24 +17,45 @@
 -product-firefox-account = Amiḍan Firefox
 # "Firefox Cloud" should be treated as a brand.
 -product-firefox-cloud = Firefox Cloud
+# Other brands
+-brand-paypal = PayPal
+-app-store = App Store
+-google-play = Google Play
 
 ## Email content
 
+fxa-header-firefox-logo = <img data-l10n-name="fxa-logo" alt="Alugu n { -brand-firefox }">
+fxa-header-sync-devices-image = <img data-l10n-name="sync-devices-image" alt="Sync devices">
+body-devices-image = <img data-l10n-name="devices-image" alt="Devices">
 fxa-privacy-url = Tasertit tabaḍnit n { -brand-mozilla }
 fxa-service-url = Tiwtilin n useqdec n { -product-firefox-cloud }
+subplat-header-firefox-logo = <img data-l10n-name="fxa-logo-firefox" alt="Alugu { -brand-firefox }">
+subplat-footer-mozilla-logo = <img data-l10n-name="mozilla-logo" alt="Alugu n { -brand-mozilla }">
 subplat-automated-email = Wagi d iymayl awurman; ma yella d tuccḍa, ulac ayen ara txedmeḍ.
+subplat-privacy-notice = Tasertit n tbaḍnit
 subplat-privacy-plaintext = Tasertit n tbaḍnit:
+subplat-update-billing-plaintext = { subplat-update-billing }:
 subplat-terms-policy = Tiwtilin akked tsertit n usefsex
+subplat-terms-policy-plaintext = { subplat-terms-policy }:
 subplat-cancel = Sefsex ajerred
+subplat-cancel-plaintext = { subplat-cancel }:
 subplat-reactivate = Ales armad n ujerred
+subplat-reactivate-plaintext = { subplat-reactivate }:
 subplat-update-billing = Aleqqem n telɣut n ufter
+subplat-privacy-policy = Tasertit tabaḍnit n { -brand-mozilla }
+subplat-privacy-policy-plaintext = { subplat-privacy-policy }:
+subplat-cloud-terms = Tiwtilin n useqdec n { -product-firefox-cloud }
+subplat-cloud-terms-plaintext = { subplat-cloud-terms }:
 subplat-legal = Usḍif
+subplat-legal-plaintext = { subplat-legal }:
 subplat-privacy = Tabaḍnit
+subplat-privacy-website-plaintext = { subplat-privacy }:
 automated-email-plaintext = Wagi d iymayl awurman; ma yella d tuccḍa, ulac ayen ara txedmeḍ.
 # After the colon, there's a link to https://survey.alchemer.com/s3/6534408/Privacy-Security-Product-Cancellation-of-Service-Q4-21
 cancellationSurvey-plaintext = Ma ulac aɣilif, mudd-aɣ-d afus ad nesnerni imeẓla-nneɣ s uttekki deg tefrant-a wezzilen:
 change-password-plaintext = Ma tcukeḍ yella win yettawṛaḍen ad yekcem ɣer umiḍan inek, snifel awal inek uffir ma ulac aɣilif.
 manage-account = Sefrek amiḍan
+manage-account-plaintext = { manage-account }:
 # After the colon, there's a link to https://accounts.firefox.com/support
 subscriptionSupport-plaintext = Isteqsiyen ɣer ujerred-ik? Tarbeɛt-nneɣ n tallelt a-tt-a da ad ak-d-efk afus:
 # After the colon, there's a link to https://accounts.firefox.com/subscriptions
@@ -95,7 +116,6 @@ postRemoveAccountRecovery-invalid = Tasarutt-a n tririt dayen ur tezmir ara ad t
 postRemoveSecondary-subject = Imay wis sin ittwakkes
 postRemoveSecondary-title = Imay wis sin ittwakkes
 postRemoveSecondary-action = Sefrek amiḍan
-postRemoveTwoStepAuthentication-subject = Asesteb s snat n tarrayin yensa
 postRemoveTwoStepAuthentication-title = Asesteb s snat n tarrayin yensa
 postRemoveTwoStepAuthentication-action = Sefrek amiḍan
 postRemoveTwoStepAuthentication-not-required = Tingalin n tririt uir zgint laqent yal tuqqna.
@@ -149,10 +169,6 @@ verifyPrimary-description = Asuter i usnifel n umiḍan tettwag seg ibenk agi:
 verifyPrimary-subject = Sentem tansa tagejdant
 verifyPrimary-action = Seqed tansa-inek imayl
 verifyPrimary-post-verify = Mi yedda usenqeḍ, tzemreḍ ad tesnifleḍ amiḍan deg ibenk-a am tirna n tansa n imayl tis snat.
-verifySecondary-subject = Sentem tansa tis snat
-verifySecondary-title = Senqed imayl wi sin
-verifySecondary-action = Seqed tansa-inek imayl
-verifySecondary-post-verification = Ticki ittwasenqed, tansa-yagi ad s-yaweḍ isentam akked ilγa n tγellist.
 verifySecondaryCode-subject = Sentem tansa tis snat
 verifySecondaryCode-title = Senqed imayl wi sin
 verifySecondaryCode-prompt = Seqdec tangalt-a n usenqed:

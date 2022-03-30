@@ -23,6 +23,7 @@ alert-bar-close-message = Emboty ñe’ẽmondo
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox Accounts
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -210,6 +211,16 @@ input-password-show = Ehechauka ñe’ẽñemi
 input-password-hide-aria = Emokañy ñe’ẽñemi mba’erechahágui
 input-password-show-aria = Ehechauka ñe’ẽñemi moñe’ẽrãrõ. Pe ñe’ẽñemi ojekuaáta mba’erechahápe.
 
+## Linked Accounts section
+
+la-heading = Mba’ete juajupyre
+la-description = Eikekuaa apañuãi’ỹre ko’ã mba’etépe.
+la-unlink-button = Pe’aite
+la-unlink-account-button = Pe’aite
+la-unlink-heading = Eipe’aite mbohapyháva mba’etégui
+la-unlink-content = ¿Eipe’asépa añetehápe ne mba’ete { -brand-google }-gui? Eipe’ávo ne mba’ete ndaha’éi esẽtamava pya’ekuépe umi mba’apurúgui. Ejapo hag̃ua, embotyva’erã tembiapo nde pópe pe mba’apuru jeikepyréva ndive.
+nav-linked-accounts = { la-heading }
+
 ## Modal
 
 modal-close-title = Mboty
@@ -314,6 +325,8 @@ delete-account-step-1-2 = Ku’e 1 2-gui
 delete-account-step-2-2 = Ku’e 2 2-gui
 delete-account-confirm-title-2 = Embojuju ne { -product-firefox-account } { -brand-mozilla } rehe apopyre nemohekorosã térã nemboha’evéva ñandutípe:
 delete-account-acknowledge = Nemandu’áke emboguetéramo ne mba’ete:
+delete-account-chk-box-1-v2 =
+    .label = Oimeraẽva jehepyme’ẽ mboheraguapy erekóva oñemboykéta (ndaha’éiva { product-pocket })
 delete-account-chk-box-2 =
     .label = Ikatu okañy marandu ha tembiapoite ñongatupyre { -brand-mozilla } apopyrépe
 delete-account-chk-box-3 =
@@ -444,12 +457,6 @@ profile-picture =
     .header = Ta’ãnga
 profile-display-name =
     .header = Téra ehechauka hag̃ua
-profile-password =
-    .header = Ñe’ẽñemi
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Heñoipyre { $date }
 profile-primary-email =
     .header = Ñandutiveve mba’eguasuvéva
 
@@ -459,6 +466,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Tekorosã
+security-password =
+    .header = Ñe’ẽñemi
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Heñoipyre { $date }
 
 ## Switch component
 

@@ -23,6 +23,7 @@ alert-bar-close-message = Fechar mensagem
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Contas Firefox
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -193,6 +194,17 @@ input-password-hide = Ocultar senha
 input-password-show = Exibir senha
 input-password-hide-aria = Oculta a senha na tela.
 input-password-show-aria = Exibe a senha como texto legível. Sua senha fica visível na tela.
+
+## Linked Accounts section
+
+la-heading = Contas vinculadas
+la-description = Você autorizou o acesso às seguintes contas.
+la-unlink-button = Desvincular
+la-unlink-account-button = Desvincular
+la-unlink-heading = Desvincular da conta de terceiros
+la-unlink-content = Tem certeza que quer desvincular sua conta do { -brand-google }? Desvincular sua conta não te desconecta automaticamente desses serviços. Para fazer isso, você precisa sair manualmente na seção de serviços conectados.
+la-unlink-content-2 = Tem certeza que quer desvincular sua conta? Fazer isso não te desconecta automaticamente desses serviços. Para desvincular sua conta, você precisa sair manualmente na seção de serviços conectados.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -416,12 +428,6 @@ profile-picture =
     .header = Foto
 profile-display-name =
     .header = Nome de exibição
-profile-password =
-    .header = Senha
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Criada em { $date }
 profile-primary-email =
     .header = Email principal
 
@@ -431,6 +437,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Segurança
+security-password =
+    .header = Senha
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Criada em { $date }
 
 ## Switch component
 

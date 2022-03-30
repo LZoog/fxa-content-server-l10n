@@ -23,6 +23,7 @@ alert-bar-close-message = Powěźeńku zacyniś
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Konta Firefox
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -116,7 +117,7 @@ cs-disconnect-sync-heading = Ze Sync źěliś
 #                      (for example: "Firefox Nightly on Google Pixel 4a")
 cs-disconnect-sync-content =
     Waše pśeglědowańske daty na wašom
-    rěźe ({ $service }) wóstanu, ale njebuźo wěcej z wašym kontom synchronizěrowaś.
+    rěźe ({ $device }) wóstanu, ale njebuźo wěcej z wašym kontom synchronizěrowaś.
 cs-disconnect-sync-reason =
     Co jo głowna pśicyna za źělenje toś togo
     rěda?
@@ -209,6 +210,17 @@ input-password-hide = Gronidła schowaś
 input-password-show = Gronidło pokazaś
 input-password-hide-aria = Gronidło na wobrazowce schowaś.
 input-password-show-aria = Gronidło ako lutny tekst pokazaś. Wašo gronidło buźo widobne na wobrazowce.
+
+## Linked Accounts section
+
+la-heading = Zwězane konta
+la-description = Smy awtorizěrowali pśistup k slědujucym kontam.
+la-unlink-button = Zwisk źěliś
+la-unlink-account-button = Zwisk źěliś
+la-unlink-heading = Wót konta tśeśego póbitowarja źěliś
+la-unlink-content = Cośo napšawdu zwisk ze swójim kontom { -brand-google } źěliś? Gaž zwisk ze swójim kontom źěliśo, njewótzjawijośo se awtomatiski wót tych słužbow. Aby to cynił, musyśo se manuelnje wót wótrězka zwězanych słužbow wótzjawiś.
+la-unlink-content-2 = Cośo napšawdu zwisk ze swójim kontom źěliś? Gaž zwisk ze swójim kontom źěliśo, njewótzjawijośo se awtomatiski wót tych słužbow. Aby to cynił, musyśo se manuelnje wót wótrězka zwězanych słužbow wótzjawiś.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -440,12 +452,6 @@ profile-picture =
     .header = Wobraz
 profile-display-name =
     .header = Zwobraznjeńske mě
-profile-password =
-    .header = Gronidło
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Napórany: { $date }
 profile-primary-email =
     .header = Primarna e-mailowa adresa
 
@@ -455,6 +461,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Wěstota
+security-password =
+    .header = Gronidło
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Napórany: { $date }
 
 ## Switch component
 

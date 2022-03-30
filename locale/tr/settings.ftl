@@ -23,6 +23,7 @@ alert-bar-close-message = Mesajı kapat
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox Hesapları
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -155,6 +156,7 @@ datablock-print =
 ## Data collection section
 
 dc-heading = Veri toplanması ve kullanımı
+dc-subheader = { -product-firefox-accounts }nı geliştirmemize yardım edin
 dc-opt-in-success = Teşekkürler! Bu verileri paylaşmanız { -product-firefox-accounts } ürününü geliştirmemize yardımcı oluyor.
 dc-opt-in-out-error = Üzgünüz, veri toplama tercihiniz değiştirilirken bir sorun oluştu.
 dc-learn-more = Daha fazla bilgi al
@@ -198,6 +200,16 @@ input-password-hide = Parolayı gizle
 input-password-show = Parolayı göster
 input-password-hide-aria = Parolayı ekrandan gizle.
 input-password-show-aria = Parolayı düz metin olarak göster. Parolanız ekranda görünecektir.
+
+## Linked Accounts section
+
+la-heading = Bağlı hesaplar
+la-description = Aşağıdaki hesaplara erişim izni verdiniz.
+la-unlink-button = Bağlantıyı kes
+la-unlink-account-button = Bağlantıyı kes
+la-unlink-heading = Üçüncü taraf hesabıyla bağlantıyı kes
+la-unlink-content = { -brand-google } hesabınızın bağlantısını kesmek istediğinizden emin misiniz? Hesabınızın bağlantısını kesmek bu servislerden otomatik olarak çıkış yapmanızı sağlamaz. Bunu yapmak için Bağlı hizmetler bölümünden manuel olarak çıkış yapmanız gerekecektir.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -421,12 +433,6 @@ profile-picture =
     .header = Resim
 profile-display-name =
     .header = Görünen ad
-profile-password =
-    .header = Parola
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Oluşturma: { $date }
 profile-primary-email =
     .header = Birinci e-posta
 
@@ -436,6 +442,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Güvenlik
+security-password =
+    .header = Parola
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Oluşturma: { $date }
 
 ## Switch component
 

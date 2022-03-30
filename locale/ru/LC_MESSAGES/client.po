@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Accounts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 22:07+0000\n"
-"PO-Revision-Date: 2022-02-06 13:44+0000\n"
-"Last-Translator: Alexander Slovesnik <unghost@mozilla-russia.org>\n"
+"POT-Creation-Date: 2022-03-24 22:07+0000\n"
+"PO-Revision-Date: 2022-03-26 10:53+0000\n"
+"Last-Translator: Denis <mr.denis.goncharov@gmail.com>\n"
 "Language-Team: Mozilla Russia <ru@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -106,7 +106,7 @@ msgstr "Подключено"
 msgid "Unknown account. <a href=\"/signup\">Sign up</a>"
 msgstr "Неизвестный аккаунт. <a href=\"/signup\">Зарегистрироваться</a>"
 
-#: .es5/views/sign_up_password.js:84
+#: .es5/views/sign_up_password.js:86
 msgid "Account no longer exists. Recreate it?"
 msgstr "Аккаунт больше не существует. Пересоздать?"
 
@@ -1869,6 +1869,10 @@ msgstr "Сохраните ключ восстановления"
 msgid "Done"
 msgstr "Готово"
 
+#: .es5/templates/partial/account-suggestion.mustache:1
+msgid "Why do I need to create this account? <a %(escapedSuggestionAttrs)s>Find out here</a>"
+msgstr "Зачем создавать этот аккаунт? <a %(escapedSuggestionAttrs)s>Узнайте здесь</a>"
+
 #: .es5/templates/partial/coppa-age-input.mustache:1
 msgid "How old are you?"
 msgstr "Сколько вам лет?"
@@ -1964,6 +1968,18 @@ msgstr "Вернуться к подпискам"
 #: .es5/templates/partial/sync-suggestion.mustache:1
 msgid "Looking for Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Get started here</a>"
 msgstr "Ищете Синхронизацию Firefox? <a %(escapedSyncSuggestionAttrs)s>Начните здесь</a>"
+
+#: .es5/templates/partial/third-party-auth.mustache:1
+msgid "or"
+msgstr "или"
+
+#: .es5/templates/partial/third-party-auth.mustache:2
+msgid "Continue with Google"
+msgstr "Продолжить с Google"
+
+#: .es5/templates/partial/third-party-auth.mustache:3
+msgid "Continue with Apple"
+msgstr "Продолжить с Apple"
 
 #: .es5/templates/pair/auth_allow.mustache:1
 msgid "Approve new device <small>for %(email)s</small>"

@@ -23,6 +23,7 @@ alert-bar-close-message = Berjocht slute
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox-accounts
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -209,6 +210,17 @@ input-password-hide = Wachtwurd ferstopje
 input-password-show = Wachtwurd toane
 input-password-hide-aria = Wachtwurd op skerm ferstopje
 input-password-show-aria = Wachtwurd as platte tekst toane. Jo wachtwurd sil sichtber wêze op it skerm.
+
+## Linked Accounts section
+
+la-heading = Keppele accounts
+la-description = Jo hawwe tagong ta de folgjende accounts autorisearrre.
+la-unlink-button = Untkeppelje
+la-unlink-account-button = Untkeppelje
+la-unlink-heading = Untkeppelje fan eksterne account
+la-unlink-content = Binne jo wis dat jo jo { -brand-google }-account ûntkeppelje wolle? As jo jo account ûntkeppelje, wurde jo net automatysk ôfmeld by dy tsjinsten. Om dat te dwaan, moatte jo jo hânmjittich ôfmelde fan de seksje Ferbûnen tsjinsten út.
+la-unlink-content-2 = Binne jo wis dat jo jo account ûntkeppelje wolle? As jo jo account ûntkeppelje, wurde jo net automatysk ôfmeld by dy tsjinsten. Om dat te dwaan, moatte jo jo hânmjittich ôfmelde fan de seksje Ferbûnen tsjinsten út.
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -446,12 +458,6 @@ profile-picture =
     .header = Ofbylding
 profile-display-name =
     .header = Werjeftenamme
-profile-password =
-    .header = Wachtwurd
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Makke op { $date }
 profile-primary-email =
     .header = Primêr e-mailadres
 
@@ -461,6 +467,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Befeiliging
+security-password =
+    .header = Wachtwurd
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Makke op { $date }
 
 ## Switch component
 

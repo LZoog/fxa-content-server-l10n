@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 22:07+0000\n"
-"PO-Revision-Date: 2022-02-07 17:39+0000\n"
-"Last-Translator: Matjaž Horvat <matjaz.horvat@gmail.com>\n"
+"POT-Creation-Date: 2022-03-24 22:07+0000\n"
+"PO-Revision-Date: 2022-03-25 13:25+0000\n"
+"Last-Translator: Lan Glad <upwinxp@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -105,7 +105,7 @@ msgstr "Povezano"
 msgid "Unknown account. <a href=\"/signup\">Sign up</a>"
 msgstr "Neznan račun. <a href=\"/signup\">Registracija</a>"
 
-#: .es5/views/sign_up_password.js:84
+#: .es5/views/sign_up_password.js:86
 msgid "Account no longer exists. Recreate it?"
 msgstr "Račun ne obstaja več. Ponovno ga ustvari?"
 
@@ -844,7 +844,7 @@ msgstr "Z nadaljevanjem sprejemate <a id=\"service-tos\" href=\"%(termsUri)s\">P
 
 #: .es5/lib/strings.js:31
 msgid "<a href=\"https://support.mozilla.org/kb/im-having-problems-my-firefox-account\">Help</a>"
-msgstr ""
+msgstr "<a href=\"https://support.mozilla.org/kb/im-having-problems-my-firefox-account\">Pomoč</a>"
 
 #: .es5/lib/strings.js:34
 msgid "Get the latest news about Mozilla and Firefox."
@@ -968,6 +968,8 @@ msgid ""
 "<span>REMEMBER:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt "
 "your data with your password to protect your privacy. You’ll still keep any subscriptions you may have and Pocket data will not be affected."
 msgstr ""
+"<span>POMNITE:</span> S ponastavitvijo gesla ponastavite svoj račun. Izgubite lahko nekatere od osebnih podatkov (vključno z zgodovino, zaznamki in gesli), saj podatke šifriramo z vašim geslom, da "
+"zaščitimo vašo zasebnost. Vse svoje morebitne naročnine boste obdržali in podatki Pocketa bodo ostali nedotaknjeni."
 
 #: .es5/templates/complete_reset_password.mustache:11
 msgid "You have successfully restored your account using your recovery key. Create a new password to secure your data, and store it in a safe location."
@@ -1326,6 +1328,8 @@ msgid ""
 "<span>NOTE:</span> When you reset your password, you reset your account. You may lose some of your personal information (including history, bookmarks, and passwords). That’s because we encrypt your "
 "data with your password to protect your privacy. You’ll still keep any subscriptions you may have and Pocket data will not be affected."
 msgstr ""
+"<span>OPOMBA:</span> S ponastavitvijo gesla ponastavite svoj račun. Izgubite lahko nekatere od osebnih podatkov (vključno z zgodovino, zaznamki in gesli), saj podatke šifriramo z vašim geslom, da "
+"zaščitimo vašo zasebnost. Vse svoje morebitne naročnine boste obdržali in podatki Pocketa bodo ostali nedotaknjeni."
 
 #: .es5/templates/reset_password.mustache:6
 msgid "Begin reset"
@@ -1498,7 +1502,7 @@ msgstr "Pošlji"
 
 #: .es5/templates/sms_send.mustache:11
 msgid "SMS &amp; data rates may apply. The recipient’s consent is required. <a %(escapedLearnMoreAttributes)s>Learn more</a>"
-msgstr ""
+msgstr "Lahko veljajo tarife za sporočila SMS in prenos podatkov. Zahtevana je prejemnikova privolitev. <a %(escapedLearnMoreAttributes)s>Več o tem</a>"
 
 #: .es5/templates/sms_send.mustache:12 .es5/templates/why_connect_another_device.mustache:1
 msgid "Why sync multiple devices?"
@@ -1654,7 +1658,7 @@ msgstr "Pošlji potisno obvestilo o prijavi"
 
 #: .es5/templates/push/send_login.mustache:3
 msgid "Check your connected Firefox devices for the sign-in confirmation tab we've sent."
-msgstr ""
+msgstr "Na povezanih napravah Firefox poiščite zavihek za potrditev prijave, ki smo ga poslali."
 
 #: .es5/templates/push/send_login.mustache:4
 msgid "Resend tab"
@@ -1732,7 +1736,7 @@ msgstr "Naroči %(email)s"
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:2
 msgid "The link you clicked was missing characters, and may have been broken by your email client."
-msgstr ""
+msgstr "Povezavi, ki ste jo kliknili, manjka nekaj znakov. Morda jo je pokvaril e-poštni odjemalec."
 
 #: .es5/templates/post_verify/finish_account_setup/set_password.mustache:5
 msgid "Continue to %(productName)s"
@@ -1789,7 +1793,7 @@ msgstr "Prenesite Firefox preko kamere"
 
 #: .es5/templates/post_verify/cad_qr/ready_to_scan.mustache:2
 msgid "Installing Firefox and syncing between at least two devices also protects against losing your data."
-msgstr ""
+msgstr "Z namestitvijo Firefoxa in sinhronizacijo med vsaj dvema napravama se tudi zaščitite pred izgubo podatkov."
 
 #: .es5/templates/post_verify/cad_qr/ready_to_scan.mustache:3
 msgid "Ready to scan"
@@ -1862,6 +1866,10 @@ msgstr "Shrani obnovitveni ključ"
 #: .es5/templates/post_verify/account_recovery/save_recovery_key.mustache:10
 msgid "Done"
 msgstr "Končaj"
+
+#: .es5/templates/partial/account-suggestion.mustache:1
+msgid "Why do I need to create this account? <a %(escapedSuggestionAttrs)s>Find out here</a>"
+msgstr "Zakaj moram ustvariti ta račun? <a %(escapedSuggestionAttrs)s>Izvedite tukaj</a>"
 
 #: .es5/templates/partial/coppa-age-input.mustache:1
 msgid "How old are you?"
@@ -1958,6 +1966,18 @@ msgstr "Nazaj na naročnine"
 #: .es5/templates/partial/sync-suggestion.mustache:1
 msgid "Looking for Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Get started here</a>"
 msgstr "Iščete Firefox Sync? <a %(escapedSyncSuggestionAttrs)s>Začnite tukaj</a>"
+
+#: .es5/templates/partial/third-party-auth.mustache:1
+msgid "or"
+msgstr "ali"
+
+#: .es5/templates/partial/third-party-auth.mustache:2
+msgid "Continue with Google"
+msgstr "Nadaljuj z Googlom"
+
+#: .es5/templates/partial/third-party-auth.mustache:3
+msgid "Continue with Apple"
+msgstr "Nadaljuj z Applom"
 
 #: .es5/templates/pair/auth_allow.mustache:1
 msgid "Approve new device <small>for %(email)s</small>"

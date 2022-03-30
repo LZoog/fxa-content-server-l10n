@@ -23,6 +23,7 @@ alert-bar-close-message = Serrar il messadi
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Contos da Firefox
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -209,6 +210,16 @@ input-password-hide = Zuppentar il pled-clav
 input-password-show = Mussar il pled-clav
 input-password-hide-aria = Zuppentar il pled-clav dal visur.
 input-password-show-aria = Mussar il pled-clav sco text decifrà. Tes pled-clav vegn ad esser visibel sin il visur.
+
+## Linked Accounts section
+
+la-heading = Contos colliads
+la-description = Ti has autorisà l'access als suandants contos.
+la-unlink-button = Distatgar
+la-unlink-account-button = Distatgar
+la-unlink-heading = Distatgar dal conto da terzas partidas
+la-unlink-content = Vuls ti propi allontanar la colliaziun cun tes conto da { -brand-google }? Cun distatgar na sortas ti betg automaticamain da quests servetschs. Per far quai stos ti sortir manualmain en la secziun «Servetschs connectads».
+nav-linked-accounts = { la-heading }
 
 ## Modal
 
@@ -448,12 +459,6 @@ profile-picture =
     .header = Maletg
 profile-display-name =
     .header = Num per mussar
-profile-password =
-    .header = Pled-clav
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Data da creaziun: { $date }
 profile-primary-email =
     .header = E-mail principal
 
@@ -463,6 +468,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Segirezza
+security-password =
+    .header = Pled-clav
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Creà: { $date }
 
 ## Switch component
 

@@ -23,6 +23,7 @@ alert-bar-close-message = Sulje viesti
 
 -brand-mozilla = Mozilla
 -brand-firefox = Firefox
+-brand-google = Google
 # “Accounts” can be localized, “Firefox” must be treated as a brand.
 -product-firefox-accounts = Firefox-tilit
 # “Account” can be localized, “Firefox” must be treated as a brand.
@@ -31,6 +32,7 @@ alert-bar-close-message = Sulje viesti
 product-mozilla-vpn = Mozilla VPN
 product-pocket = Pocket
 product-firefox-monitor = Firefox Monitor
+product-firefox-relay = Firefox Relay
 
 ##
 
@@ -64,9 +66,14 @@ avatar-default-avatar =
 
 # BentoMenu component
 
+bento-menu-title = { -brand-firefox }-valikko
+bento-menu-firefox-title = { -brand-firefox } on teknologia, joka taistelee yksityisyytesi puolesta.
 bento-menu-vpn = { product-mozilla-vpn }
 bento-menu-monitor = { product-firefox-monitor }
 bento-menu-pocket = { product-pocket }
+bento-menu-firefox-relay = { product-firefox-relay }
+bento-menu-firefox-desktop = { -brand-firefox }-selain työpöydälle
+bento-menu-firefox-mobile = { -brand-firefox }-selain mobiililaitteille
 bento-menu-made-by-mozilla = { -brand-mozilla }lta
 
 ## Connect another device promo
@@ -89,6 +96,9 @@ connect-another-app-store-image-2 =
 
 cs-heading = Yhdistetyt palvelut
 cs-description = Kaikki mitä käytät ja mihin olet sisäänkirjautuneena.
+cs-cannot-refresh =
+    Valitettavasti yhdistettyjen palvelujen listauksen
+    päivittämisessä ilmeni ongelma.
 cs-cannot-disconnect = Asiakasta ei löydy, yhteyttä ei voi katkaista
 # This string is used in a notification message near the top of the page.
 # Variables:
@@ -126,7 +136,17 @@ cs-disconnect-sync-opt-not-say = En halua sanoa
 
 cs-disconnect-advice-confirm = Selvä
 cs-disconnect-lost-advice-heading = Yhteys kadonneeseen tai varastettuun laitteeseen on katkaistu
+cs-disconnect-lost-advice-content-2 =
+    Koska laitteesi katosi tai varastettiin,
+    sinun tulisi vaihtaa { -product-firefox-account }si salasana
+    tilin asetuksissa. Sinun kannattaa myös etsiä ohjeita oman
+    laitteen valmistajalta tietojen etäpoistoon liittyen.
 cs-disconnect-suspicious-advice-heading = Yhteys epäilyttävään laitteeseen on katkaistu
+cs-disconnect-suspicious-advice-content =
+    Jos irrotettu laite todellakin on epäilyttävä,
+    sinun tulisi vaihtaa { -product-firefox-account }n salasana
+    tilin asetuksissa. Sinun kannattaa vaihtaa myös muut
+    salasanat, jotka olet tallentanut { -brand-firefox }iin kirjoittamalla osoitepalkkiin about:logins.
 cs-sign-out-button = Kirjaudu ulos
 
 ##
@@ -144,6 +164,11 @@ datablock-print =
 ## Data collection section
 
 dc-heading = Tietojen keruu ja käyttö
+dc-subheader = Auta parantamaan palvelua { -product-firefox-accounts }
+dc-subheader-content = Salli palvelun { -product-firefox-accounts } lähettää teknistä tietoa ja vuorovaikutustietoa { -brand-mozilla }lle.
+dc-opt-out-success = Poistuminen onnistui. { -product-firefox-accounts } ei lähetä teknistä tai vuorovaikutustietoa { -brand-mozilla }lle.
+dc-opt-in-success = Kiitos! Tämän tiedon jakaminen auttaa parantamaan palvelua { -product-firefox-accounts }.
+dc-opt-in-out-error = Valitettavasti tiedonkeruuasetusten muuttamisen yhteydessä ilmeni ongelma.
 dc-learn-more = Lue lisää
 
 # DropDownAvatarMenu component
@@ -186,6 +211,16 @@ input-password-show = Näytä salasana
 input-password-hide-aria = Piilota salasana näytöltä.
 input-password-show-aria = Näytä salasana raakatekstinä. Salasanasi näkyy näytöllä.
 
+## Linked Accounts section
+
+la-heading = Linkitetyt tilit
+la-description = Olet valtuuttanut pääsyn seuraaville tileille.
+la-unlink-button = Poista linkitys
+la-unlink-account-button = Poista linkitys
+la-unlink-heading = Poista linkitys kolmannen osapuolen tilistä
+la-unlink-content = Haluatko varmasti poistaa { -brand-google }-tilisi linkityksen? Tilisi linkityksen poistaminen ei kirjaa sinua automaattisesti ulos näistä palveluista. Tätä varten sinun on kirjauduttava manuaalisesti ulos Yhdistetyt palvelut -osiosta.
+nav-linked-accounts = { la-heading }
+
 ## Modal
 
 modal-close-title = Sulje
@@ -215,6 +250,10 @@ nav-email-comm = Sähköpostiviestintä
 ## Two Step Authentication - replace recovery code
 
 tfa-replace-code-error = Palautuskoodien vaihtamisessa ilmeni ongelma.
+tfa-replace-code-success =
+    Uudet koodit on luotu. Talleta nämä kertakäyttöiset
+    koodit turvalliseen paikkaan — tarvitset niitä päästäksesi tilillesi, jos
+    mobiililaitteesi ei ole käytettävissäsi.
 tfa-replace-code-success-alert = Tilin palautuskoodit päivitetty.
 tfa-replace-code-1-2 = Vaihe 1/2
 tfa-replace-code-2-2 = Vaihe 2/2
@@ -284,9 +323,10 @@ delete-account-header =
     .title = Poista tili
 delete-account-step-1-2 = Vaihe 1/2
 delete-account-step-2-2 = Vaihe 2/2
+delete-account-confirm-title-2 = Olet yhdistänyt { -product-firefox-account }si { -brand-mozilla }n tuotteisiin, jotka pitävät sinut tuotteliaana ja turvassa verkossa:
 delete-account-acknowledge = Huomioi, että tilisi poistamalla:
-delete-account-chk-box-1 =
-    .label = Kaikki maksetut tilaukset perutaan
+delete-account-chk-box-1-v2 =
+    .label = Kaikki käytössäsi olevat maksulliset tilaukset perutaan (lukuun ottamatta { product-pocket })
 delete-account-chk-box-2 =
     .label = Saatat menettää { -brand-mozilla }n tuotteisiin tallennetut tiedot ja ominaisuudet
 delete-account-chk-box-3 =
@@ -321,6 +361,7 @@ display-name-success-alert = Näyttönimi päivitetty.
 recovery-key-cancel-button = Peruuta
 recovery-key-close-button = Sulje
 recovery-key-continue-button = Jatka
+recovery-key-created = Palautusavain on luotu. Talleta avain turvalliseen paikkaan, jonka löydät vaivatta myöhemmin — tarvitset avaimen päästäksesi takaisin tietoihisi, jos unohdat salasanasi.
 recovery-key-enter-password =
     .label = Kirjoita salasana
 recovery-key-page-title =
@@ -384,9 +425,12 @@ tfa-scan-this-code =
 # This is the image alt text for a QR code.
 # Variables:
 #   $secret (String) - a long alphanumeric string that does not require translation
+# DEV NOTE: Set image alt text per fluent/react documentation, do not use the below as an example
 tfa-qa-code-alt =
     Käytä koodi { $secret } määrittääksesi kaksivaiheisen todennuksen
     tuettuihin sovelluksiin.
+tfa-qa-code =
+    .alt = { tfa-qa-code-alt }
 tfa-button-cant-scan-qr = Etkö voi lukea QR-koodia?
 # When the user cannot use a QR code.
 tfa-enter-secret-key = Kirjoita tämä salainen avain todennussovellukseesi:
@@ -413,12 +457,6 @@ profile-picture =
     .header = Kuva
 profile-display-name =
     .header = Näyttönimi
-profile-password =
-    .header = Salasana
-# This is a string that shows when the user's password was created.
-# Variables:
-#   $date (String) - a localized date and time string
-profile-password-created-date = Luotu { $date }
 profile-primary-email =
     .header = Ensisijainen sähköposti
 
@@ -428,6 +466,12 @@ profile-primary-email =
 ## Security section of Setting
 
 security-heading = Turvallisuus
+security-password =
+    .header = Salasana
+# This is a string that shows when the user's password was created.
+# Variables:
+#   $date (String) - a localized date and time string
+security-password-created-date = Luotu { $date }
 
 ## Switch component
 
@@ -462,6 +506,9 @@ rk-content-explain = Palauta tietosi kun unohdat salasanasi.
 rk-content-reset-data = Miksi salasanan nollaaminen nollaa myös tietoni?
 rk-cannot-verify-session-2 = Valitettavasti istunnon vahvistamisessa oli ongelma.
 rk-remove-modal-heading = Poistetaanko palautusavain?
+rk-remove-modal-content =
+    Jos nollaat salasanasi, et voi käyttää palautusavainta
+    saadaksesi tietosi takaisin käyttöösi. Tätä toimintoa ei voi kumota.
 rk-refresh-error = Valitettavasti palautusavaimen päivittämisessä ilmeni ongelma.
 rk-remove-error = Tilisi palautusavainta ei voitu poistaa.
 
@@ -499,6 +546,8 @@ se-default-content = Käytä tiliäsi, jos et voi kirjautua ensisijaiseen sähk�
 se-content-note =
     Huomio: toissijainen sähköposti ei palauta tietojasi — tarvitset
     <a>palautusavaimen</a> sitä varten.
+# Default value for the secondary email
+se-secondary-email-none = Ei mitään
 
 ##
 
